@@ -83,7 +83,7 @@ const webpackConfig = merge(baseWebpackConfig, {
     //_clean-webpack-plugin@2.0.1@clean-webpack-plugin\
     new  CleanWebpackPlugin({
         verbose: true,
-        cleanOnceBeforeBuildPatterns : ['distribution/*']
+        cleanOnceBeforeBuildPatterns : ['*/*']
     }),
         new webpack.HashedModuleIdsPlugin(),
         new MiniCssExtractPlugin({
