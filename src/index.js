@@ -16,6 +16,7 @@ import 'babel-polyfill';
 ///////////////
 
 //import Vue from 'vue'
+//从cdn加载依赖包
 import App from './App'
 import router from './router'
 window.onload = () => {

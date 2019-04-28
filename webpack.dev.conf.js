@@ -14,7 +14,8 @@ const webpackConfig = merge(baseWebpackConfig, {
         contentBase: './distribution',
         inline: true,//do not use iframe for the page, true is default
         open: true,//open browser after dev server starts
-        port: 8080,//8080 is default
+        port: 8080,
+        //8080 is default
         proxy: {//proxy backend api
             '/api': 'http://localhost:3000'
         },

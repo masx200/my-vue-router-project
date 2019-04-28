@@ -29,8 +29,8 @@ const webpackConfig = merge(baseWebpackConfig, {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                        //    modules: true,
-                          //  localIdentName: '[name]---[local]---[hash:base64:5]'
+                            //    modules: true,
+                            //  localIdentName: '[name]---[local]---[hash:base64:5]'
                         }
                     },
                     {
@@ -44,7 +44,7 @@ const webpackConfig = merge(baseWebpackConfig, {
                         loader: 'sass-loader',
                         options: {
                             sourceMap: true
-                          //  data: '@import "./src/styles/_variables.scss";'
+                            //  data: '@import "./src/styles/_variables.scss";'
                         }
                     }
                 ]
@@ -60,38 +60,66 @@ const webpackConfig = merge(baseWebpackConfig, {
             }),
             new OptimizeCSSAssetsPlugin({})
         ],
-        runtimeChunk: {
-            "name": "manifest"
-        },
+        // runtimeChunk: {
+        //     "name": "manifest"
+        // },
         splitChunks: {
+            chunks: 'async',
+            minSize: 30000,
+            maxSize: 0,
+            minChunks: 1,
+            maxAsyncRequests: 5,
+            maxInitialRequests: 3,
+            automaticNameDelimiter: '~',
+            name: true,
             cacheGroups: {
-                default: false,
-                vendors: false,
-                vendor: {
+                vendors: {
                     test: /[\\/]node_modules[\\/]/,
-                    name: 'vendors',
-                    chunks: 'all'
+                    priority: -10
+                },
+                default: {
+                    minChunks: 2,
+                    priority: -20,
+                    reuseExistingChunk: true
                 }
-
             }
-        }
+            // cacheGroups: {
+            //     commons: {
+            //       name: 'commons',
+            //       chunks: 'initial',
+            //       minChunks: 2
+            //     }
+            //   }
+            // cacheGroups: {
+            //     default: false,
+            //     vendors: false,
+            //     vendor: {
+            //         test: /[\\/]node_modules[\\/]/,
+            //         name: 'vendors',
+            //         chunks: 'all'
+            //     }
+
+            // }
+        },
+        runtimeChunk: true
     },
     plugins: [
         // new CleanWebpackPlugin(['distribution/*']),
         // Error: clean-webpack-plugin only accepts an options object. See:
-    //         https://github.com/johnagan/clean-webpack-plugin#options-and-defaults-optional
-    //_clean-webpack-plugin@2.0.1@clean-webpack-plugin\
-    new  CleanWebpackPlugin({
-        verbose: true,
-        cleanOnceBeforeBuildPatterns : ['*/*']
-    }),
+        //         https://github.com/johnagan/clean-webpack-plugin#options-and-defaults-optional
+        //_clean-webpack-plugin@2.0.1@clean-webpack-plugin\
+        new CleanWebpackPlugin({
+            dry: false,
+            verbose: true,
+            cleanOnceBeforeBuildPatterns: ['*/*']
+        }),
         new webpack.HashedModuleIdsPlugin(),
         new MiniCssExtractPlugin({
             filename: "[name].[contenthash].css",
             chunkFilename: "[name].[contenthash].css"
         }),
         new webpack.DefinePlugin({
-         //   'process.env': env
+            //   'process.env': env
         }),
         new UglifyJsPlugin({
             uglifyOptions: {
@@ -104,9 +132,9 @@ const webpackConfig = merge(baseWebpackConfig, {
             parallel: true
         }),
         new OptimizeCSSPlugin({
-            cssProcessorOptions: 
-               
-                 { safe: true }
+            cssProcessorOptions:
+
+                { safe: true }
         }),
         new HtmlWebpackPlugin({
             // filename: process.env.NODE_ENV === 'testing'
