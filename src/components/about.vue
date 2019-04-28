@@ -69,6 +69,9 @@ export default {
     }
   },
   mounted() {
+
+
+      global.handleClick3()
     this.mychangemenu();
   },
   created() {

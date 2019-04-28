@@ -46,6 +46,8 @@ export default {
     }
   },
   mounted() {
+
+      global.handleClick1()
     this.mychangemenu();
   },
   created() {

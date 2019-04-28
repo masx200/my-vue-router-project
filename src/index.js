@@ -25,13 +25,55 @@ window.onload = () => {
     Vue.config.productionTip = false
 
     /* eslint-disable no-new */
-    new Vue({
+   
+
+    if (window.location.hash == "#/") {
+        global.myisactive1 = true
+        global.myisactive2 = false
+        global.myisactive3 = false
+    } else if (window.location.hash == "#/huami") {
+        global.myisactive2 = true
+        global.myisactive1 = false
+        global.myisactive3 = false
+    } else  if (window.location.hash == "#/about"){
+        global.myisactive3 = true
+        global.myisactive1 = false
+        global.myisactive2 = false
+    }
+
+    global.handleClick1=function handleClick1() {
+        global.myisactive1 = true
+        global.myisactive2 = false
+        global.myisactive3 = false
+        $("#mynav1").click()
+    }
+    global.handleClick2=function handleClick2() {
+        global.myisactive2 = true
+        global.myisactive1 = false
+        global.myisactive3 = false
+        $("#mynav2").click()
+    }
+    global.handleClick3=function handleClick3() {
+        global.myisactive3 = true
+        global.myisactive1 = false
+        global.myisactive2 = false
+        $("#mynav3").click()
+    }
+    global.myvueobj=new Vue({
         el: '#app',
         router,
         components: {
             App
         },
-        template: '<App/>'
+        template: '<App/>',
+        data() {
+            return {
+              isActive1:global.myisactive1,
+              isActive2:global.myisactive1,
+              isActive3: global.myisactive1,
+            //   myroutename: this.$route.name
+            };
+          }
     })
 }
 

@@ -99,6 +99,9 @@ export default {
         this.mychangemenu();
     },
     mounted() {
+
+
+        global.handleClick2()
         this.mychangemenu();
 
         if (!importScripts) {

@@ -7,15 +7,15 @@
         </div>
         <div>
           <ul class="nav navbar-nav" @click="mychangemenu()">
-            <li v-bind:class="{ active: isActive1 }">
+            <li id="mynav1" v-bind:class="{ active: isActive1 }">
               <!--     <a href="">首页</a> -->
               <router-link to="/">基于VUE的首页</router-link>
             </li>
 
-            <li v-bind:class="{ active: isActive2 }">
+            <li id="mynav2"v-bind:class="{ active: isActive2 }">
               <router-link to="/huami">花密网页版</router-link>
             </li>
-            <li v-bind:class="{ active: isActive3 }">
+            <li id="mynav3"v-bind:class="{ active: isActive3 }">
               <router-link to="/about">关于</router-link>
             </li>
             <li>
@@ -36,13 +36,28 @@ export default {
   name: "App",
   data() {
     return {
-      isActive1: true,
-      isActive2: true,
-      isActive3: true,
+      isActive1:global.myisactive1,
+      isActive2:global.myisactive2,
+      isActive3: global.myisactive3,
       myroutename: this.$route.name
     };
   },
   methods: {
+      mounted(){
+ if (window.location.hash == "#/") {
+        global.myisactive1 = true
+        global.myisactive2 = false
+        global.myisactive3 = false
+    } else if (window.location.hash == "#/huami") {
+        global.myisactive2 = true
+        global.myisactive1 = false
+        global.myisactive3 = false
+    } else  if (window.location.hash == "#/about"){
+        global.myisactive3 = true
+        global.myisactive1 = false
+        global.myisactive2 = false
+    }
+      },
     mychangemenu() {
       //alert("changed")
       this.myroutename = this.$route.name;
