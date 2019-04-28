@@ -3,7 +3,7 @@ https://masx200.github.io/my-vue-router-project/
 https://masx200.github.io/my-react-router-test/
 
 # my-project
-
+基于webpack的vue项目,从cdn加载依赖包,并分包懒加载,vue-router测试
 > A Vue.js project
 
 ## Build Setup
