@@ -103,7 +103,7 @@ export default {
 
         global.handleClick2()
         this.mychangemenu();
-
+/*
         if (!importScripts) {
             var importScripts = (function(globalEval) {
                 var xhr = new XMLHttpRequest();
@@ -136,7 +136,7 @@ export default {
                 };
             })(eval);
         }
-
+*/
         //importScripts("https://cdn.staticfile.org/clipboard.js/2.0.4/clipboard.min.js")
 
         //importScripts("https://cdn.staticfile.org/jquery/3.4.0/jquery.min.js")
@@ -225,7 +225,8 @@ export default {
                 console.error("Trigger:", e.trigger);
             });
             $("#copyOK").hide();
-        })(
+        });
+        (
             // console.log($.toString())
             //         console.log(myfun1)
             // myfun1()
