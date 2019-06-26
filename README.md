@@ -1,37 +1,29 @@
 # my-vue-router-project-webpack
+
+使用 webpack-react-vue-spa-awesome-config 重构了 my-vue-router-project
+
 https://masx200.github.io/my-vue-router-project/
 
 https://masx200.github.io/my-react-router-test/
 
-使用了本地的node模块,导致打包出来的文件比较大,加载很慢,webpack打包过于繁琐建议使用parcel bundler
+使用了本地的 node 模块,导致打包出来的文件比较大,加载很慢,webpack 打包过于繁琐建议使用 parcel bundler
 
 # my-project
-基于webpack的vue项目,从cdn加载依赖包,并分包懒加载,vue-router测试
+
+基于 webpack 的 vue 项目,从 cdn 加载依赖包,并分包懒加载,vue-router 测试
+
 > A Vue.js project
 
 ## Build Setup
 
-
 # install dependencies
+
 npm install
 
-# serve with hot reload at localhost:8080
-npm run dev
+# serve with hot reload
+
+npm run start
 
 # build for production with minification
+
 npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
