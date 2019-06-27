@@ -4,8 +4,8 @@
     "description": "A Vue.js router project",
     "author": "masx200 <34191203+masx200@users.noreply.github.com>",
     "scripts": {
-        "start": "webpack-dev-server  --config config/webpack.config.js --mode=development",
-        "build": "webpack   --config config/webpack.config.js --mode=production"
+        "start": "webpack-dev-server  --config ./config/webpack.config.js --mode=development",
+        "build": "webpack   --config ./config/webpack.config.js --mode=production"
     },
     "babel": {
         "presets": [
