@@ -102,6 +102,7 @@
     "vue-template-compiler": "^2.6.10",
     "webpack-manifest-plugin": "^2.0.4",
     "webpack-merge": "^4.2.1",
+    "webpack-copyfiles-plugin": "^1.0.6",
     "workbox-webpack-plugin": "^4.3.0"
   },
   "browserslist": {
