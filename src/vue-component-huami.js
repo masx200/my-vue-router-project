@@ -79,7 +79,7 @@ let huami = Vue.extend({
                   </p>
               </span>
               <p>
-                  <span id="copyOK">√复制成功</span>
+                  <span id="copyOK"  style="display: none;">√复制成功</span>
               </p>
               <p></p>
           </div>
