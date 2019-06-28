@@ -5956,7 +5956,7 @@ loader-utils@1.2.3, loader-utils@^1.0.0, loader-utils@^1.0.1, loader-utils@^1.0.
     emojis-list "^2.0.0"
     json5 "^1.0.1"
 
-loader-utils@^0.2.16:
+loader-utils@^0.2.16, loader-utils@^0.2.7:
   version "0.2.17"
   resolved "https://registry.npm.taobao.org/loader-utils/download/loader-utils-0.2.17.tgz#f86e6374d43205a6e6c60e9196f17c0299bfb348"
   integrity sha1-+G5jdNQyBabmxg6RlvF8Apm/s0g=
@@ -9514,6 +9514,13 @@ unicode-canonical-property-names-ecmascript@^1.0.4:
   resolved "https://registry.npm.taobao.org/unicode-canonical-property-names-ecmascript/download/unicode-canonical-property-names-ecmascript-1.0.4.tgz#2619800c4c825800efdd8343af7dd9933cbe2818"
   integrity sha1-JhmADEyCWADv3YNDr33Zkzy+KBg=
 
+unicode-loader@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npm.taobao.org/unicode-loader/download/unicode-loader-1.0.7.tgz#0b41ac579a3ecdff018df8cf3fb678b3ff4be9ac"
+  integrity sha1-C0GsV5o+zf8BjfjPP7Z4s/9L6aw=
+  dependencies:
+    loader-utils "^0.2.7"
+
 unicode-match-property-ecmascript@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npm.taobao.org/unicode-match-property-ecmascript/download/unicode-match-property-ecmascript-1.0.4.tgz#8ed2a32569961bce9227d09cd3ffbb8fed5f020c"
@@ -9930,8 +9937,8 @@ webpack-plugin-compat@^1.0.1:
   integrity sha1-GlJJJCWn0nsGJ9W6LeTqzJno6ao=
 
 "webpack-react-vue-spa-awesome-config@https://github.com/masx200/webpack-react-vue-spa-awesome-config.git":
-  version "2.1.0"
-  resolved "https://github.com/masx200/webpack-react-vue-spa-awesome-config.git#c03117e49830102819c390c6fc7b30dfe653b972"
+  version "2.1.1"
+  resolved "https://github.com/masx200/webpack-react-vue-spa-awesome-config.git#ce251cf75d3d7af3a9c1a7ac58ba0a179cd0228c"
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
@@ -9963,6 +9970,7 @@ webpack-plugin-compat@^1.0.1:
     style-loader "0.23.1"
     terser-webpack-plugin "1.2.3"
     uglifyjs-webpack-plugin "^2.1.3"
+    unicode-loader "^1.0.7"
     url-loader "^2.0.0"
     vue "^2.6.10"
     vue-loader "^15.7.0"
