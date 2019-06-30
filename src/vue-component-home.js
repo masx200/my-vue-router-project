@@ -11,7 +11,7 @@ let home = Vue.extend({
   },
   methods: {},
   mounted() {
-    document.title = "vue-router-project-" + "home";
+    document.title = "masx200的github主页" + "vue-router-project-" + "home";
     window.location.hash = "#/";
     // window.mychangemenu();
     // mychangemenu();
