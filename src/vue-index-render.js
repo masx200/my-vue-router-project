@@ -2,6 +2,10 @@
 import $ from "jquery";
 import Vue from "vue/dist/vue.esm.browser";
 import VueRouter from "vue-router";
+Vue.config.productionTip = false;
+Vue.config.silent = true;
+Vue.config.devtools = true;
+Vue.use(VueRouter);
 // import "../RegisteraServiceWorkerFile.js";
 // import IMPORTCJSAMDUMD from "../IMPORTCJSAMDUMD";
 
@@ -69,11 +73,9 @@ function myonloadfunc() {
   //   console.log(modulearray);
   // var VueRouter = modulearray[0].default;
   // var Vue = modulearray[1].default;
-  Vue.config.productionTip = false;
-  Vue.config.silent = true;
-  Vue.config.devtools = true;
+
   //   Router = VueRouter;
-  Vue.use(VueRouter);
+
   // window.keysave = "";
   // $(window).on("hashchange", () => {
   //   console.log("hashchange");
@@ -144,7 +146,7 @@ function myonloadfunc() {
             
             </div>
             <div class="collapse navbar-collapse" id="example-navbar-collapse">
-            <ul class="nav navbar-nav" id="mynavul" @click="myfreshdata()" >
+            <ul class="nav navbar-nav" id="mynavul" @click="myfreshdata" >
             <li id="mynav1" v-bind:class="{ active: isActive1 }">
 
             <router-link to="/"  class="nav-link mui-btn mui-btn-primary mui-btn-outlined">基于VUE的首页</router-link>
@@ -208,7 +210,7 @@ function myonloadfunc() {
     }
   });
 
-  Vue.component("App", App);
+  //   Vue.component("App", App);
 
   new Vue({
     el: "#root",
