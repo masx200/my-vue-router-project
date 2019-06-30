@@ -10707,8 +10707,8 @@ webpack-plugin-compat@^1.0.1:
   integrity sha1-GlJJJCWn0nsGJ9W6LeTqzJno6ao=
 
 "webpack-react-vue-spa-awesome-config@https://github.com/masx200/webpack-react-vue-spa-awesome-config.git":
-  version "2.1.1"
-  resolved "https://github.com/masx200/webpack-react-vue-spa-awesome-config.git#4ba2f410dbdd3b7ec98f7e473d7dc46583832eeb"
+  version "2.2.0"
+  resolved "https://github.com/masx200/webpack-react-vue-spa-awesome-config.git#a0872bafe84fc01f987b20a1f767c312c3b71b62"
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
@@ -10731,6 +10731,7 @@ webpack-plugin-compat@^1.0.1:
     postcss-cssnext "^3.1.0"
     postcss-flexbugs-fixes "^4.1.0"
     postcss-loader "^3.0.0"
+    postcss-normalize "^8.0.1"
     postcss-preset-env "^6.6.0"
     postcss-safe-parser "^4.0.1"
     purify-css "^1.2.5"
