@@ -136,10 +136,11 @@ let huami = Vue.extend({
         }
         var code32 = source.join("");
         var code1 = code32.slice(0, 1);
+        var code16;
         if (isNaN(code1)) {
-          var code16 = code32.slice(0, 16);
+          code16 = code32.slice(0, 16);
         } else {
-          var code16 = "K" + code32.slice(1, 16);
+          code16 = "K" + code32.slice(1, 16);
         }
         //   $("#code16").val(code16);
         this.message3 = code16;

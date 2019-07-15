@@ -1,5 +1,6 @@
 "use strict";
 import "./index.css";
+// eslint-disable-next-line no-undef
 import("bootstrap");
 import("./clipboard.min.js").then(module => {
   const ClipboardJS = module.default;
