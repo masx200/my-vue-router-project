@@ -1,3 +1,4 @@
+"use strict";
 // var keysave=""
 export var md5 =
   /*

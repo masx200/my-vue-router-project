@@ -1,3 +1,4 @@
+"use strict";
 import Vue from "vue/dist/vue.esm.browser";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
 // import Vue from "vue";

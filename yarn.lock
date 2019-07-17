@@ -859,6 +859,12 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@https://github.com/masx200/-babel-runtime.git":
+  version "7.4.5"
+  resolved "https://github.com/masx200/-babel-runtime.git#2014a2ad746e6dd068fb14a0c7310df26b4aa35d"
+  dependencies:
+    regenerator-runtime "https://github.com/masx200/regenerator-runtime.git"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.npm.taobao.org/@babel/template/download/@babel/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -2053,6 +2059,29 @@ babel-preset-react-app@^9.0.0:
     "@babel/preset-react" "7.0.0"
     "@babel/preset-typescript" "7.3.3"
     "@babel/runtime" "7.4.3"
+    babel-plugin-dynamic-import-node "2.2.0"
+    babel-plugin-macros "2.5.1"
+    babel-plugin-transform-react-remove-prop-types "0.4.24"
+
+"babel-preset-react-app@https://github.com/masx200/babel-preset-react-app.git":
+  version "9.0.0"
+  resolved "https://github.com/masx200/babel-preset-react-app.git#d2d771a42efdd2e7edcd761e9be0ffe36abf0c88"
+  dependencies:
+    "@babel/core" "7.4.3"
+    "@babel/plugin-proposal-class-properties" "7.4.0"
+    "@babel/plugin-proposal-decorators" "7.4.0"
+    "@babel/plugin-proposal-object-rest-spread" "7.4.3"
+    "@babel/plugin-syntax-dynamic-import" "7.2.0"
+    "@babel/plugin-transform-classes" "7.4.3"
+    "@babel/plugin-transform-destructuring" "7.4.3"
+    "@babel/plugin-transform-flow-strip-types" "7.4.0"
+    "@babel/plugin-transform-react-constant-elements" "7.2.0"
+    "@babel/plugin-transform-react-display-name" "7.2.0"
+    "@babel/plugin-transform-runtime" "7.4.3"
+    "@babel/preset-env" "7.4.3"
+    "@babel/preset-react" "7.0.0"
+    "@babel/preset-typescript" "7.3.3"
+    "@babel/runtime" "https://github.com/masx200/-babel-runtime.git"
     babel-plugin-dynamic-import-node "2.2.0"
     babel-plugin-macros "2.5.1"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
@@ -8536,6 +8565,10 @@ regenerator-runtime@^0.11.0:
   resolved "https://registry.npm.taobao.org/regenerator-runtime/download/regenerator-runtime-0.11.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fregenerator-runtime%2Fdownload%2Fregenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
   integrity sha1-vgWtf5v30i4Fb5cmzuUBf78Z4uk=
 
+"regenerator-runtime@https://github.com/masx200/regenerator-runtime.git":
+  version "1.0.0"
+  resolved "https://github.com/masx200/regenerator-runtime.git#f6db6e1301f941acf7f7e4f88156908b8255ed96"
+
 regenerator-transform@^0.10.0:
   version "0.10.1"
   resolved "https://registry.npm.taobao.org/regenerator-transform/download/regenerator-transform-0.10.1.tgz#1e4996837231da8b7f3cf4114d71b5691a0680dd"
@@ -10298,17 +10331,18 @@ webpack-plugin-compat@^1.0.1:
   integrity sha1-GlJJJCWn0nsGJ9W6LeTqzJno6ao=
 
 "webpack-react-vue-spa-awesome-config@https://github.com/masx200/webpack-react-vue-spa-awesome-config.git":
-  version "2.2.1"
-  resolved "https://github.com/masx200/webpack-react-vue-spa-awesome-config.git#814c3407d9baead7489205563864c73c35e8807d"
+  version "2.2.2"
+  resolved "https://github.com/masx200/webpack-react-vue-spa-awesome-config.git#07715b9c0e3de99e1ac6a61e75274c1aeca90e01"
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
     "@babel/preset-env" "^7.4.5"
     "@babel/preset-react" "^7.0.0"
+    "@babel/runtime" "https://github.com/masx200/-babel-runtime.git"
     babel-loader "^8.0.6"
     babel-plugin-named-asset-import "^0.3.2"
     babel-plugin-transform-runtime "^6.23.0"
-    babel-preset-react-app "^9.0.0"
+    babel-preset-react-app "https://github.com/masx200/babel-preset-react-app.git"
     clean-webpack-plugin "^3.0.0"
     css-loader "^3.0.0"
     fast-sass-loader "1.5.0"
@@ -10332,6 +10366,7 @@ webpack-plugin-compat@^1.0.1:
     react-dev-utils "^9.0.1"
     react-dom "^16.8.6"
     react-router-dom "^5.0.1"
+    regenerator-runtime "https://github.com/masx200/regenerator-runtime.git"
     style-loader "0.23.1"
     terser-webpack-plugin "1.2.3"
     uglifyjs-webpack-plugin "^2.1.3"
