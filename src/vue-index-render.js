@@ -1,7 +1,7 @@
 "use strict";
 import $ from "jquery";
 import Vue from "vue/dist/vue.esm.browser";
-import VueRouter from "vue-router";
+import VueRouter from "vue-router/dist/vue-router.esm.browser";
 Vue.config.productionTip = false;
 Vue.config.silent = true;
 Vue.config.devtools = true;
@@ -218,10 +218,10 @@ function myonloadfunc() {
     components: {
       App
     },
-    template: "<App/>",
-    data() {
-      return {};
-    }
+    template: "<App/>"
+    // data() {
+    //   return {};
+    // }
   });
 }
 //     });

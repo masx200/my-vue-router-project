@@ -9,31 +9,31 @@ let huami = Vue.extend({
     // console.log("huami,mounted");
     document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
   },
-  beforeDestroy() {
-    // console.log("huami,beforeDestroy");
-    // console.log("keysave=", window.keysave);
-  },
+  //   beforeDestroy() {
+  //     // console.log("huami,beforeDestroy");
+  //     // console.log("keysave=", window.keysave);
+  //   },
   //beforeDestroy
-  activated() {
-    // console.log("huami, activated")
-  },
+  //   activated() {
+  //     // console.log("huami, activated")
+  //   },
   //activated
-  updated() {
-    // console.log("huami, updated")
-  },
-  beforeUpdate() {
-    // console.log("huami,beforeUpdate")
-  },
+  //   updated() {
+  //     // console.log("huami, updated")
+  //   },
+  //   beforeUpdate() {
+  //     // console.log("huami,beforeUpdate")
+  //   },
 
-  beforeCreate() {
-    // console.log("huami,beforeCreate")
-  },
-  beforeMount() {
-    // console.log("huami,beforeMount")
-  },
-  destroyed() {
-    // console.log("huami,destroyed")
-  },
+  //   beforeCreate() {
+  //     // console.log("huami,beforeCreate")
+  //   },
+  //   beforeMount() {
+  //     // console.log("huami,beforeMount")
+  //   },
+  //   destroyed() {
+  //     // console.log("huami,destroyed")
+  //   },
   template: `
   <div class="hello flowerpassword"><h1>花密  不一样的密码管理工具</h1>
   <div class="container" id="rong1" style="text-align: center;">
@@ -88,9 +88,9 @@ let huami = Vue.extend({
 </div>
 `,
   name: "huami",
-  created() {
-    // console.log("huami,created");
-  },
+  //   created() {
+  //     // console.log("huami,created");
+  //   },
   data() {
     return { message1: "", message2: "", message3: "" };
   },
