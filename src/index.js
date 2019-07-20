@@ -9,13 +9,13 @@ import("./clipboard.min.js").then(module => {
     e.clearSelection();
   });
 });
-
-(() => {
-  try {
-    "serviceWorker" in navigator &&
-      window.addEventListener("load", function() {
-        navigator.serviceWorker.register("service-worker.js");
-      });
-  } catch (error) {}
-  /* 注册google的workbox的serviceworker */
-})();
+import "./registerserviceworker";
+// (() => {
+//   try {
+//     "serviceWorker" in navigator &&
+//       window.addEventListener("load", function() {
+//         navigator.serviceWorker.register("service-worker.js");
+//       });
+//   } catch (error) {}
+//   /* 注册google的workbox的serviceworker */
+// })();
