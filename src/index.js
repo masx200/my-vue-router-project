@@ -9,7 +9,8 @@ import("./clipboard.min.js").then(module => {
     e.clearSelection();
   });
 });
-import "./registerserviceworker";
+import "webpack-react-vue-spa-awesome-config/registerserviceworker.js"
+//import "./registerserviceworker";
 // (() => {
 //   try {
 //     "serviceWorker" in navigator &&
