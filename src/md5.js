@@ -216,7 +216,7 @@ export var md5 =
     function hex_hmac_md5(k, d) {
       return rstr2hex(raw_hmac_md5(k, d));
     }
-    $md5 = function(string, key, raw) {
+    var $md5 = function(string, key, raw) {
       if (!key) {
         if (!raw) {
           return hex_md5(string);
@@ -231,10 +231,9 @@ export var md5 =
       }
     };
     return $md5;
-  })(
-   // {}
-    //   typeof jQuery === "function" ? jQuery : this
-  );
+  })();
+  // {}
+  //   typeof jQuery === "function" ? jQuery : this
 
 // export default function() {
 //   (() => {

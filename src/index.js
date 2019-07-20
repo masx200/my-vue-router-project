@@ -1,4 +1,9 @@
 "use strict";
+document.getElementById("root").innerHTML = `<div>
+<h1>loading</h1>
+<span class="mui-spinner mui-spinner-custom">
+
+</span></div>`;
 import("./vue-index-render.js");
 import "./index.css";
 // eslint-disable-next-line no-undef
@@ -9,7 +14,7 @@ import("./clipboard.min.js").then(module => {
     e.clearSelection();
   });
 });
-import "webpack-react-vue-spa-awesome-config/registerserviceworker.js"
+import "webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 //import "./registerserviceworker";
 // (() => {
 //   try {
