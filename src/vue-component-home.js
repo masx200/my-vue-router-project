@@ -12,6 +12,7 @@ import picture7 from "./webpack.svg";
 
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
 // import Vue from "vue";
+var timer;
 import Vue from "vue/dist/vue.esm.browser";
 let home = Vue.extend({
   template: `
@@ -70,9 +71,12 @@ let home = Vue.extend({
     window.location.hash = "#/";
     // window.mychangemenu();
     // mychangemenu();
-    setInterval(() => {
+    timer = setInterval(() => {
       setnowtime(获取当前时间());
     }, 1100);
+  },
+  beforeDestroy() {
+    clearInterval(timer);
   }
 });
 export default home;
