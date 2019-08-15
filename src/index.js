@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
       e.clearSelection();
     });
   });
-});
+},{once:true});
 
 import "webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 //import "./registerserviceworker";
