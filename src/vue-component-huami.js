@@ -1,3 +1,8 @@
+import {
+  initGlobalState,
+  bindGlobalStore
+} from "./test/vue-simple-global-state-store-manager";
+initGlobalState({ huamipassword: "", huaminame: "", huamioutput: "" });
 import Vue from "vue/dist/vue.esm.browser";
 import $ from "jquery";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
@@ -153,4 +158,9 @@ let huami = Vue.extend({
     }
   }
 });
-export default huami;
+var huamibind = bindGlobalStore(
+  { huamipassword: "message1", huaminame: "message2", huamioutput: "message3" },
+  huami
+);
+// console.log(Vue, huamibind, huami);
+export default huamibind;
