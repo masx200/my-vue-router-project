@@ -12,6 +12,7 @@ let huami = Vue.extend({
   mounted() {
     // vuehuamirender();
     // console.log("huami,mounted");
+    console.log(this);
     document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
   },
   //   beforeDestroy() {
