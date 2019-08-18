@@ -36,7 +36,7 @@ import {
 } from "vue-simple-global-state-store-manager";
 import bindglobalstoretestname from "./bindglobalstore-testname.vue";
 import bindglobalstoretestnumber from "./bindglobalstore-testnumber.vue";
-import { constants } from "crypto";
+// import { constants } from "crypto";
 // console.log([bindglobalstoretestname, bindglobalstoretestnumber]);
 
 const expcom = {
