@@ -1,8 +1,8 @@
-import {
-  initGlobalState,
-  bindGlobalStore
-} from "./test/vue-simple-global-state-store-manager";
-initGlobalState({ huamipassword: "", huaminame: "", huamioutput: "" });
+// import {
+//   initGlobalState,
+//   bindGlobalStore
+// } from "./test/vue-simple-global-state-store-manager";
+// initGlobalState({ huamipassword: "", huaminame: "", huamioutput: "" });
 import Vue from "vue/dist/vue.esm.browser";
 import $ from "jquery";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
@@ -12,7 +12,7 @@ let huami = Vue.extend({
   mounted() {
     // vuehuamirender();
     // console.log("huami,mounted");
-    console.log(this);
+    // console.log(this);
     document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
   },
   //   beforeDestroy() {
@@ -159,9 +159,10 @@ let huami = Vue.extend({
     }
   }
 });
-var huamibind = bindGlobalStore(
-  { huamipassword: "message1", huaminame: "message2", huamioutput: "message3" },
-  huami
-);
+// var huamibind = bindGlobalStore(
+//   { huamipassword: "message1", huaminame: "message2", huamioutput: "message3" },
+//   huami
+// );
 // console.log(Vue, huamibind, huami);
-export default huamibind;
+// export default huamibind;
+export default huami;
