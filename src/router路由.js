@@ -1,7 +1,7 @@
 import VueRouter from "vue-router/dist/vue-router.esm.browser";
-const about = () => import("./vue-component-about.js");
-const home = () => import("./vue-component-home.js");
-const huami = () => import("./vue-component-huami.js");
+const about = () => import("./vue-component-about.vue");
+const home = () => import("./vue-component-home.vue");
+const huami = () => import("./vue-component-huami.vue");
 const router = new VueRouter({
   routes: [
     {
