@@ -37,7 +37,9 @@ import {
 import bindglobalstoretestname from "./bindglobalstore-testname.vue";
 import bindglobalstoretestnumber from "./bindglobalstore-testnumber.vue";
 // import { constants } from "crypto";
-console.log([bindglobalstoretestname, bindglobalstoretestnumber]);
+// console.log([bindglobalstoretestname, bindglobalstoretestnumber]);
+import Vue from "vue/dist/vue.esm.browser.min.js";
+// console.log([Vue.extend(bindglobalstoretestname),bindglobalstoretestname]);
 
 const expcom = {
   components: {
@@ -60,5 +62,5 @@ const expcom = {
   }
 };
 // console.log(expcom.components);
-export default expcom;
+export default Vue.extend(expcom);
 </script>
