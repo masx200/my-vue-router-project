@@ -10176,7 +10176,7 @@ vue-router@^3.0.7:
 
 "vue-simple-global-state-store-manager@https://github.com/masx200/vue-simple-global-state-store-manager.git":
   version "1.0.0"
-  resolved "https://github.com/masx200/vue-simple-global-state-store-manager.git#a2b912b34a67fe878d329fc373fcf67909e3d2a5"
+  resolved "https://github.com/masx200/vue-simple-global-state-store-manager.git#39e5a97bb68c7913a45cd2c35f00814f1c8cb802"
 
 vue-style-loader@^4.1.0, vue-style-loader@^4.1.2:
   version "4.1.2"

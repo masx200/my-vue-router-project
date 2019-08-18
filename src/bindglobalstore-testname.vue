@@ -18,7 +18,8 @@ initGlobalState({
 export default {
   methods: {
     changevalue() {
-      this.testname = this.testname + "-test";
+      this.testname =
+        Math.random() > 0.5 ? this.testname + "te" : "st" + this.testname;
     }
   },
   data() {

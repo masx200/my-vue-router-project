@@ -2,12 +2,9 @@
 import AppHome from "./vue-app-home.vue";
 import $ from "jquery";
 import Vue from "vue/dist/vue.esm.browser";
-import VueRouter from "vue-router/dist/vue-router.esm.browser";
+//import VueRouter from "vue-router/dist/vue-router.esm.browser";
 import router from "./router路由";
-Vue.config.productionTip = false;
-Vue.config.silent = true;
-Vue.config.devtools = true;
-Vue.use(VueRouter);
+
 // import "../RegisteraServiceWorkerFile.js";
 // import IMPORTCJSAMDUMD from "../IMPORTCJSAMDUMD";
 

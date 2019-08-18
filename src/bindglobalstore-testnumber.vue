@@ -24,7 +24,7 @@ export default Vue.extend({
   },
   methods: {
     changevalue() {
-      this.testnumber = this.testnumber + "-test";
+      this.testnumber = this.testnumber + "" + Math.random() * 10;
     }
   }
 });

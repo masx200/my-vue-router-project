@@ -25,6 +25,16 @@ window.addEventListener(
 );
 
 import "webpack-react-vue-spa-awesome-config/registerserviceworker.js";
+
+import Vue from "vue/dist/vue.esm.browser";
+import VueRouter from "vue-router/dist/vue-router.esm.browser";
+Vue.config.productionTip = false;
+Vue.config.silent = true;
+Vue.config.devtools = true;
+Vue.use(VueRouter);
+import SimpleStoreManager from "vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
+// console.log(SimpleStore);
+Vue.use(SimpleStoreManager);
 //import "./registerserviceworker";
 // (() => {
 //   try {
