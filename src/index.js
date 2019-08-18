@@ -7,6 +7,7 @@ document.getElementById("root").innerHTML = `<div>
 </span></div>`;
 import("./vue-index-render.js");
 import "./index.css";
+import "./mystyle.css";
 // eslint-disable-next-line no-undef
 
 window.addEventListener(
@@ -34,3 +35,4 @@ import "webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 //   } catch (error) {}
 //   /* 注册google的workbox的serviceworker */
 // })();
+// import("./vue-simple-global-state-store-manager.vue").then(console.log);

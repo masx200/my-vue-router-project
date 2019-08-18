@@ -145,11 +145,17 @@ export default App;
                   class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                 >圆周率计算多线程</a>
               </li>
-              <li>
+              <!--  <li>
                 <a
                   href="../index.html#/decoder"
                   class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                 >JSfuck-and-hieroglyphy-Decoder-and-ENCODER</a>
+              </li>-->
+              <li>
+                <router-link
+                  to="/vue-simple-global-state-store-manager"
+                  class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
+                >Vue 极简全局状态管理库</router-link>
               </li>
             </ul>
           </div>

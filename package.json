@@ -1,9 +1,9 @@
 {
-    "version": "2.2.1",
+    "version": "2.2.2",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start",
         "test": "webpack-react-vue-spa-awesome-config build",
-        "build": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.1/ "
+        "build": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.2/ "
     },
     "name": "my-vue-router-project",
     "description": "A Vue.js router project",
@@ -13,7 +13,9 @@
             "react-app"
         ]
     },
-    "dependencies": {},
+    "dependencies": {
+        "vue-simple-global-state-store-manager": "https://github.com/masx200/vue-simple-global-state-store-manager.git"
+    },
     "browserslist": {
         "production": [
             ">0.2%",

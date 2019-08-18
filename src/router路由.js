@@ -25,12 +25,11 @@ const router = new VueRouter({
       name: "huami",
       component: huami
     },
-    //   {
-    //     path: "",
-    //     //   redirect: "/"
-    //     name: "home",
-    //     component: home
-    //   },
+    {
+      path: "/vue-simple-global-state-store-manager",
+      name: "vue-simple-global-state-store-manager",
+      component: () => import("./vue-simple-global-state-store-manager.vue")
+    },
     {
       path: "*",
       //   redirect: "/"
