@@ -42,6 +42,7 @@ import Vue from "vue/dist/vue.esm.browser.min.js";
 // console.log([Vue.extend(bindglobalstoretestname),bindglobalstoretestname]);
 
 const expcom = {
+name:"vue-simple-global-state-store-manager",
   components: {
     bindglobalstoretestname,
     // :
