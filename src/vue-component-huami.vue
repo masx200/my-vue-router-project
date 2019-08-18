@@ -4,7 +4,7 @@
 //   bindGlobalStore
 // } from "./test/vue-simple-global-state-store-manager";
 // initGlobalState({ huamipassword: "", huaminame: "", huamioutput: "" });
-import Vue from "vue/dist/vue.esm.browser";
+import Vue from "vue/dist/vue.esm.browser.min.js";
 import $ from "jquery";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
 import { md5 } from "./md5";

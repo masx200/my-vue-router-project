@@ -14,7 +14,7 @@ import picture7 from "./webpack.svg";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
 // import Vue from "vue";
 var timer;
-import Vue from "vue/dist/vue.esm.browser";
+import Vue from "vue/dist/vue.esm.browser.min.js";
 let home = Vue.extend({
   //  /*  template: `
   //   <div>

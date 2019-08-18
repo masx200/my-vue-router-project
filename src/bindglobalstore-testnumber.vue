@@ -17,7 +17,7 @@ import {
 initGlobalState({
   globaltestnumber: 1000000000000 * Math.random()
 });
-import Vue from "vue/dist/vue.esm.browser";
+import Vue from "vue/dist/vue.esm.browser.min.js";
 export default Vue.extend({
   data() {
     return { testnumber: "2241777582" };
