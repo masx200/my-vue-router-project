@@ -18,7 +18,8 @@ initGlobalState({
   globaltestnumber: 1000000000000 * Math.random()
 });
 import Vue from "vue/dist/vue.esm.browser.min.js";
-export default Vue.extend({
+
+var comfu = Vue.extend({
   data() {
     return { testnumber: "2241777582" };
   },
@@ -28,4 +29,10 @@ export default Vue.extend({
     }
   }
 });
+export default bindGlobalStore(
+  {
+    globaltestnumber: "testnumber"
+  },
+  comfu
+);
 </script>>

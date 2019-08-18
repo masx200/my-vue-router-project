@@ -37,25 +37,28 @@ import {
 import bindglobalstoretestname from "./bindglobalstore-testname.vue";
 import bindglobalstoretestnumber from "./bindglobalstore-testnumber.vue";
 // import { constants } from "crypto";
-// console.log([bindglobalstoretestname, bindglobalstoretestnumber]);
+console.log([bindglobalstoretestname, bindglobalstoretestnumber]);
 
 const expcom = {
   components: {
-    bindglobalstoretestname: bindGlobalStore(
-      {
-        globaltestname: "testname"
-      },
-      bindglobalstoretestname
-    ),
+    bindglobalstoretestname,
+    // :
 
-    bindglobalstoretestnumber: bindGlobalStore(
-      {
-        globaltestnumber: "testnumber"
-      },
-      bindglobalstoretestnumber
-    )
+    // bindGlobalStore(
+    //   {
+    //     globaltestname: "testname"
+    //   },
+    //   bindglobalstoretestname
+    // ),
+    bindglobalstoretestnumber
+    // : bindGlobalStore(
+    //   {
+    //     globaltestnumber: "testnumber"
+    //   },
+    //   bindglobalstoretestnumber
+    // )
   }
 };
-// console.log(expcom);
+// console.log(expcom.components);
 export default expcom;
 </script>
