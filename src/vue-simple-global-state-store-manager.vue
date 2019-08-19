@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>
-      <a href="https://github.com/masx200/vue-simple-global-state-store-manager">Vue 极简全局状态管理库</a>
+      <a href="https://github.com/masx200/vue-simple-global-state-store-manager">适用于Vue的极简全局状态管理库</a>
       <p>
         <a
           href="  https://github.com/masx200/vue-simple-global-state-store-manager"
@@ -42,7 +42,7 @@ import Vue from "vue/dist/vue.esm.browser.min.js";
 // console.log([Vue.extend(bindglobalstoretestname),bindglobalstoretestname]);
 
 const expcom = {
-name:"vue-simple-global-state-store-manager",
+  name: "vue-simple-global-state-store-manager",
   components: {
     bindglobalstoretestname,
     // :

@@ -17,7 +17,7 @@ initGlobalState({
 });
 
 var comp = {
-  name: "",
+  //   name: "",
   methods: {
     changevalue() {
       this.testname =

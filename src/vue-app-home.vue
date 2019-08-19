@@ -133,11 +133,11 @@ export default App;
                   class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                 >关于VUE</router-link>
               </li>
-                <li>
+              <li>
                 <router-link
                   to="/vue-simple-global-state-store-manager"
                   class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
-                >Vue 极简全局状态管理库</router-link>
+                >适用于Vue的极简全局状态管理库</router-link>
               </li>
               <li>
                 <a
@@ -157,7 +157,6 @@ export default App;
                   class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                 >JSfuck-and-hieroglyphy-Decoder-and-ENCODER</a>
               </li>-->
-            
             </ul>
           </div>
         </div>
