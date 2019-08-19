@@ -1,3 +1,6 @@
+/* eslint-disable no-extra-semi */
+/* eslint-disable no-unexpected-multiline */
+/* eslint-disable no-unused-vars */
 /*!
  * clipboard.js v2.0.4
  * https://zenorocha.github.io/clipboard.js
