@@ -4,7 +4,7 @@
 
 https://masx200.github.io/my-vue-router-project/
 
-添加了全局状态管理库
+添加了全局状态管理库,适用于Vue.js的极简全局状态管理库
 
 https://github.com/masx200/vue-simple-global-state-store-manager
 
