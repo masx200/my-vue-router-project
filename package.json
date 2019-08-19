@@ -14,6 +14,8 @@
         ]
     },
     "dependencies": {
+        "babel-eslint": "^10.0.2",
+        "eslint-plugin-vue": "^5.2.3",
         "vue-simple-global-state-store-manager": "https://github.com/masx200/vue-simple-global-state-store-manager.git"
     },
     "browserslist": {
