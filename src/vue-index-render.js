@@ -1,7 +1,7 @@
 "use strict";
 import AppHome from "./vue-app-home.vue";
 import $ from "jquery";
-import Vue from "vue/dist/vue.esm.browser.min.js";
+// import Vue from "vue/dist/vue.esm.browser.min.js";
 //import VueRouter from "vue-router/dist/vue-router.esm.browser";
 import router from "./router路由";
 
@@ -74,36 +74,31 @@ function myonloadfunc() {
   //   console.log(modulearray);
   // var VueRouter = modulearray[0].default;
   // var Vue = modulearray[1].default;
-
   //   Router = VueRouter;
-
   // window.keysave = "";
   // $(window).on("hashchange", () => {
   //   console.log("hashchange");
   //   $("#mynavul").click();
   // });
-
   //   $(window).on("hashchange", hashchangehandler);
   //   function hashchangehandler() {
   //     jQuery("#example-navbar-collapse").removeClass("show");
   //   }
-
   //   Vue.component("App", App);
-
-  new Vue({
-    el: document.querySelector("#root"),
-    router,
-    components: {
-      //   App
-    },
-    // template: "<App/>"
-    render(h) {
-      return h(AppHome);
-    }
-    // data() {
-    //   return {};
-    // }
-  });
+  //   new Vue({
+  //     el: document.querySelector("#root"),
+  //     router,
+  //     components: {
+  //       //   App
+  //     },
+  //     // template: "<App/>"
+  //     render(h) {
+  //       return h(AppHome);
+  //     }
+  //     // data() {
+  //     //   return {};
+  //     // }
+  //   });
 }
 //     });
 //   })();
@@ -113,3 +108,5 @@ window.addEventListener("resize", () => {
     $("#my主体").css("padding-top", $("#my导航栏").height());
   });
 });
+export default AppHome;
+export { router };

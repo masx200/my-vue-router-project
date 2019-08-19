@@ -5,7 +5,7 @@ document.getElementById("root").innerHTML = `<div>
 <span class="mui-spinner mui-spinner-custom">
 
 </span></div>`;
-import("./vue-index-render.js");
+
 import "./index.css";
 import "./mystyle.css";
 // eslint-disable-next-line no-undef
@@ -46,3 +46,20 @@ Vue.use(SimpleStoreManager);
 //   /* 注册google的workbox的serviceworker */
 // })();
 // import("./vue-simple-global-state-store-manager.vue").then(console.log);
+import("./vue-index-render.js").then(({ router, default: AppHome }) => {
+  // var AppHome=default
+  new Vue({
+    el: document.querySelector("#root"),
+    router,
+    //   components: {
+    //     //   App
+    //   },
+    // template: "<App/>"
+    render(h) {
+      return h(AppHome);
+    }
+    // data() {
+    //   return {};
+    // }
+  });
+});
