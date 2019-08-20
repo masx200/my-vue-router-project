@@ -2,14 +2,14 @@
 function 获取当前时间() {
   return new Date().toString().slice(0, new Date().toString().indexOf("GMT"));
 }
-import picture1 from "./babeljs.png";
+import picture1 from "./pictures/babeljs.png";
 
-import picture2 from "./parcel.jpg";
-import picture3 from "./bootstrap.png";
-import picture4 from "./logo-jquery.png";
-import picture5 from "./react.svg";
-import picture6 from "./vue.png";
-import picture7 from "./webpack.svg";
+import picture2 from "./pictures/parcel.jpg";
+import picture3 from "./pictures/bootstrap.png";
+import picture4 from "./pictures/logo-jquery.png";
+import picture5 from "./pictures/react.svg";
+import picture6 from "./pictures/vue.png";
+import picture7 from "./pictures/webpack.svg";
 
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
 // import Vue from "vue";

@@ -7,7 +7,7 @@
 import Vue from "vue/dist/vue.esm.browser.min.js";
 import $ from "jquery";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
-import { md5 } from "./md5";
+import { md5 } from "./assetsutils/md5";
 // import Vue from "vue";
 let huami = Vue.extend({
   mounted() {
