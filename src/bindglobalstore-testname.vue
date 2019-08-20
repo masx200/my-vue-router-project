@@ -52,4 +52,4 @@ var comfu = bindGlobalStore(
 );
 // console.log(comfu);
 export default comfu;
-</script>>
+</script>
