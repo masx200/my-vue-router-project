@@ -35,4 +35,4 @@ export default bindGlobalStore(
   },
   comfu
 );
-</script>>
+</script>
