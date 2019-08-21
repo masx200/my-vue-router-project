@@ -31,6 +31,11 @@ const router = new VueRouter({
       component: () => import("./vue-simple-global-state-store-manager.vue")
     },
     {
+      path: "/beautify-javascript",
+      name: "beautify-javascript",
+      component: () => import("./beautify-javascript.vue")
+    },
+    {
       path: "*",
       //   redirect: "/"
       name: "home",

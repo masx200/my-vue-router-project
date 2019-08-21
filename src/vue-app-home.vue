@@ -139,6 +139,12 @@ export default App;
                   class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                 >适用于Vue的极简全局状态管理库</router-link>
               </li>
+                <li>
+                <router-link
+                  to="/beautify-javascript"
+                  class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
+                >美化javascript代码</router-link>
+              </li>
               <li>
                 <a
                   href="../index.html#/react-home"
