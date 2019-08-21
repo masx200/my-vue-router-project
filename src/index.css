@@ -247,7 +247,7 @@ code {
 }
 * {
   font-family: Microsoft Yahei;
-  text-align: center;
+  /* text-align: center; */
 }
 #nav {
   float: center;
