@@ -77,13 +77,19 @@ import {
   generate,
   Parser
 } from "acorn-parse-escodegen-generate-esm-broweser";
-import marked from "./assetsutils/marked.min.js";
+import marked /*  { parser } */ from "./assetsutils/marked.min.js";
 
 import hljs from "./assetsutils/highlight.min.js";
 
 import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
 // import { constants } from 'crypto';
-const { parse } = Parser.extend(dynamicImport);
+// // import { constants } from 'crypto';
+// constants
+const myparser = Parser.extend(dynamicImport);
+// console.log(myparser);
+const parse = myparser.parse.bind(myparser);
+
+// console.log(Parser, parse, dynamicImport);
 export default {
   data() {
     return {

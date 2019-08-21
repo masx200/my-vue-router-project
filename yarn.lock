@@ -1123,8 +1123,8 @@ acorn-jsx@^5.0.0:
   integrity sha1-MqBk/ZJUKSFqCbFBECv90YX65A4=
 
 "acorn-parse-escodegen-generate-esm-broweser@https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser.git":
-  version "1.0.1"
-  resolved "https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser.git#4c2ffb9df555a31c4df5be22461673aeae28ecad"
+  version "1.0.2"
+  resolved "https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser.git#1b6f59966744a2e9e9243e75311e500b5ec92651"
 
 acorn@^6.0.2, acorn@^6.2.1:
   version "6.3.0"
