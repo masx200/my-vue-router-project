@@ -93,6 +93,7 @@ export default {
   },
   methods: {
     clearcode() {
+      this.$refs.输入框.style.height = "50px";
       this.input = "";
       this.output = "";
       this.$refs.输出框.innerHTML = "";
