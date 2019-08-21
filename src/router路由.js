@@ -6,7 +6,7 @@ const router = new VueRouter({
   routes: [
     {
       path: "/about",
-      name: "about",
+      // name: "about",
       //   //   component:require('./vue-component-about').default
       //   component: () => {
       //     var com = import("./vue-component-about");
@@ -17,12 +17,12 @@ const router = new VueRouter({
     },
     {
       path: "/",
-      name: "home",
+      // name: "home",
       component: home
     },
     {
       path: "/huami",
-      name: "huami",
+      // name: "huami",
       component: huami
     },
     {
@@ -32,13 +32,13 @@ const router = new VueRouter({
     },
     {
       path: "/beautify-javascript",
-      name: "beautify-javascript",
+      // name: "beautify-javascript",
       component: () => import("./beautify-javascript.vue")
     },
     {
       path: "*",
       //   redirect: "/"
-      name: "home",
+      // name: "home",
       component: home
     }
   ]
