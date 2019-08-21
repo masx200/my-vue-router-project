@@ -47,6 +47,7 @@
   </div>
 </template>
 <script>
+import dynamicImport from "acorn-dynamic-import";
 function lashentextarea(eles) {
   // console.log(eles.outerHTML);
   requestAnimationFrame(function() {
@@ -71,13 +72,18 @@ function lashentextarea(eles) {
     //   }
   });
 }
-import { parse, generate } from "acorn-parse-escodegen-generate-esm-broweser";
+import {
+  // parse,
+  generate,
+  Parser
+} from "acorn-parse-escodegen-generate-esm-broweser";
 import marked from "./assetsutils/marked.min.js";
 
 import hljs from "./assetsutils/highlight.min.js";
 
 import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
 // import { constants } from 'crypto';
+const { parse } = Parser.extend(dynamicImport);
 export default {
   data() {
     return {
