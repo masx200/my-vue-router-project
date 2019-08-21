@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.6/precache-manifest.0596754497c813829dd3d60cb7a39367.js"
+  "https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.7/precache-manifest.e3c25800a0d308d500d7fa3551e0ccdb.js"
 );
 
 self.addEventListener('message', (event) => {
