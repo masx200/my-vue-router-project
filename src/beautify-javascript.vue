@@ -184,6 +184,7 @@ ${code}
     }
   },
   mounted() {
+      document.title='美化JavaScript代码'
     window.addEventListener("resize", this.拉伸文本框);
   },
   beforeDestroy() {
