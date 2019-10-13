@@ -1,7 +1,7 @@
 "use strict";
 import AppHome from "./vue-app-home.vue";
 import $ from "jquery";
-// import Vue from "vue/dist/vue.esm.browser.min.js";
+// import Vue from "vue";
 //import VueRouter from "vue-router/dist/vue-router.esm.browser";
 import router from "./router路由";
 

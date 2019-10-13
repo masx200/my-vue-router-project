@@ -38,7 +38,7 @@ import bindglobalstoretestname from "./bindglobalstore-testname.vue";
 import bindglobalstoretestnumber from "./bindglobalstore-testnumber.vue";
 // import { constants } from "crypto";
 // console.log([bindglobalstoretestname, bindglobalstoretestnumber]);
-import Vue from "vue/dist/vue.esm.browser.min.js";
+import Vue from "vue";
 // console.log([Vue.extend(bindglobalstoretestname),bindglobalstoretestname]);
 
 const expcom = {

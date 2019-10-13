@@ -17,7 +17,7 @@ import {
 initGlobalState({
   globaltestnumber: 1000000000000 * Math.random()
 });
-import Vue from "vue/dist/vue.esm.browser.min.js";
+import Vue from "vue";
 
 var comfu = Vue.extend({
   data() {

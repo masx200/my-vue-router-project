@@ -4,7 +4,7 @@
 function 获取当前时间() {
   return new Date().toString().slice(0, new Date().toString().indexOf("GMT"));
 }
-import Vue from "vue/dist/vue.esm.browser.min.js";
+import Vue from "vue";
 // var Vue = window.IMPORTCJSAMDUMD.REQUIREPACKAGE("vue");
 // import Vue from "vue";
 var timer;

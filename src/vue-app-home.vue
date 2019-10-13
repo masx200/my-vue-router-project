@@ -1,7 +1,7 @@
 <script>
 import { hashchangehandler } from "./vue-index-render";
 import $ from "jquery";
-import Vue from "vue/dist/vue.esm.browser.min.js";
+import Vue from "vue";
 let App = Vue.extend({
   //  /*  template: `<div id="root">
   //             <div id="my导航栏" class="fixed-top container-fluid">

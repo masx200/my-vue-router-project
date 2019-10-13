@@ -28,7 +28,7 @@ var comp = {
     return { testname: "helloworld-test使用全局状态管理" };
   }
 };
-// import Vue from "vue/dist/vue.esm.browser.min.js";
+// import Vue from "vue";
 // var comfu = Vue.extend(comp);
 // console.log(comfu);
 
