@@ -11,14 +11,16 @@
  * See https://goo.gl/2aRDsh
  */
 
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
-
 importScripts(
-  "https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.11/precache-manifest.97895718a983f31da75b9845524f6985.js"
+  "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js"
 );
 
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'SKIP_WAITING') {
+importScripts(
+  "https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.11/precache-manifest.4b747a0d4bd08cc6b3e648b589998e8c.js"
+);
+
+self.addEventListener("message", event => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
     self.skipWaiting();
   }
 });
@@ -33,6 +35,26 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(/.*\.(?:js|html|\/)$/, new workbox.strategies.NetworkFirst(), 'GET');
-workbox.routing.registerRoute(/.*\.(?:xml|json|md|css)$/, new workbox.strategies.StaleWhileRevalidate(), 'GET');
-workbox.routing.registerRoute(/\.(?:png|jpg|jpeg|svg|gif)$/, new workbox.strategies.CacheFirst({ "cacheName":"image-cache", plugins: [new workbox.expiration.Plugin({ maxEntries: 10, purgeOnQuotaError: false })] }), 'GET');
+workbox.routing.registerRoute(
+  /.*\.(?:js|html|\/)$/,
+  new workbox.strategies.NetworkFirst(),
+  "GET"
+);
+workbox.routing.registerRoute(
+  /.*\.(?:xml|json|md|css)$/,
+  new workbox.strategies.StaleWhileRevalidate(),
+  "GET"
+);
+workbox.routing.registerRoute(
+  /\.(?:png|jpg|jpeg|svg|gif)$/,
+  new workbox.strategies.CacheFirst({
+    cacheName: "image-cache",
+    plugins: [
+      new workbox.expiration.Plugin({
+        maxEntries: 10,
+        purgeOnQuotaError: false
+      })
+    ]
+  }),
+  "GET"
+);
