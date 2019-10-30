@@ -1,6 +1,11 @@
 import { generate, parse } from "acorn-parse-escodegen-generate-esm-broweser";
-onmessage = e => {
-  const sourcecode = e.data;
+self.onmessage = e => {
+  const source = e.data;
+  const code = transform(source);
+  // @ts-ignore
+  self.postMessage(code);
+};
+function transform(sourcecode) {
   console.log(sourcecode);
   var ast = parse(sourcecode, { sourceType: "module" });
   var code = generate(
@@ -10,5 +15,5 @@ onmessage = e => {
     // { parse: Parser.extend(dynamicImport) }
   );
   console.log(code);
-  postMessage(code);
-};
+  return code;
+}

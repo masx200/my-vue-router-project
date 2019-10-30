@@ -1,5 +1,5 @@
 // @ts-ignore
-import transformworker from "./tranformcode.worker";
+import Worker from "./tranformcode.worker";
 // import generate from "@babel/generator";
 //   // parse,
 //   generate
@@ -15,17 +15,19 @@ import transformworker from "./tranformcode.worker";
 // import { generate } from "escodegen";
 // import { parse } from "@babel/parser";
 let worker;
-export function launchworker() {
+function launchworker() {
   if (!worker) {
-    worker = new transformworker();
+    worker = new Worker();
   }
 }
 export default function(sourcecode) {
+  launchworker();
   return new Promise((resolve, rj) => {
-    worker.postMessage(sourcecode);
     worker.onmessage = e => {
       resolve(e.data);
     };
+    worker.postMessage(sourcecode);
+
     worker.onerror = e => {
       // for (var key in e) {
       //     console.error(key, e[key])

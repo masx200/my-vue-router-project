@@ -1,5 +1,6 @@
 
 <script>
+import asynchighlighttext from "./async highlight js text";
 // import dynamicImport from "acorn-dynamic-import";
 import lashentextarea from "./function lashentextarea";
 // import {
@@ -7,11 +8,9 @@ import lashentextarea from "./function lashentextarea";
 //   generate,
 //   Parser
 // } from "acorn-parse-escodegen-generate-esm-broweser";
-import marked /*  { parser } */ from "./assetsutils/marked.min.js";
 
-import hljs from "./assetsutils/highlight.min.js";
+// import hljs from "./assetsutils/highlight.min.js";
 
-import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
 // import { constants } from 'crypto';
 // // import { constants } from 'crypto';
 // constants
@@ -21,7 +20,6 @@ import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
 
 // console.log(Parser, parse, dynamicImport);
 
-import codeparseandgenerate, { launchworker } from "./code-parseandgenerate.js";
 // import func from "../vue-temp/vue-editor-bridge";
 export default {
   name: "beautifyjvascript",
@@ -52,62 +50,29 @@ export default {
       this.拉伸文本框();
     },
     transformcode() {
+      asynchighlighttext(this.input).then(
+        output => (this.$refs.输出框.innerHTML = output)
+      );
       //   this.output = this.input;
       //   console.log(this.input);
       //   console.log(parse);
       //   console.log(
-      (async () => {
-        try {
-          //   var ast = parse(
-          //     this.input,
-
-          //     { sourceType: "module" }
-          //   );
-          //   //   );
-          //   var code = generate(ast);
-
-          var code = await codeparseandgenerate(this.input);
-          var text = `
-\`\`\`javascript
-${code}
-\`\`\`
-`;
-          const divele = document.createElement("div");
-
-          // $(ref.current).html(marked(text));
-          /* 使用jquery的漏洞,如果内容包括html标签的话,当前网页会被覆盖 */
-
-          divele.innerHTML = marked(text);
-
-          Array.from(divele.querySelectorAll("pre code")).forEach(block =>
-            hljs.highlightBlock(block)
-          );
-
-          this.output = divele.innerHTML;
-          console.log(divele.innerHTML);
-          // constants
-          弹出消息通用("success");
-        } catch (error) {
-          console.error(error);
-          弹出消息通用("danger");
-        }
-      })();
+      //   ()();
     },
     拉伸文本框() {
+      function 上下分屏() {
+        //   }
+        //   var 上下分屏 = () => {
+        this.模式左右 = false;
+        this.分屏状态 = "左右分屏";
+      }
       lashentextarea(this.$refs.输入框);
       requestAnimationFrame(() => {
-        function 上下分屏() {
-          //   }
-          //   var 上下分屏 = () => {
-          this.模式左右 = false;
-          this.分屏状态 = "左右分屏";
-        }
-
         if (this.$refs.detail1.open && !this.$refs.detail2.open) {
-          上下分屏.bind(this)();
+          上下分屏.call(this);
         }
         if (!this.$refs.detail1.open && this.$refs.detail2.open) {
-          上下分屏.bind(this)();
+          上下分屏.call(this);
         }
       });
     }
@@ -121,7 +86,7 @@ ${code}
   mounted() {
     document.title = "美化JavaScript代码";
     window.addEventListener("resize", this.拉伸文本框);
-    launchworker();
+    // launchworker();
   },
   beforeDestroy() {
     window.removeEventListener("resize", this.拉伸文本框);

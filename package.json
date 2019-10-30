@@ -1,8 +1,8 @@
 {
-    "version": "2.2.11",
+    "version": "2.2.12",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start",
-        "build": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.11/ "
+        "build": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.12/ "
     },
     "name": "my-vue-router-project",
     "description": "A Vue.js router project",
@@ -43,8 +43,10 @@
         "css-loader": "^3.1.0",
         "error": "^7.0.2",
         "escodegen": "^1.12.0",
+        "eslint": "^6.6.0",
         "eslint-plugin-vue": "^5.2.3",
         "file-loader": "^4.1.0",
+        "highlight.js": "^9.15.10",
         "html-webpack-plugin": "^3.2.0",
         "image-webpack-loader": "^5.0.0",
         "jquery": "^3.4.1",
@@ -67,6 +69,7 @@
         "sass-loader": "^7.1.0",
         "style-loader": "^0.23.1",
         "terser-webpack-plugin": "^1.3.0",
+        "typescript": "^3.7.1-rc",
         "uglifyjs-webpack-plugin": "^2.1.3",
         "unicode-loader": "^1.0.7",
         "url-loader": "^2.1.0",
@@ -84,9 +87,7 @@
         "webpack-manifest-plugin": "^2.0.4",
         "webpack-merge": "^4.2.1",
         "workbox-webpack-plugin": "^4.3.1",
-        "worker-loader": "^2.0.0",
-        "eslint": "^6.6.0",
-        "typescript": "^3.7.1-rc"
+        "worker-loader": "^2.0.0"
     },
     "browserslist": {
         "production": [
