@@ -3,7 +3,8 @@
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start",
         "build": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.12/ "
-    },
+   ,"build-local":"webpack-react-vue-spa-awesome-config build"
+ },
     "name": "my-vue-router-project",
     "description": "A Vue.js router project",
     "author": "masx200 <34191203+masx200@users.noreply.github.com>",
