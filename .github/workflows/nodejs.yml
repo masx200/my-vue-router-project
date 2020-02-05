@@ -21,7 +21,6 @@ jobs:
     - run: yarn install
     - run: yarn run build-local
     - run: cp  -f ./dist/* ./public/ 
-    - run: npm i -g now
     - run: now --token 2vrtRctFUVK9pNcsR1Seee5O
     
       env:
