@@ -20,8 +20,8 @@ jobs:
     - run: npm install -g yarn
     - run: yarn install
     - run: yarn run build
-    - run: cp -f ./dist/* ./public/
+    
     - run: now --prod --token 2vrtRctFUVK9pNcsR1Seee5O
- 
+    - run: cp -f ./dist/* ./public/
       env:
         CI: true
