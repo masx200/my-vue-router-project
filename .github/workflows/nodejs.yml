@@ -21,6 +21,8 @@ jobs:
     - run: yarn install
     - run: yarn run build-local
     - run: cp  -f ./dist/* ./public/ 
+    - run: yarn add now 
+    - run: now
     
       env:
         CI: true
