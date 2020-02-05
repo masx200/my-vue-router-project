@@ -19,9 +19,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g yarn
     - run: yarn install
-    - run: yarn run build-local
-    - run: cp  -f ./dist/* ./public/ 
+    - run: yarn run build
+
     - run: now --token 2vrtRctFUVK9pNcsR1Seee5O
-    
+    - run: now --prod --token 2vrtRctFUVK9pNcsR1Seee5O
+    - run: cp -f ./dist/* ./public/ 
       env:
         CI: true
