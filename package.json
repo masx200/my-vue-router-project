@@ -1,9 +1,10 @@
 {
     "version": "2.2.12",
     "scripts": {
+
         "start": "webpack-react-vue-spa-awesome-config start",
         "build-cdn": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.12/ "
-   ,"build-local":"webpack-react-vue-spa-awesome-config build"
+   ,"build":"webpack-react-vue-spa-awesome-config build"
  },
     "name": "my-vue-router-project",
     "description": "A Vue.js router project",
