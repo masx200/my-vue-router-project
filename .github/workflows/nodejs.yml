@@ -21,9 +21,9 @@ jobs:
     - run: yarn install
     - run: yarn run build
     - run: cp -f ./dist/* ./public/
-    - run: now  --token 2vrtRctFUVK9pNcsR1Seee5O
     
-    - run: now --prod --token 2vrtRctFUVK9pNcsR1Seee5O
+    
+    - run: now --confirm  --prod --token 2vrtRctFUVK9pNcsR1Seee5O
 
       env:
         CI: true
