@@ -28,6 +28,8 @@
     },
     "license": "MIT",
     "devDependencies": {
+        "@types/node": "12.12.31",
+        "@types/jquery": "^3.3.33",
         "prettier": "^2.0.2",
         "@babel/core": "^7.6.4",
         "@babel/generator": "^7.6.4",
