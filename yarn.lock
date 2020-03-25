@@ -966,13 +966,13 @@
   dependencies:
     "@hapi/hoek" "^8.3.0"
 
-"@masx200/acorn-parse-escodegen-generate-esm-broweser@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.npmjs.org/@masx200/acorn-parse-escodegen-generate-esm-broweser/-/acorn-parse-escodegen-generate-esm-broweser-1.0.6.tgz#22e6dcc56cfc5ae4844b24f7ad9942c3890e3c8a"
-  integrity sha512-AB25vLnm/bKGvVwJPPlLjueMbvx63f7SMVHb3L5CuW8Kudx+2VEfJZAjp6FcxHpA+Lx+vJJ6xhl0ZpI+mM1ikQ==
+"@masx200/acorn-parse-escodegen-generate-esm-broweser@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/@masx200/acorn-parse-escodegen-generate-esm-broweser/-/acorn-parse-escodegen-generate-esm-broweser-1.1.0.tgz#fcaa12295c83e0f8831e04295a25c194c8e5b511"
+  integrity sha512-4T4f+UL5yw39ZLeHhE2lsgvbbjFNCq5bafSOdRFFWEJHRPGvHx+VPfVTGonBLyJHOKWYAVRWT4IPq50hC9zizg==
   dependencies:
     "@types/escodegen" "^0.0.6"
-    acorn "^7.1.0"
+    acorn "^7.1.1"
 
 "@masx200/vue-simple-global-state-store-manager@^1.1.3":
   version "1.1.3"
