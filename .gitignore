@@ -18,3 +18,4 @@ selenium-debug.log
 *.sln
 
 *.bak
+.now
