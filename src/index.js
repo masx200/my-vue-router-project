@@ -17,17 +17,17 @@ document.getElementById("root").innerHTML = `<div>
 // eslint-disable-next-line no-undef
 
 window.addEventListener(
-  "load",
-  () => {
-    //   import("bootstrap/dist/js/bootstrap.bundle");
-    import("./assetsutils/clipboard").then(module => {
-      const ClipboardJS = module.default;
-      new ClipboardJS(".btn").on("success", function(e) {
-        e.clearSelection();
-      });
-    });
-  },
-  { once: true }
+    "load",
+    () => {
+        //   import("bootstrap/dist/js/bootstrap.bundle");
+        import("./assetsutils/clipboard").then((module) => {
+            const ClipboardJS = module.default;
+            new ClipboardJS(".btn").on("success", function (e) {
+                e.clearSelection();
+            });
+        });
+    },
+    { once: true }
 );
 
 Vue.config.productionTip = false;
@@ -48,19 +48,19 @@ Vue.use(SimpleStoreManager);
 // })();
 // import("./vue-simple-global-state-store-manager.vue").then(console.log);
 import("./vue-index-render.js").then(({ router, default: AppHome }) => {
-  // var AppHome=default
-  new Vue({
-    el: document.querySelector("#root"),
-    router,
-    //   components: {
-    //     //   App
-    //   },
-    // template: "<App/>"
-    render(h) {
-      return h(AppHome);
-    }
-    // data() {
-    //   return {};
-    // }
-  });
+    // var AppHome=default
+    new Vue({
+        el: document.querySelector("#root"),
+        router,
+        //   components: {
+        //     //   App
+        //   },
+        // template: "<App/>"
+        render(h) {
+            return h(AppHome);
+        },
+        // data() {
+        //   return {};
+        // }
+    });
 });

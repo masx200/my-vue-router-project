@@ -16,38 +16,38 @@ import Worker from "./tranformcode.worker";
 // import { parse } from "@babel/parser";
 let worker;
 function launchworker() {
-  if (!worker) {
-    worker = new Worker();
-  }
+    if (!worker) {
+        worker = new Worker();
+    }
 }
-export default function(sourcecode) {
-  launchworker();
-  return new Promise((resolve, rj) => {
-    worker.onmessage = e => {
-      resolve(e.data);
-    };
-    worker.postMessage(sourcecode);
+export default function (sourcecode) {
+    launchworker();
+    return new Promise((resolve, rj) => {
+        worker.onmessage = (e) => {
+            resolve(e.data);
+        };
+        worker.postMessage(sourcecode);
 
-    worker.onerror = e => {
-      // for (var key in e) {
-      //     console.error(key, e[key])
-      // }
-      // console.error(e.message)
-      //   console.error("Error:", e.message, e.filename);
-      //   arr[index].terminate();
-      //   $("#tp2-big").val("Error:" + e.message+" "+e.filename);
-      //   throw e;
-      rj(new Error(e.message + " " + e.filename));
-    };
-    // });
-  });
-  //   var ast = Parser.extend(dynamicImport)
-  //     .extend(jsx())
-  //     .parse(sourcecode, { sourceType: "module" });
-  //   console.log(
-  //     Parser.extend(dynamicImport).parse(sourcecode, { sourceType: "module" })
-  //   );
-  /* var ast = parse(sourcecode, { sourceType: "module" });
+        worker.onerror = (e) => {
+            // for (var key in e) {
+            //     console.error(key, e[key])
+            // }
+            // console.error(e.message)
+            //   console.error("Error:", e.message, e.filename);
+            //   arr[index].terminate();
+            //   $("#tp2-big").val("Error:" + e.message+" "+e.filename);
+            //   throw e;
+            rj(new Error(e.message + " " + e.filename));
+        };
+        // });
+    });
+    //   var ast = Parser.extend(dynamicImport)
+    //     .extend(jsx())
+    //     .parse(sourcecode, { sourceType: "module" });
+    //   console.log(
+    //     Parser.extend(dynamicImport).parse(sourcecode, { sourceType: "module" })
+    //   );
+    /* var ast = parse(sourcecode, { sourceType: "module" });
   console.log(ast);
 
   var code = generate(
