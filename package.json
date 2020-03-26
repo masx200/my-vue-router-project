@@ -4,7 +4,7 @@
         "start": "webpack-react-vue-spa-awesome-config start",
         "build-cdn": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.12/ ",
         "build": "webpack-react-vue-spa-awesome-config build",
-        "prettier": "prettier **/*.js --write **/*.ts *.json *.md **/*.jsx **/*.tsx "
+        "prettier": "prettier **/*.js --write **/*.ts *.json *.md **/*.jsx **/*.tsx **/*.vue"
     },
     "name": "@masx200/my-vue-router-project",
     "description": "A Vue.js router project",
