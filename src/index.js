@@ -1,5 +1,5 @@
-import VueRouter from "vue-router/dist/vue-router.esm.browser";
-import SimpleStoreManager from "vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
+import VueRouter from "vue-router";
+import SimpleStoreManager from "@masx200/vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
 import Vue from "vue";
 import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 import "./index.css";
