@@ -13,4 +13,5 @@
         </button>
     </div>
 </template>
+
 <script src="./bindglobalstore-testnumber.js"></script>
