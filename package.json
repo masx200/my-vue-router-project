@@ -36,7 +36,7 @@
         "@babel/preset-react": "^7.9.4",
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "^1.1.0",
         "@masx200/vue-simple-global-state-store-manager": "^1.1.3",
-        "@masx200/webpack-react-vue-spa-awesome-config": "^2.7.0",
+        "@masx200/webpack-react-vue-spa-awesome-config": "^2.7.1",
         "@types/jquery": "^3.3.33",
         "@types/node": "12.12.31",
         "acorn": "^7.1.1",
