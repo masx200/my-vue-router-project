@@ -974,10 +974,10 @@
     "@types/escodegen" "^0.0.6"
     acorn "^7.1.1"
 
-"@masx200/vue-simple-global-state-store-manager@^1.1.3":
+"@masx200/vue-simple-global-state-store-manager@https://github.com/masx200/vue-simple-global-state-store-manager":
   version "1.1.3"
-  resolved "https://registry.npmjs.org/@masx200/vue-simple-global-state-store-manager/-/vue-simple-global-state-store-manager-1.1.3.tgz#41a47acd1a3fdc31b7b5e6caaec572b2eb182267"
-  integrity sha512-mwyi4KuSiJOfORw3rV0seoYCx+vRWZ5+7CuYrrSRE0Z5xaEsHAybN/1vIk19T72+RWTua63fEXDwqYECpHo4bQ==
+  uid f60f7ec8bafb321ffd92cedfbd52d9a3f8fd04e0
+  resolved "https://github.com/masx200/vue-simple-global-state-store-manager#f60f7ec8bafb321ffd92cedfbd52d9a3f8fd04e0"
 
 "@masx200/webpack-react-vue-spa-awesome-config@^2.7.1":
   version "2.7.1"
@@ -6789,10 +6789,10 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.npmjs.org/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4, lodash@^4.17.5, lodash@~4.17.12:
-  version "4.17.15"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.4, lodash@^4.17.5, lodash@~4.17.12:
+  version "4.17.19"
+  resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha1-5I3e2+MLMyF4PFtDAfvTU7weSks=
 
 logalot@^2.0.0, logalot@^2.1.0:
   version "2.1.0"
