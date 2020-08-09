@@ -78,14 +78,14 @@
                             </li>
                             <li>
                                 <a
-                                    href="../index.html#/react-home"
+                                    href="https://masx200-github-io.masx200.now.sh/index.html#/react-home"
                                     class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                                     >基于react的首页</a
                                 >
                             </li>
                             <li class>
                                 <a
-                                    href="../index.html#/picalc"
+                                    href="https://masx200-github-io.masx200.now.sh/index.html#/picalc"
                                     class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                                     >圆周率计算多线程</a
                                 >
