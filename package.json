@@ -2,8 +2,12 @@
     "version": "2.3.1",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start",
-        "build-cdn": "webpack-react-vue-spa-awesome-config build --output-public-path=https://cdn.jsdelivr.net/gh/masx200/my-vue-router-project@2.2.12/ ",
-        "build": "webpack-react-vue-spa-awesome-config build",
+        
+
+
+
+
+   "build": "webpack-react-vue-spa-awesome-config build",
         "prettier": "prettier **/*.js --write **/*.ts *.json *.md **/*.jsx **/*.tsx **/*.vue"
     },
     "name": "@masx200/my-vue-router-project",
@@ -109,7 +113,10 @@
         "webpack-merge": "^4.2.2",
         "workbox-webpack-plugin": "^5.1.2",
         "worker-loader": "^2.0.0",
-"http-proxy":"1.18.1"
+
+"http-proxy":"1.18.1",
+"yargs-parser":"13.1.2"
+
     },
     "main": "index.js",
     "bugs": {
