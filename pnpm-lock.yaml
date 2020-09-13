@@ -2,12 +2,13 @@ devDependencies:
   '@babel/core': 7.11.6
   '@babel/generator': 7.11.6
   '@babel/parser': 7.11.5
+  '@babel/plugin-proposal-class-properties': 7.10.4_@babel+core@7.11.6
   '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.11.6
   '@babel/preset-env': 7.11.5_@babel+core@7.11.6
   '@babel/preset-react': 7.10.4_@babel+core@7.11.6
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': 1.1.1
   '@masx200/vue-simple-global-state-store-manager': github.com/masx200/vue-simple-global-state-store-manager/70c7dd08f6bc2c56fd9db1f21b6a79ec4021607c_vue@2.6.12
-  '@masx200/webpack-react-vue-spa-awesome-config': 2.7.4
+  '@masx200/webpack-react-vue-spa-awesome-config': 2.8.0
   '@types/jquery': 3.5.1
   '@types/node': 14.10.1
   '@types/react': 16.9.49
@@ -73,11 +74,11 @@ devDependencies:
   vue-router: 3.4.3
   vue-style-loader: 4.1.2
   vue-template-compiler: 2.6.12
-  webpack: 4.44.1_webpack@4.44.1
+  webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
   webpack-cli: 3.3.12_webpack@4.44.1
   webpack-copyfiles-plugin: 1.0.9_webpack@4.44.1
   webpack-deep-scope-plugin: 1.6.2_webpack@4.44.1
-  webpack-dev-server: 3.11.0_webpack@4.44.1
+  webpack-dev-server: 3.11.0_7d74d9f6ceb0e540c1e44d9709220c58
   webpack-manifest-plugin: 2.2.0_webpack@4.44.1
   webpack-merge: 5.1.4
   workbox-webpack-plugin: 5.1.4_webpack@4.44.1
@@ -594,6 +595,17 @@ packages:
     resolution:
       integrity: sha1-AqfpYfwy5tWy2wZJ4Bv4Dd7n4Eo=
       tarball: '@babel/plugin-proposal-nullish-coalescing-operator/download/@babel/plugin-proposal-nullish-coalescing-operator-7.10.4.tgz'
+  /@babel/plugin-proposal-nullish-coalescing-operator/7.10.4_@babel+core@7.9.0:
+    dependencies:
+      '@babel/core': 7.9.0
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3_@babel+core@7.9.0
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha1-AqfpYfwy5tWy2wZJ4Bv4Dd7n4Eo=
+      tarball: '@babel/plugin-proposal-nullish-coalescing-operator/download/@babel/plugin-proposal-nullish-coalescing-operator-7.10.4.tgz'
   /@babel/plugin-proposal-nullish-coalescing-operator/7.8.3_@babel+core@7.9.0:
     dependencies:
       '@babel/core': 7.9.0
@@ -610,6 +622,17 @@ packages:
       '@babel/core': 7.11.6
       '@babel/helper-plugin-utils': 7.10.4
       '@babel/plugin-syntax-numeric-separator': 7.10.4_@babel+core@7.11.6
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha1-zhWQ/wplrRKXCmCdeIVemkwa7wY=
+      tarball: '@babel/plugin-proposal-numeric-separator/download/@babel/plugin-proposal-numeric-separator-7.10.4.tgz'
+  /@babel/plugin-proposal-numeric-separator/7.10.4_@babel+core@7.9.0:
+    dependencies:
+      '@babel/core': 7.9.0
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/plugin-syntax-numeric-separator': 7.10.4_@babel+core@7.9.0
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -679,6 +702,18 @@ packages:
       '@babel/helper-plugin-utils': 7.10.4
       '@babel/helper-skip-transparent-expression-wrappers': 7.11.0
       '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.11.6
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha1-3lhm0GRvav2quKVmOC/joiF1UHY=
+      tarball: '@babel/plugin-proposal-optional-chaining/download/@babel/plugin-proposal-optional-chaining-7.11.0.tgz'
+  /@babel/plugin-proposal-optional-chaining/7.11.0_@babel+core@7.9.0:
+    dependencies:
+      '@babel/core': 7.9.0
+      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-skip-transparent-expression-wrappers': 7.11.0
+      '@babel/plugin-syntax-optional-chaining': 7.8.3_@babel+core@7.9.0
     dev: true
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1530,6 +1565,16 @@ packages:
     resolution:
       integrity: sha1-tXlfTj4xQEGcNhG3oqODK5rvMo0=
       tarball: '@babel/plugin-transform-react-display-name/download/@babel/plugin-transform-react-display-name-7.10.4.tgz'
+  /@babel/plugin-transform-react-display-name/7.10.4_@babel+core@7.9.0:
+    dependencies:
+      '@babel/core': 7.9.0
+      '@babel/helper-plugin-utils': 7.10.4
+    dev: true
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    resolution:
+      integrity: sha1-tXlfTj4xQEGcNhG3oqODK5rvMo0=
+      tarball: '@babel/plugin-transform-react-display-name/download/@babel/plugin-transform-react-display-name-7.10.4.tgz'
   /@babel/plugin-transform-react-display-name/7.8.3_@babel+core@7.9.0:
     dependencies:
       '@babel/core': 7.9.0
@@ -1935,11 +1980,11 @@ packages:
       '@babel/plugin-proposal-async-generator-functions': 7.10.5_@babel+core@7.9.0
       '@babel/plugin-proposal-dynamic-import': 7.10.4_@babel+core@7.9.0
       '@babel/plugin-proposal-json-strings': 7.10.4_@babel+core@7.9.0
-      '@babel/plugin-proposal-nullish-coalescing-operator': 7.8.3_@babel+core@7.9.0
-      '@babel/plugin-proposal-numeric-separator': 7.8.3_@babel+core@7.9.0
+      '@babel/plugin-proposal-nullish-coalescing-operator': 7.10.4_@babel+core@7.9.0
+      '@babel/plugin-proposal-numeric-separator': 7.10.4_@babel+core@7.9.0
       '@babel/plugin-proposal-object-rest-spread': 7.11.0_@babel+core@7.9.0
       '@babel/plugin-proposal-optional-catch-binding': 7.10.4_@babel+core@7.9.0
-      '@babel/plugin-proposal-optional-chaining': 7.9.0_@babel+core@7.9.0
+      '@babel/plugin-proposal-optional-chaining': 7.11.0_@babel+core@7.9.0
       '@babel/plugin-proposal-unicode-property-regex': 7.10.4_@babel+core@7.9.0
       '@babel/plugin-syntax-async-generators': 7.8.4_@babel+core@7.9.0
       '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.9.0
@@ -2042,7 +2087,7 @@ packages:
     dependencies:
       '@babel/core': 7.9.0
       '@babel/helper-plugin-utils': 7.10.4
-      '@babel/plugin-transform-react-display-name': 7.8.3_@babel+core@7.9.0
+      '@babel/plugin-transform-react-display-name': 7.10.4_@babel+core@7.9.0
       '@babel/plugin-transform-react-jsx': 7.10.4_@babel+core@7.9.0
       '@babel/plugin-transform-react-jsx-development': 7.11.5_@babel+core@7.9.0
       '@babel/plugin-transform-react-jsx-self': 7.10.4_@babel+core@7.9.0
@@ -2167,7 +2212,7 @@ packages:
     resolution:
       integrity: sha1-gwGr+0UQ40BWSnaeRhw3qvVwBAI=
       tarball: '@masx200/acorn-parse-escodegen-generate-esm-broweser/download/@masx200/acorn-parse-escodegen-generate-esm-broweser-1.1.1.tgz'
-  /@masx200/webpack-react-vue-spa-awesome-config/2.7.4:
+  /@masx200/webpack-react-vue-spa-awesome-config/2.8.0:
     dependencies:
       '@babel/core': 7.11.6
       '@babel/plugin-proposal-class-properties': 7.10.4_@babel+core@7.11.6
@@ -2207,13 +2252,14 @@ packages:
       postcss-normalize: 9.0.0
       postcss-preset-env: 6.7.0
       postcss-safe-parser: 4.0.2
-      purgecss-webpack-plugin: 2.3.0
+      purgecss-webpack-plugin: 2.3.0_webpack-cli@3.3.12
       purify-css: 1.2.5
       purifycss-webpack: 0.7.0_purify-css@1.2.5
       react-app-polyfill: 1.0.6
       react-dev-utils: 10.2.1
       react-hot-loader: 4.12.21_5ce8f66b58dc92cd3f67a918e0e72f70
       regenerator-runtime: 0.13.7
+      sass: 1.26.10
       style-loader: 1.2.1_webpack@4.44.1
       terser: 5.3.1
       terser-webpack-plugin: 4.2.0_webpack@4.44.1
@@ -2221,14 +2267,14 @@ packages:
       uglifyjs-webpack-plugin: 2.2.0_webpack@4.44.1
       unicode-loader: 1.0.7
       url-loader: 4.1.0_file-loader@6.1.0+webpack@4.44.1
-      vue-loader: 15.9.3_css-loader@4.3.0+webpack@4.44.1
+      vue-loader: 15.9.3_aef87f907101ceb8d57913cdf1b3fa3d
       vue-style-loader: 4.1.2
       vue-template-compiler: 2.6.12
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-cli: 3.3.12_webpack@4.44.1
       webpack-copyfiles-plugin: 1.0.9_webpack@4.44.1
       webpack-deep-scope-plugin: 1.6.2_webpack@4.44.1
-      webpack-dev-server: 3.11.0_webpack@4.44.1
+      webpack-dev-server: 3.11.0_7d74d9f6ceb0e540c1e44d9709220c58
       workbox-webpack-plugin: 5.1.4_webpack@4.44.1
       worker-loader: 3.0.2_webpack@4.44.1
     dev: true
@@ -2237,8 +2283,8 @@ packages:
       react: 16.13.1
       vue: 2.6.12
     resolution:
-      integrity: sha1-C8W+Os/mRyfvGI9lcwBNIIA4Lz8=
-      tarball: '@masx200/webpack-react-vue-spa-awesome-config/download/@masx200/webpack-react-vue-spa-awesome-config-2.7.4.tgz'
+      integrity: sha1-8PYezWwJxjW2z795Uo5IcQrPQA0=
+      tarball: '@masx200/webpack-react-vue-spa-awesome-config/download/@masx200/webpack-react-vue-spa-awesome-config-2.8.0.tgz'
   /@mrmlnc/readdir-enhanced/2.2.1:
     dependencies:
       call-me-maybe: 1.0.1
@@ -3301,7 +3347,7 @@ packages:
       mkdirp: 0.5.5
       pify: 4.0.1
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 6.9'
@@ -3341,7 +3387,7 @@ packages:
       tarball: babel-plugin-htm/download/babel-plugin-htm-3.0.0.tgz
   /babel-plugin-macros/2.8.0:
     dependencies:
-      '@babel/runtime': 7.9.0
+      '@babel/runtime': 7.11.2
       cosmiconfig: 6.0.0
       resolve: 1.17.0
     dev: true
@@ -4387,7 +4433,7 @@ packages:
     dependencies:
       '@types/webpack': 4.41.22
       del: 4.1.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>=8.9.0'
@@ -4726,7 +4772,7 @@ packages:
       p-limit: 3.0.2
       schema-utils: 2.7.1
       serialize-javascript: 4.0.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
     dev: true
     engines:
@@ -4946,7 +4992,7 @@ packages:
       postcss-value-parser: 4.1.0
       schema-utils: 2.7.1
       semver: 7.3.2
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -6015,7 +6061,7 @@ packages:
       fs-extra: 3.0.1
       loader-utils: 1.4.0
       node-sass: 4.14.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     peerDependencies:
       node-sass: 4.x || 3.x
@@ -6066,7 +6112,7 @@ packages:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -6926,7 +6972,7 @@ packages:
       pretty-error: 2.1.1
       tapable: 1.1.3
       util.promisify: 1.0.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>=6.9'
@@ -7928,7 +7974,7 @@ packages:
       less: 3.12.2
       loader-utils: 2.0.0
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -8446,7 +8492,7 @@ packages:
       loader-utils: 1.4.0
       normalize-url: 1.9.1
       schema-utils: 1.0.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
     dev: true
     engines:
@@ -9045,7 +9091,7 @@ packages:
     dependencies:
       cssnano: 4.1.10
       last-call-webpack-plugin: 3.0.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     peerDependencies:
       webpack: ^4.0.0
@@ -9816,7 +9862,7 @@ packages:
       postcss: 7.0.32
       schema-utils: 2.7.1
       semver: 7.3.2
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -10478,12 +10524,14 @@ packages:
     resolution:
       integrity: sha1-tYsBCsQMIsVldhbI0sLALHv0eew=
       tarball: punycode/download/punycode-2.1.1.tgz
-  /purgecss-webpack-plugin/2.3.0:
+  /purgecss-webpack-plugin/2.3.0_webpack-cli@3.3.12:
     dependencies:
       purgecss: 2.3.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
     dev: true
+    peerDependencies:
+      webpack-cli: '*'
     resolution:
       integrity: sha1-ulC8JVJN28J7XtR+8wr2WtOhC7I=
       tarball: purgecss-webpack-plugin/download/purgecss-webpack-plugin-2.3.0.tgz
@@ -11282,7 +11330,7 @@ packages:
       sass: 1.26.10
       schema-utils: 2.7.1
       semver: 7.3.2
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -11291,6 +11339,13 @@ packages:
       node-sass: ^4.0.0
       sass: ^1.3.0
       webpack: ^4.36.0 || ^5.0.0
+    peerDependenciesMeta:
+      fibers:
+        optional: true
+      node-sass:
+        optional: true
+      sass:
+        optional: true
     resolution:
       integrity: sha1-x7cwEISLJkeS3UU3LuoLh8ukQB4=
       tarball: sass-loader/download/sass-loader-10.0.2.tgz
@@ -12044,7 +12099,7 @@ packages:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 8.9.0'
@@ -12177,7 +12232,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 4.8.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -12198,7 +12253,7 @@ packages:
       serialize-javascript: 4.0.0
       source-map: 0.6.1
       terser: 5.3.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
     dev: true
     engines:
@@ -12474,7 +12529,7 @@ packages:
       serialize-javascript: 1.9.1
       source-map: 0.6.1
       uglify-js: 3.10.4
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
       worker-farm: 1.7.0
     dev: true
@@ -12628,13 +12683,16 @@ packages:
       loader-utils: 2.0.0
       mime-types: 2.1.27
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
     peerDependencies:
       file-loader: '*'
       webpack: ^4.0.0 || ^5.0.0
+    peerDependenciesMeta:
+      file-loader:
+        optional: true
     resolution:
       integrity: sha1-x9aw1rD8zVGrP/xYp40yuNiae+I=
       tarball: url-loader/download/url-loader-4.1.0.tgz
@@ -12769,6 +12827,30 @@ packages:
     resolution:
       integrity: sha1-UylVzB6yCKPZkLOp+acFdGV+CPI=
       tarball: vue-hot-reload-api/download/vue-hot-reload-api-2.3.4.tgz
+  /vue-loader/15.9.3_aef87f907101ceb8d57913cdf1b3fa3d:
+    dependencies:
+      '@vue/component-compiler-utils': 3.2.0
+      css-loader: 4.3.0_webpack@4.44.1
+      hash-sum: 1.0.2
+      loader-utils: 1.4.0
+      vue-hot-reload-api: 2.3.4
+      vue-style-loader: 4.1.2
+      vue-template-compiler: 2.6.12
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
+    dev: true
+    peerDependencies:
+      cache-loader: '*'
+      css-loader: '*'
+      vue-template-compiler: '*'
+      webpack: ^3.0.0 || ^4.1.0 || ^5.0.0-0
+    peerDependenciesMeta:
+      cache-loader:
+        optional: true
+      vue-template-compiler:
+        optional: true
+    resolution:
+      integrity: sha1-DeNdnlVdPtU5aVFsrFziVTEpndo=
+      tarball: vue-loader/download/vue-loader-15.9.3.tgz
   /vue-loader/15.9.3_css-loader@4.3.0+webpack@4.44.1:
     dependencies:
       '@vue/component-compiler-utils': 3.2.0
@@ -12777,11 +12859,18 @@ packages:
       loader-utils: 1.4.0
       vue-hot-reload-api: 2.3.4
       vue-style-loader: 4.1.2
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     peerDependencies:
+      cache-loader: '*'
       css-loader: '*'
+      vue-template-compiler: '*'
       webpack: ^3.0.0 || ^4.1.0 || ^5.0.0-0
+    peerDependenciesMeta:
+      cache-loader:
+        optional: true
+      vue-template-compiler:
+        optional: true
     resolution:
       integrity: sha1-DeNdnlVdPtU5aVFsrFziVTEpndo=
       tarball: vue-loader/download/vue-loader-15.9.3.tgz
@@ -12856,7 +12945,7 @@ packages:
       loader-utils: 1.4.0
       supports-color: 6.1.0
       v8-compile-cache: 2.1.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       yargs: 13.3.2
     dev: true
     engines:
@@ -12872,7 +12961,7 @@ packages:
       fs-extra: 2.0.0
       globby: 8.0.1
       hash-files: 1.1.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-plugin-compat: 1.0.3
     dev: true
     peerDependencies:
@@ -12883,7 +12972,7 @@ packages:
   /webpack-deep-scope-plugin/1.6.2_webpack@4.44.1:
     dependencies:
       deep-scope-analyser: 1.7.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     peerDependencies:
       webpack: ^4.14.0
@@ -12896,7 +12985,7 @@ packages:
       mime: 2.4.6
       mkdirp: 0.5.5
       range-parser: 1.2.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-log: 2.0.0
     dev: true
     engines:
@@ -12906,7 +12995,7 @@ packages:
     resolution:
       integrity: sha1-ABnD23FuP6XOy/ZPKriKdLqzMfM=
       tarball: webpack-dev-middleware/download/webpack-dev-middleware-3.7.2.tgz
-  /webpack-dev-server/3.11.0_webpack@4.44.1:
+  /webpack-dev-server/3.11.0_7d74d9f6ceb0e540c1e44d9709220c58:
     dependencies:
       ansi-html: 0.0.7
       bonjour: 3.5.0
@@ -12937,7 +13026,8 @@ packages:
       strip-ansi: 3.0.1
       supports-color: 6.1.0
       url: 0.11.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
+      webpack-cli: 3.3.12_webpack@4.44.1
       webpack-dev-middleware: 3.7.2_webpack@4.44.1
       webpack-log: 2.0.0
       ws: 6.2.1
@@ -12948,6 +13038,10 @@ packages:
     hasBin: true
     peerDependencies:
       webpack: ^4.0.0 || ^5.0.0
+      webpack-cli: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
     resolution:
       integrity: sha1-jxVKO84bz9HMYY705wMniFXn/4w=
       tarball: webpack-dev-server/download/webpack-dev-server-3.11.0.tgz
@@ -12967,7 +13061,7 @@ packages:
       lodash: 4.17.20
       object.entries: 1.1.2
       tapable: 1.1.3
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>=6.11.5'
@@ -13007,7 +13101,7 @@ packages:
     resolution:
       integrity: sha1-7t2OwLko+/HL/plOItLYkPMwqTM=
       tarball: webpack-sources/download/webpack-sources-1.4.3.tgz?cache=0&sync_timestamp=1598534427415&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwebpack-sources%2Fdownload%2Fwebpack-sources-1.4.3.tgz
-  /webpack/4.44.1_webpack@4.44.1:
+  /webpack/4.44.1_7d74d9f6ceb0e540c1e44d9709220c58:
     dependencies:
       '@webassemblyjs/ast': 1.9.0
       '@webassemblyjs/helper-module-context': 1.9.0
@@ -13031,6 +13125,7 @@ packages:
       tapable: 1.1.3
       terser-webpack-plugin: 1.4.5_webpack@4.44.1
       watchpack: 1.7.4
+      webpack-cli: 3.3.12_webpack@4.44.1
       webpack-sources: 1.4.3
     dev: true
     engines:
@@ -13038,6 +13133,13 @@ packages:
     hasBin: true
     peerDependencies:
       webpack: '*'
+      webpack-cli: '*'
+      webpack-command: '*'
+    peerDependenciesMeta:
+      webpack-cli:
+        optional: true
+      webpack-command:
+        optional: true
     resolution:
       integrity: sha1-F+af/58yG48RfR/acU7fwLk5zCE=
       tarball: webpack/download/webpack-4.44.1.tgz
@@ -13257,7 +13359,7 @@ packages:
       fast-json-stable-stringify: 2.1.0
       source-map-url: 0.4.0
       upath: 1.2.0
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
       webpack-sources: 1.4.3
       workbox-build: 5.1.4
     dev: true
@@ -13286,7 +13388,7 @@ packages:
     dependencies:
       loader-utils: 2.0.0
       schema-utils: 2.7.1
-      webpack: 4.44.1_webpack@4.44.1
+      webpack: 4.44.1_7d74d9f6ceb0e540c1e44d9709220c58
     dev: true
     engines:
       node: '>= 10.13.0'
@@ -13500,18 +13602,20 @@ packages:
     peerDependencies:
       vue: ^2.6.11
     resolution:
+      registry: 'https://registry.npm.taobao.org/'
       tarball: 'https://codeload.github.com/masx200/vue-simple-global-state-store-manager/tar.gz/70c7dd08f6bc2c56fd9db1f21b6a79ec4021607c'
     version: 1.1.5
 specifiers:
   '@babel/core': ^7.11.6
   '@babel/generator': ^7.11.6
   '@babel/parser': ^7.11.5
+  '@babel/plugin-proposal-class-properties': 7.10.4
   '@babel/plugin-syntax-dynamic-import': ^7.8.3
   '@babel/preset-env': ^7.11.5
   '@babel/preset-react': ^7.10.4
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': ^1.1.1
   '@masx200/vue-simple-global-state-store-manager': 'https://github.com/masx200/vue-simple-global-state-store-manager'
-  '@masx200/webpack-react-vue-spa-awesome-config': ^2.7.4
+  '@masx200/webpack-react-vue-spa-awesome-config': ^2.8.0
   '@types/jquery': 3.5.1
   '@types/node': 14.10.1
   '@types/react': 16.9.49

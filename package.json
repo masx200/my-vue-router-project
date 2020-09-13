@@ -109,7 +109,8 @@
         "webpack-merge": "^5.1.4",
         "workbox-webpack-plugin": "^5.1.4",
         "worker-loader": "^3.0.2",
-        "yargs-parser": "20.0.0"
+        "yargs-parser": "20.0.0",
+        "@babel/plugin-proposal-class-properties": "7.10.4"
     },
     "main": "index.js",
     "bugs": {
