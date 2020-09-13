@@ -1,6 +1,8 @@
 # my-vue-router-project-webpack
 
-使用 webpack-react-vue-spa-awesome-config 重构了 my-vue-router-project
+使用 webpack-react-vue-spa-awesome-config 打包
+
+https://github.com/masx200/webpack-react-vue-spa-awesome-config
 
 https://github.com/masx200/my-vue-router-project
 
