@@ -24,10 +24,17 @@ export default {
             this.拉伸文本框();
         },
         transformcode() {
+            //alert("transformcode")
             asynchighlighttext(this.input)
-                .then((output) => (this.$refs.输出框.innerHTML = output))
-                .catch((e) => (this.$refs.输出框.innerText = String(e)))
-                .then(() => {
+                .then((output) => {
+                    this.$refs.输出框.innerHTML = output;
+                    alert(output);
+                })
+                .catch((e) => {
+                    this.$refs.输出框.innerText = String(e) + e.stack;
+                    alert(String(e) + e.stack);
+                })
+                .finally(() => {
                     this.$refs.detail1.open = false;
                     this.$refs.detail2.open = true;
                 });

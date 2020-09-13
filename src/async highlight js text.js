@@ -1,5 +1,5 @@
 // @ts-ignore
-import Worker from "./markdown-highlight.worker";
+import Worker from "./markdown-highlight.worker.js";
 let worker;
 function launchworker() {
     if (!worker) {

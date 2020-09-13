@@ -1,5 +1,5 @@
 // @ts-ignore
-import Worker from "./tranformcode.worker";
+import Worker from "./tranformcode.worker.js";
 let worker;
 function launchworker() {
     if (!worker) {

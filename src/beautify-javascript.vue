@@ -14,13 +14,13 @@
         ></button>
         <button
             class="btn btn-outline-primary clipbutton"
-            v-on:click="transformcode"
+            v-on:click="transformcode()"
         >
             转换
         </button>
         <button
             class="btn btn-outline-primary clipbutton"
-            v-on:click="clearcode"
+            v-on:click="clearcode()"
         >
             清除
         </button>
