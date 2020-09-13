@@ -1,5 +1,6 @@
 // @ts-ignore
-import hljs from "highlight.js/lib/highlight";
+import hljs from "highlight.js/lib/core.js";
+//升级了highlight
 export default hljs;
 import javascript from "highlight.js/lib/languages/javascript";
 hljs.registerLanguage("javascript", javascript);
