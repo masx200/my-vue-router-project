@@ -99,7 +99,7 @@
         <div
             class="container"
             id="my主体"
-            style="min-width: 100%; padding-top: 53px;"
+            style="min-width: 100%; padding-top: 53px"
         >
             <router-view />
         </div>

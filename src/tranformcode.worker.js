@@ -1,4 +1,7 @@
-import { generate, parse } from "@masx200/acorn-parse-escodegen-generate-esm-broweser";
+import {
+    generate,
+    parse,
+} from "@masx200/acorn-parse-escodegen-generate-esm-broweser";
 self.onmessage = (e) => {
     const source = e.data;
     const code = transform(source);

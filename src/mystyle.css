@@ -1,8 +1,8 @@
 p {
-  color: #000 !important;
+    color: #000 !important;
 }
 pre {
-  text-align: left !important;
+    text-align: left !important;
 }
 h1,
 h2,
@@ -13,5 +13,5 @@ h6,
 button,
 div,
 input {
-  text-align: center;
+    text-align: center;
 }

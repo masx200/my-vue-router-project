@@ -1,5 +1,5 @@
 // @ts-ignore
-import Worker from './tranformcode.worker';
+import Worker from "./tranformcode.worker";
 let worker;
 function launchworker() {
     if (!worker) {
@@ -9,12 +9,12 @@ function launchworker() {
 export default function (sourcecode) {
     launchworker();
     return new Promise((resolve, rj) => {
-        worker.onmessage = e => {
+        worker.onmessage = (e) => {
             resolve(e.data);
         };
         worker.postMessage(sourcecode);
-        worker.onerror = e => {
-            rj(new Error(e.message + ' ' + e.filename));
+        worker.onerror = (e) => {
+            rj(new Error(e.message + " " + e.filename));
         };
     });
 }

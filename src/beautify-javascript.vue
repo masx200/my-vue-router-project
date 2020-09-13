@@ -33,8 +33,9 @@
                     <summary
                         class="btn btn-outline-primary mui-btn mui-btn-outline-primary"
                         v-on:click="拉伸文本框()"
-                        >展开收起</summary
                     >
+                        展开收起
+                    </summary>
                     <h3>源本代码</h3>
 
                     <div>
@@ -50,7 +51,7 @@
                             v-model="input"
                             class="form-control"
                             id="clip50b92c49b148d93bba82d6b41a4651fce30"
-                            style="height: 50px; text-align: left !important;"
+                            style="height: 50px; text-align: left !important"
                         />
                     </div>
                 </details>
@@ -64,8 +65,9 @@
                     <summary
                         class="btn btn-outline-primary mui-btn mui-btn-outline-primary"
                         v-on:click="拉伸文本框()"
-                        >展开收起</summary
                     >
+                        展开收起
+                    </summary>
                     <div>
                         <h3>美化代码</h3>
                         <button
@@ -81,7 +83,7 @@
                                 v-html="output"
                                 class="form-control"
                                 id="clip50b92c49b148d93bba82d6b41a4651fce37"
-                                style="height: fit-content;"
+                                style="height: fit-content"
                             ></div>
                         </div>
                     </div>

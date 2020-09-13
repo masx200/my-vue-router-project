@@ -2,7 +2,7 @@
 <template>
     <div class="hello flowerpassword">
         <h1>花密 不一样的密码管理工具</h1>
-        <div class="container" id="rong1" style="text-align: center;">
+        <div class="container" id="rong1" style="text-align: center">
             <div class id="rong2">
                 <h2>
                     <span>1</span>
@@ -72,7 +72,7 @@
                                 id="copycode16"
                                 class="btn-lg btn copycode16d btn-info"
                                 data-clipboard-target="#code16"
-                                style="width: 100%;"
+                                style="width: 100%"
                                 v-on:click="functioncopy"
                             >
                                 点击复制
@@ -80,9 +80,7 @@
                         </p>
                     </span>
                     <p>
-                        <span id="copyOK" style="display: none;"
-                            >√复制成功</span
-                        >
+                        <span id="copyOK" style="display: none">√复制成功</span>
                     </p>
                     <p></p>
                 </div>

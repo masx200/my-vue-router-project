@@ -1,3 +1,4 @@
+import "./error-alert.js";
 import VueRouter from "vue-router";
 import SimpleStoreManager from "@masx200/vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
 import Vue from "vue";
