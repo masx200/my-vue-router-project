@@ -1,5 +1,5 @@
 {
-    "version": "2.3.1",
+    "version": "2.4.0",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start",
         "build": "webpack-react-vue-spa-awesome-config build",
@@ -34,7 +34,7 @@
         "@babel/preset-react": "^7.10.4",
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "^1.1.1",
         "@masx200/vue-simple-global-state-store-manager": "https://github.com/masx200/vue-simple-global-state-store-manager",
-        "@masx200/webpack-react-vue-spa-awesome-config": "^2.7.4",
+        "@masx200/webpack-react-vue-spa-awesome-config": "^2.8.0",
         "@types/jquery": "3.5.1",
         "@types/node": "14.10.1",
         "@types/react": "16.9.49",
