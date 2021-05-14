@@ -71,7 +71,7 @@
         "lodash": "^4.17.20",
         "mini-css-extract-plugin": "^0.11.2",
         "minimist": "^1.2.5",
-        "node-sass": "^4.14.1",
+        "node-sass": "6.0.0",
         "optimize-css-assets-webpack-plugin": "^5.0.4",
         "pnp-webpack-plugin": "^1.6.4",
         "popper.js": "^1.16.1",
