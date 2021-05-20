@@ -37,7 +37,9 @@ Vue.config.devtools = true;
 Vue.use(VueRouter);
 // console.log(SimpleStore);
 Vue.use(SimpleStoreManager);
-
+Vue.config.errorHandler = function (err, vm, info) {
+    throw err;
+};
 import("./vue-index-render.js").then(({ router, default: AppHome }) => {
     // var AppHome=default
     new Vue({
