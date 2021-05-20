@@ -1,6 +1,6 @@
 <script src="./vue-app-home.js"></script>
 <template>
-    <div id="root">
+    <div>
         <div id="my导航栏" class="fixed-top container-fluid">
             <nav
                 class="

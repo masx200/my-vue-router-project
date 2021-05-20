@@ -28,7 +28,7 @@ export default {
             asynchighlighttext(this.input)
                 .then((output) => {
                     this.$refs.输出框.innerHTML = output;
-                //    alert(output);
+                    //    alert(output);
                 })
                 .catch((e) => {
                     this.$refs.输出框.innerText = String(e) + e.stack;

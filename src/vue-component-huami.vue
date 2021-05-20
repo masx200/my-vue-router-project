@@ -17,7 +17,10 @@
                             v-on:change="handlechange()"
                             v-on:input="handlechange()"
                             v-model="message1"
-                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control"
+                            class="
+                                col-lg-12 col-md-12 col-sm-12 col-xs-12
+                                form-control
+                            "
                             id="password"
                             placeholder="输入密码"
                             name="password"
@@ -35,7 +38,10 @@
                             v-on:change="handlechange()"
                             v-on:input="handlechange()"
                             v-model="message2"
-                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control"
+                            class="
+                                col-lg-12 col-md-12 col-sm-12 col-xs-12
+                                form-control
+                            "
                             id="key"
                             placeholder="输入代号"
                             name="key"
@@ -62,7 +68,12 @@
                             <input
                                 v-model="message3"
                                 id="code16"
-                                class="col-lg-12 col-md-12 col-sm-12 col-xs-12 snippet code16d form-control"
+                                class="
+                                    col-lg-12 col-md-12 col-sm-12 col-xs-12
+                                    snippet
+                                    code16d
+                                    form-control
+                                "
                                 readonly
                             />
                         </p>

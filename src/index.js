@@ -41,7 +41,9 @@ Vue.use(SimpleStoreManager);
 import("./vue-index-render.js").then(({ router, default: AppHome }) => {
     // var AppHome=default
     new Vue({
-        el: document.querySelector("#root"),
+        el: document
+            .querySelector("#root")
+            .appendChild(document.createElement("div")),
         router,
         //   components: {
         //     //   App
