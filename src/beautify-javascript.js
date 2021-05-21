@@ -31,8 +31,10 @@ export default {
                     //    alert(output);
                 })
                 .catch((e) => {
-                    this.$refs.输出框.innerText = String(e) + e.stack;
-                    alert(String(e) + e.stack);
+                    var errtxt = String(e) + "\n" + e.stack;
+
+                    this.$refs.输出框.innerText = errtxt;
+                    alert(errtxt);
                 })
                 .finally(() => {
                     this.$refs.detail1.open = false;
