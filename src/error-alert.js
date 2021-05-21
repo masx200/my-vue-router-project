@@ -3,10 +3,10 @@ window.addEventListener("unhandledrejection", fn2);
 
 function fn1(e) {
     const { error } = e;
-    alert(String(error) + "\n"+e.message + "\n" + error?.stack);
+    alert([String(e),String(error) ,e.message,e.filename , error?.stack].join('\n'));
 }
 
 function fn2(e) {
     const { reason } = e;
-    alert(String(reason) + "\n" + reason?.stack);
+    alert([String(e),String(reason) , reason?.stack].join('\n'));
 }
