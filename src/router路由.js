@@ -32,5 +32,8 @@ const router = new VueRouter({
         }),
     ],
 });
+router.onError((err) => {
+    throw err;
+});
 
 export default router;

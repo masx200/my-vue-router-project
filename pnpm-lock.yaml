@@ -10,7 +10,7 @@ specifiers:
   '@babel/preset-react': ^7.13.13
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': ^1.1.1
   '@masx200/vue-simple-global-state-store-manager': https://github.com/masx200/vue-simple-global-state-store-manager
-  '@masx200/webpack-react-vue-spa-awesome-config': ^3.0.2
+  '@masx200/webpack-react-vue-spa-awesome-config': ^3.0.3
   '@types/jquery': 3.5.5
   '@types/node': 15.3.1
   '@types/react': 17.0.6
@@ -100,7 +100,7 @@ devDependencies:
   '@babel/preset-react': 7.13.13_@babel+core@7.14.3
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': 1.1.1
   '@masx200/vue-simple-global-state-store-manager': github.com/masx200/vue-simple-global-state-store-manager/70c7dd08f6bc2c56fd9db1f21b6a79ec4021607c_vue@2.6.12
-  '@masx200/webpack-react-vue-spa-awesome-config': 3.0.2_browserslist@4.16.6
+  '@masx200/webpack-react-vue-spa-awesome-config': 3.0.3_browserslist@4.16.6
   '@types/jquery': 3.5.5
   '@types/node': 15.3.1
   '@types/react': 17.0.6
@@ -2260,8 +2260,8 @@ packages:
       acorn: 7.4.1
     dev: true
 
-  /@masx200/webpack-react-vue-spa-awesome-config/3.0.2_browserslist@4.16.6:
-    resolution: {integrity: sha512-6jjNO0vG8F0nBnTaJm9NSofA2PAwj/rTuHA+B2/SLNG+e0gF14N7ZV8/vrcrISwBoApgyUJu+hWPXmTV/QRK4Q==}
+  /@masx200/webpack-react-vue-spa-awesome-config/3.0.3_browserslist@4.16.6:
+    resolution: {integrity: sha512-RgHOwIXKYJyeiPMnHHG2z2DdjylYYPuP5eNDrf23xD45921ptNjdO0OMdYhOq06BsSUrfOA/hLmEM9Kf/qSh/w==}
     hasBin: true
     dependencies:
       '@babel/core': 7.14.3
