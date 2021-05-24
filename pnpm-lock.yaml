@@ -10,7 +10,7 @@ specifiers:
   '@babel/preset-react': ^7.13.13
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': ^1.1.1
   '@masx200/vue-simple-global-state-store-manager': https://github.com/masx200/vue-simple-global-state-store-manager
-  '@masx200/webpack-react-vue-spa-awesome-config': ^3.0.3
+  '@masx200/webpack-react-vue-spa-awesome-config': ^3.0.7
   '@types/jquery': 3.5.5
   '@types/node': 15.3.1
   '@types/react': 17.0.6
@@ -100,7 +100,7 @@ devDependencies:
   '@babel/preset-react': 7.13.13_@babel+core@7.14.3
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': 1.1.1
   '@masx200/vue-simple-global-state-store-manager': github.com/masx200/vue-simple-global-state-store-manager/70c7dd08f6bc2c56fd9db1f21b6a79ec4021607c_vue@2.6.12
-  '@masx200/webpack-react-vue-spa-awesome-config': 3.0.3_browserslist@4.16.6
+  '@masx200/webpack-react-vue-spa-awesome-config': 3.0.7
   '@types/jquery': 3.5.5
   '@types/node': 15.3.1
   '@types/react': 17.0.6
@@ -2260,8 +2260,8 @@ packages:
       acorn: 7.4.1
     dev: true
 
-  /@masx200/webpack-react-vue-spa-awesome-config/3.0.3_browserslist@4.16.6:
-    resolution: {integrity: sha512-RgHOwIXKYJyeiPMnHHG2z2DdjylYYPuP5eNDrf23xD45921ptNjdO0OMdYhOq06BsSUrfOA/hLmEM9Kf/qSh/w==}
+  /@masx200/webpack-react-vue-spa-awesome-config/3.0.7:
+    resolution: {integrity: sha512-15te9Xpl0Tsc2m394bxerdeb5iG1gPuwnbAqeOZsuOi+hoL7jdy9E/1+3C8drFWzhuxVxLwc6mIFj6kYo/AFzQ==}
     hasBin: true
     dependencies:
       '@babel/core': 7.14.3
@@ -2285,6 +2285,7 @@ packages:
       babel-plugin-transform-runtime: 6.23.0
       babel-preset-react-app: 10.0.0
       banner-content-loader: 0.1.1
+      browserslist: 4.16.6
       clean-webpack-plugin: 4.0.0-alpha.0_webpack@5.37.1
       copy-webpack-plugin: 8.1.1_webpack@5.37.1
       css-loader: 5.2.4_webpack@5.37.1
@@ -2320,8 +2321,6 @@ packages:
       vue-template-compiler: 2.6.12
       webpack: 5.37.1_webpack-cli@4.7.0
       webpack-cli: 4.7.0_73b101d6e7258082846183368a5d0f22
-      webpack-copyfiles-plugin: 1.0.9_webpack@5.37.1
-      webpack-deep-scope-plugin: 1.6.2_webpack@5.37.1
       webpack-dev-server: 3.11.2_webpack-cli@4.7.0+webpack@5.37.1
       workbox-webpack-plugin: 6.1.5_webpack@5.37.1
       worker-loader: 3.0.8_webpack@5.37.1
@@ -2332,7 +2331,6 @@ packages:
       - '@types/babel__core'
       - '@webpack-cli/generators'
       - '@webpack-cli/migrate'
-      - browserslist
       - cache-loader
       - supports-color
       - webpack-bundle-analyzer
