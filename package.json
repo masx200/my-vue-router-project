@@ -1,5 +1,5 @@
 {
-    "version": "2.5.6",
+    "version": "3.0.0",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start",
         "build": "webpack-react-vue-spa-awesome-config build",
