@@ -79,37 +79,35 @@
             /******/
         }; // create a fake namespace object // mode & 1: value is a module id, require it // mode & 2: merge all properties of value into the ns // mode & 4: return value when already ns object // mode & 8|1: behave like require
         /******/
-        /******/ /******/ /******/ /******/ /******/ /******/ __webpack_require__.t = function (
-            value,
-            mode
-        ) {
-            /******/ if (mode & 1) value = __webpack_require__(value);
-            /******/ if (mode & 8) return value;
-            /******/ if (
-                mode & 4 &&
-                typeof value === "object" &&
-                value &&
-                value.__esModule
-            )
-                return value;
-            /******/ var ns = Object.create(null);
-            /******/ __webpack_require__.r(ns);
-            /******/ Object.defineProperty(ns, "default", {
-                enumerable: true,
-                value: value,
-            });
-            /******/ if (mode & 2 && typeof value != "string")
-                for (var key in value)
-                    __webpack_require__.d(
-                        ns,
-                        key,
-                        function (key) {
-                            return value[key];
-                        }.bind(null, key)
-                    );
-            /******/ return ns;
-            /******/
-        }; // getDefaultExport function for compatibility with non-harmony modules
+        /******/ /******/ /******/ /******/ /******/ /******/ __webpack_require__.t =
+            function (value, mode) {
+                /******/ if (mode & 1) value = __webpack_require__(value);
+                /******/ if (mode & 8) return value;
+                /******/ if (
+                    mode & 4 &&
+                    typeof value === "object" &&
+                    value &&
+                    value.__esModule
+                )
+                    return value;
+                /******/ var ns = Object.create(null);
+                /******/ __webpack_require__.r(ns);
+                /******/ Object.defineProperty(ns, "default", {
+                    enumerable: true,
+                    value: value,
+                });
+                /******/ if (mode & 2 && typeof value != "string")
+                    for (var key in value)
+                        __webpack_require__.d(
+                            ns,
+                            key,
+                            function (key) {
+                                return value[key];
+                            }.bind(null, key)
+                        );
+                /******/ return ns;
+                /******/
+            }; // getDefaultExport function for compatibility with non-harmony modules
         /******/
         /******/ /******/ __webpack_require__.n = function (module) {
             /******/ var getter =
@@ -185,9 +183,8 @@
 
                 var _clipboardAction = __webpack_require__(1);
 
-                var _clipboardAction2 = _interopRequireDefault(
-                    _clipboardAction
-                );
+                var _clipboardAction2 =
+                    _interopRequireDefault(_clipboardAction);
 
                 var _tinyEmitter = __webpack_require__(3);
 
@@ -345,16 +342,15 @@
                                         this.clipboardAction = null;
                                     }
 
-                                    this.clipboardAction = new _clipboardAction2.default(
-                                        {
+                                    this.clipboardAction =
+                                        new _clipboardAction2.default({
                                             action: this.action(trigger),
                                             target: this.target(trigger),
                                             text: this.text(trigger),
                                             container: this.container,
                                             trigger: trigger,
                                             emitter: this,
-                                        }
-                                    );
+                                        });
                                 },
 
                                 /**
@@ -433,7 +429,8 @@
                                         typeof action === "string"
                                             ? [action]
                                             : action;
-                                    var support = !!document.queryCommandSupported;
+                                    var support =
+                                        !!document.queryCommandSupported;
 
                                     actions.forEach(function (action) {
                                         support =
@@ -613,9 +610,8 @@
                                         this.fakeHandlerCallback
                                     ) || true;
 
-                                this.fakeElem = document.createElement(
-                                    "textarea"
-                                );
+                                this.fakeElem =
+                                    document.createElement("textarea");
                                 // Prevent zooming on iOS
                                 this.fakeElem.style.fontSize = "12pt";
                                 // Reset box model
@@ -713,9 +709,8 @@
                                         action: this.action,
                                         text: this.selectedText,
                                         trigger: this.trigger,
-                                        clearSelection: this.clearSelection.bind(
-                                            this
-                                        ),
+                                        clearSelection:
+                                            this.clearSelection.bind(this),
                                     }
                                 );
                             },
@@ -1042,11 +1037,12 @@
 
                     return {
                         destroy: function () {
-                            Array.prototype.forEach.call(nodeList, function (
-                                node
-                            ) {
-                                node.removeEventListener(type, callback);
-                            });
+                            Array.prototype.forEach.call(
+                                nodeList,
+                                function (node) {
+                                    node.removeEventListener(type, callback);
+                                }
+                            );
                         },
                     };
                 }
@@ -1199,17 +1195,18 @@
                     }
 
                     // Handle Array-like based usage
-                    return Array.prototype.map.call(elements, function (
-                        element
-                    ) {
-                        return _delegate(
-                            element,
-                            selector,
-                            type,
-                            callback,
-                            useCapture
-                        );
-                    });
+                    return Array.prototype.map.call(
+                        elements,
+                        function (element) {
+                            return _delegate(
+                                element,
+                                selector,
+                                type,
+                                callback,
+                                useCapture
+                            );
+                        }
+                    );
                 }
 
                 /**

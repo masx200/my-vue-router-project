@@ -10,7 +10,7 @@ specifiers:
   '@babel/preset-react': ^7.13.13
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': ^1.1.1
   '@masx200/vue-simple-global-state-store-manager': https://github.com/masx200/vue-simple-global-state-store-manager
-  '@masx200/webpack-react-vue-spa-awesome-config': ^3.0.8
+  '@masx200/webpack-react-vue-spa-awesome-config': 3.1.0
   '@types/jquery': 3.5.5
   '@types/node': 15.6.1
   '@types/react': 17.0.6
@@ -100,7 +100,7 @@ devDependencies:
   '@babel/preset-react': 7.13.13_@babel+core@7.14.3
   '@masx200/acorn-parse-escodegen-generate-esm-broweser': 1.1.1
   '@masx200/vue-simple-global-state-store-manager': github.com/masx200/vue-simple-global-state-store-manager/70c7dd08f6bc2c56fd9db1f21b6a79ec4021607c_vue@2.6.12
-  '@masx200/webpack-react-vue-spa-awesome-config': 3.0.8
+  '@masx200/webpack-react-vue-spa-awesome-config': 3.1.0
   '@types/jquery': 3.5.5
   '@types/node': 15.6.1
   '@types/react': 17.0.6
@@ -2260,8 +2260,8 @@ packages:
       acorn: 7.4.1
     dev: true
 
-  /@masx200/webpack-react-vue-spa-awesome-config/3.0.8:
-    resolution: {integrity: sha512-YKd7l13DqB2iL0lF5+uOnMmKzs3cPM8bIAKmHlCn3jNw5UD68pRg/ueZIwqzonF9nz/VDPDggcrJ+K1knobHmA==}
+  /@masx200/webpack-react-vue-spa-awesome-config/3.1.0:
+    resolution: {integrity: sha512-DOqvz235FmLT4DhoS/TJd9l3ZtRceeFBmA84Q9GYtQeaCKhBFgIC1DwbQdoxyynyqHkzNMKIm1sEHj8tIkQ/YA==}
     hasBin: true
     dependencies:
       '@babel/core': 7.14.3
@@ -2279,6 +2279,7 @@ packages:
       '@types/terser-webpack-plugin': 5.0.3_webpack-cli@4.7.0
       '@types/webpack': 5.28.0_webpack-cli@4.7.0
       '@types/workbox-webpack-plugin': 5.1.6
+      '@vue/preload-webpack-plugin': 2.0.0_38447b79675a32e71181d8d9095cb077
       babel-loader: 8.2.2_303f800143e2efa12d42f5e3c0abbfbc
       babel-plugin-htm: 3.0.0
       babel-plugin-named-asset-import: 0.3.7_@babel+core@7.14.3
@@ -2291,6 +2292,7 @@ packages:
       css-loader: 5.2.6_webpack@5.37.1
       fast-sass-loader: 2.0.0_sass@1.32.12+webpack@5.37.1
       file-loader: 6.2.0_webpack@5.37.1
+      htm: 3.0.4
       html-webpack-plugin: 5.3.1_webpack@5.37.1
       json-loader: 0.5.7
       less: 4.1.1
@@ -2637,6 +2639,17 @@ packages:
       vue-template-es2015-compiler: 1.9.1
     optionalDependencies:
       prettier: 1.19.1
+    dev: true
+
+  /@vue/preload-webpack-plugin/2.0.0_38447b79675a32e71181d8d9095cb077:
+    resolution: {integrity: sha512-RoorRB50WehYbsiWu497q8egZBYlrvOo9KBUG41uth4O023Cbs+7POLm9uw2CAiViBAIhvpw1Y4w4i+MZxOfXw==}
+    engines: {node: '>=6.0.0'}
+    peerDependencies:
+      html-webpack-plugin: ^5.0.0 || ^4.5.1
+      webpack: ^5.20.0 || ^4.1.0
+    dependencies:
+      html-webpack-plugin: 5.3.1_webpack@5.37.1
+      webpack: 5.37.1_webpack-cli@4.7.0
     dev: true
 
   /@webassemblyjs/ast/1.11.0:
