@@ -21,7 +21,7 @@ window.addEventListener(
     "load",
     () => {
         //   import("bootstrap/dist/js/bootstrap.bundle");
-        import("./assetsutils/clipboard").then((module) => {
+        import("clipboard").then((module) => {
             const ClipboardJS = module.default;
             new ClipboardJS(".btn").on("success", function (e) {
                 e.clearSelection();

@@ -32,6 +32,7 @@ specifiers:
   browserslist: ^4.16.6
   case-sensitive-paths-webpack-plugin: ^2.4.0
   clean-webpack-plugin: ^4.0.0-alpha.0
+  clipboard: ^2.0.8
   copy-webpack-plugin: ^9.0.0
   core-js: ^3.12.1
   css-loader: ^5.2.6
@@ -89,6 +90,7 @@ specifiers:
 
 dependencies:
   browserslist: 4.16.6
+  clipboard: 2.0.8
 
 devDependencies:
   '@babel/core': 7.14.3
@@ -4066,6 +4068,14 @@ packages:
       chalk: 1.1.3
     dev: true
 
+  /clipboard/2.0.8:
+    resolution: {integrity: sha512-Y6WO0unAIQp5bLmk1zdThRhgJt/x3ks6f30s3oE3H1mgIEU33XyQjEf8gsf6DxC7NPX8Y1SsNWjUjL/ywLnnbQ==}
+    dependencies:
+      good-listener: 1.2.2
+      select: 1.1.2
+      tiny-emitter: 2.1.0
+    dev: false
+
   /cliui/3.2.0:
     resolution: {integrity: sha1-EgYBU3qRbSmUD5NNo7SNWFo5IT0=}
     dependencies:
@@ -4836,6 +4846,10 @@ packages:
     resolution: {integrity: sha1-3zrhmayt+31ECqrgsp4icrJOxhk=}
     engines: {node: '>=0.4.0'}
     dev: true
+
+  /delegate/3.2.0:
+    resolution: {integrity: sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw==}
+    dev: false
 
   /delegates/1.0.0:
     resolution: {integrity: sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=}
@@ -5764,6 +5778,12 @@ packages:
       lodash: 4.17.21
       minimatch: 3.0.4
     dev: true
+
+  /good-listener/1.2.2:
+    resolution: {integrity: sha1-1TswzfkxPf+33JoNR3CWqm0UXFA=}
+    dependencies:
+      delegate: 3.2.0
+    dev: false
 
   /graceful-fs/4.2.6:
     resolution: {integrity: sha512-nTnJ528pbqxYanhpDYsi4Rd8MAeaBA67+RZ10CM1m3bTAVFEDcd5AuA4a6W5YkGZ1iNXHzZz8T6TBKLeBuNriQ==}
@@ -9519,6 +9539,10 @@ packages:
     resolution: {integrity: sha1-Yl2GWPhlr0Psliv8N2o3NZpJlMo=}
     dev: true
 
+  /select/1.1.2:
+    resolution: {integrity: sha1-DnNQrN7ICxEIUoeG7B1EGNEbOW0=}
+    dev: false
+
   /selfsigned/1.10.11:
     resolution: {integrity: sha512-aVmbPOfViZqOZPgRBT0+3u4yZFHpmnIghLMlAcb5/xhp5ZtB/RVnKhz5vl2M32CLXAqR4kha9zfhNg0Lf/sxKA==}
     dependencies:
@@ -10193,6 +10217,10 @@ packages:
   /timsort/0.3.0:
     resolution: {integrity: sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=}
     dev: true
+
+  /tiny-emitter/2.1.0:
+    resolution: {integrity: sha512-NB6Dk1A9xgQPMoGqC5CVXn123gWyte215ONT5Pp5a0yt4nlEoO1ZWeCwpncaekPHXO60i47ihFnZPiRPjRMq4Q==}
+    dev: false
 
   /to-fast-properties/1.0.3:
     resolution: {integrity: sha1-uDVx+k2MJbguIxsG46MFXeTKGkc=}
