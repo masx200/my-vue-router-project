@@ -98,7 +98,7 @@
                                     >美化javascript代码</router-link
                                 >
                             </li>
-                            <li>
+                           <!-- <li>
                                 <a
                                     href="https://masx200-github-io.masx200.vercel.app/index.html#/react-home"
                                     class="
@@ -117,7 +117,7 @@
                                     "
                                     >圆周率计算多线程</a
                                 >
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                 </div>
