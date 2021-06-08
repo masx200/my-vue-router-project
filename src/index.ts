@@ -1,3 +1,4 @@
+import { initloadingid } from "./initloadingid.ts";
 import "./error-alert.js";
 import VueRouter from "vue-router";
 //@ts-ignore
@@ -12,7 +13,7 @@ import "./pre-wrap.css";
 ("use strict");
 const rootele = document.getElementById("root");
 rootele &&
-    (rootele.innerHTML = `<div>
+    (rootele.innerHTML = `<div id=${initloadingid}>
 <h1>loading</h1>
 <span class="mui-spinner mui-spinner-custom">
 

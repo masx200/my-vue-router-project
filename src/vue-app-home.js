@@ -21,6 +21,8 @@ let App = Vue.extend({
         },
     },
     mounted() {
+        var initloadele = document.getElementById(initloadingid);
+        initloadele && (initloadele.style.display = "none");
         this.myfreshdata();
         hashchangehandler();
         $("#mynavul").click(hashchangehandler);
@@ -28,3 +30,4 @@ let App = Vue.extend({
     },
 });
 export default App;
+import { initloadingid } from "./initloadingid.ts";

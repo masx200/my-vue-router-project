@@ -15,12 +15,12 @@ herewindowonload();
 function herewindowonload() {
     if (haverun == 0) {
         haverun = 1;
-        myonloadfunc();
+        // myonloadfunc();
     } else {
         console.log("不要重复运行此onload函数");
     }
 }
-function myonloadfunc() {}
+//function myonloadfunc() {}
 window.addEventListener("resize", () => {
     requestAnimationFrame(() => {
         $("#my主体").css("padding-top", $("#my导航栏").height());
