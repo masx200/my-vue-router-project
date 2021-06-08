@@ -17,7 +17,7 @@
                                 navbar-brand
                                 mui-btn mui-btn-primary mui-btn-outlined
                             "
-                            href="../index.html"
+                            href="./index.html"
                             >masx200的github主页</a
                         >
                         <button
