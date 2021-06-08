@@ -100,7 +100,7 @@
                             </li>
                             <li>
                                 <a
-                                    href="https://masx200-github-io.masx200.vercel.app/index.html#/react-home"
+                                    href="https://masx200-github-io-masx200.vercel.app/#/react-home"
                                     class="
                                         nav-link
                                         mui-btn mui-btn-primary mui-btn-outlined
@@ -110,7 +110,7 @@
                             </li>
                             <li class>
                                 <a
-                                    href="https://masx200-github-io.masx200.vercel.app/index.html#/picalc"
+                                    href="https://masx200-github-io-masx200.vercel.app/#/picalc"
                                     class="
                                         nav-link
                                         mui-btn mui-btn-primary mui-btn-outlined
