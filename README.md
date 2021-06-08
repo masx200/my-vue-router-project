@@ -23,13 +23,14 @@ https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser
 ## Build Setup
 
 # install dependencies
-
+```
 npm install
-
+```
 # serve with hot reload
-
+```
 npm run start
-
+```
 # build for production with minification
-
+```
 npm run build
+```
