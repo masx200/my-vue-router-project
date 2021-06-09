@@ -6,7 +6,7 @@ function launchworker() {
         worker = new Worker();
     }
 }
-export function 关闭所有worker() {
+export function 关闭所有worker1() {
     worker?.terminate();
     worker = undefined;
 }
