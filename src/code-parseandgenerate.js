@@ -6,6 +6,10 @@ function launchworker() {
         worker = new Worker();
     }
 }
+export function 关闭所有worker() {
+    worker?.terminate();
+    worker = undefined;
+}
 export default function (sourcecode) {
     launchworker();
     return new Promise((resolve, rj) => {

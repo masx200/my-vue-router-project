@@ -1,4 +1,6 @@
 // @ts-ignore
+import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
+import codeparseandgenerate from "./code-parseandgenerate.js";
 import Worker from "./markdown-highlight.worker.js";
 let worker;
 function launchworker() {
@@ -6,8 +8,10 @@ function launchworker() {
         worker = new Worker();
     }
 }
-import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
-import codeparseandgenerate from "./code-parseandgenerate.js";
+export function 关闭所有worker() {
+    worker?.terminate();
+    worker = undefined;
+}
 export default async (input) => {
     launchworker();
     let output;
