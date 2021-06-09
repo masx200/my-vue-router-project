@@ -109,7 +109,10 @@
         "webpack-merge": "^5.7.3",
         "workbox-webpack-plugin": "^6.1.5",
         "worker-loader": "^3.0.8",
-        "yargs-parser": "20.2.7"
+        "yargs-parser": "20.2.7",
+        "browserslist": "^4.16.6",
+        "clipboard": "^2.0.8",
+        "tslib": "^2.2.0"
     },
     "main": "index.js",
     "bugs": {
@@ -118,8 +121,6 @@
     "homepage": "https://github.com/masx200/my-vue-router-project#readme",
     "keywords": [],
     "dependencies": {
-        "browserslist": "^4.16.6",
-        "clipboard": "^2.0.8",
-        "tslib": "^2.2.0"
+
     }
 }
