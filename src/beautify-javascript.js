@@ -7,6 +7,7 @@ export default {
     name: "beautifyjvascript",
     data() {
         return {
+            disablebutton: false,
             分屏状态: "上下分屏",
             input: "",
             模式左右: true,
@@ -28,6 +29,7 @@ export default {
         },
         transformcode() {
             //alert("transformcode")
+            this.disablebutton = true;
             asynchighlighttext(this.input)
                 .then((output) => {
                     this.$refs.输出框.innerHTML = output;
@@ -40,6 +42,7 @@ export default {
                     alert(errtxt);
                 })
                 .finally(() => {
+                    this.disablebutton = false;
                     this.$refs.detail1.open = false;
                     this.$refs.detail2.open = true;
                 });

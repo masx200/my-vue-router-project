@@ -15,6 +15,7 @@
         <button
             class="btn btn-outline-primary clipbutton"
             v-on:click="transformcode()"
+            :disabled="disablebutton"
         >
             转换
         </button>

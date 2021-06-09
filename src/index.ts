@@ -1,3 +1,4 @@
+//@ts-ignore
 import { initloadingid } from "./initloadingid.ts";
 import "./error-alert.js";
 import VueRouter from "vue-router";

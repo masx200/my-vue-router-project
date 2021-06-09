@@ -16,10 +16,10 @@ const selectclass = class extends Array {
     constructor(ele) {
         "use strict";
         super();
-        this.button.loading = () => {
+        this.buttonloading = () => {
             return this.button("loading");
         };
-        this.button.reset = () => {
+        this.buttonreset = () => {
             return this.button("reset");
         };
         //   this.push = Array.prototype.push;
