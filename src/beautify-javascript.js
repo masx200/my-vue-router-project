@@ -79,3 +79,4 @@ export default {
         关闭所有worker2();
     },
 };
+import $ from 'jquery'
