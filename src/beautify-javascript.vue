@@ -3,7 +3,7 @@
     <div>
         <h2>美化JavaScript代码</h2>
         <h3>
-          使用acorn生成抽象语法树,
+            使用acorn生成抽象语法树,
             <br />使用escodegen生成代码
         </h3>
         <h4>删除注释,并格式整理</h4>

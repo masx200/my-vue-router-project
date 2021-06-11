@@ -1,9 +1,8 @@
 import $ from "jquery";
-import asynchighlighttext, {
-    关闭所有worker2,
-} from "./async-highlight-js-text.js";
+import { 关闭所有worker2 } from "./async-highlight-js-text.js";
 import { 关闭所有worker1 } from "./code-parseandgenerate.js";
 import lashentextarea from "./function-lashentextarea.js";
+import { transformall } from "./transformall.js";
 export default {
     name: "beautifyjvascript",
     data() {
@@ -31,7 +30,7 @@ export default {
         transformcode() {
             //alert("transformcode")
             this.disablebutton = true;
-            asynchighlighttext(this.input)
+            transformall(this.input)
                 .then((output) => {
                     this.$refs.输出框.innerHTML = output;
                     //    alert(output);

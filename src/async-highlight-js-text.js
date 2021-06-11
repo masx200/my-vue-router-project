@@ -1,6 +1,5 @@
 // @ts-ignore
 import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
-import codeparseandgenerate from "./code-parseandgenerate.js";
 import Worker from "./markdown-highlight.worker.js";
 let worker;
 function launchworker() {
@@ -16,8 +15,8 @@ export default async (input) => {
     launchworker();
     let output;
     try {
-        var code = await codeparseandgenerate(input);
-        const text = code;
+        // var code = await codeparseandgenerate(input);
+        const text = input;
         output = await new Promise((resolve, rj) => {
             worker.onmessage = (e) => {
                 resolve(e.data);
