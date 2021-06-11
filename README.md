@@ -14,10 +14,9 @@ https://github.com/masx200/vue-simple-global-state-store-manager
 
 https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser
 
-使用prettier进行代码格式化
+使用 prettier 进行代码格式化
 
 https://www.npmjs.com/package/prettier
-
 
 # my-project
 
