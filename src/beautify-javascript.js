@@ -2,7 +2,7 @@ import $ from "jquery";
 import { 关闭所有worker2 } from "./async-highlight-js-text.js";
 import { 关闭所有worker1 } from "./code-parseandgenerate.js";
 import lashentextarea from "./function-lashentextarea.js";
-import { transformall } from "./transformall.js";
+import { transformall } from "./transformallcode.js";
 export default {
     name: "beautifyjvascript",
     data() {
