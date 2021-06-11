@@ -27,6 +27,18 @@ let App = Vue.extend({
         hashchangehandler();
         $("#mynavul").click(hashchangehandler);
         $("#my主体").css("padding-top", $("#my导航栏").height());
+        requestAnimationFrame(() => {
+            $("#my主体").css("padding-top", $("#my导航栏").height());
+        });
+        let timer = setInterval(() => {
+            $("#my主体").css("padding-top", $("#my导航栏").height());
+            console.log($("#my导航栏").height());
+        }, 0);
+        setTimeout(() => {
+            $("#my主体").css("padding-top", $("#my导航栏").height());
+            console.log($("#my导航栏").height());
+            clearInterval(timer);
+        }, 1000);
     },
 });
 export default App;
