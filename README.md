@@ -1,8 +1,8 @@
 # my-vue-router-project-webpack
 
-https://github.com/masx200/my-vue-router-project
-
 使用 webpack-react-vue-spa-awesome-config 打包
+
+https://github.com/masx200/my-vue-router-project
 
 https://github.com/masx200/webpack-react-vue-spa-awesome-config
 
@@ -12,11 +12,7 @@ https://github.com/masx200/vue-simple-global-state-store-manager
 
 添加了 javascript 代码美化功能,借用掘金网的代码的高亮样式
 
-https://prettier.io/docs/en/api.html
-
-https://babeljs.io/docs/en/babel-parser
-
-https://babeljs.io/docs/en/babel-generator
+https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser
 
 # my-project
 
