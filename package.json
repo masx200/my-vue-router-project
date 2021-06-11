@@ -120,7 +120,5 @@
     },
     "homepage": "https://github.com/masx200/my-vue-router-project#readme",
     "keywords": [],
-    "dependencies": {
-
-    }
+    "dependencies": {}
 }

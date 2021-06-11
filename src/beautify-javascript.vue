@@ -4,8 +4,7 @@
         <h2>美化JavaScript代码</h2>
         <h3>
             使用"@babel/parser"生成抽象语法树,
-            <br />使用"@babel/generator"生成代码
-            <br/>使用"prettier"美化代码
+            <br />使用"@babel/generator"生成代码 <br />使用"prettier"美化代码
         </h3>
         <h4>删除注释,并格式整理</h4>
         <button
