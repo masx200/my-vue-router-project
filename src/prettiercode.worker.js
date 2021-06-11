@@ -1,7 +1,7 @@
 // import prettier from "prettier/esm/standalone.mjs";
 // import parserbabel from "prettier/esm/parser-babel.mjs";
-importScripts("https://unpkg.com/prettier/standalone.js");
-importScripts("https://unpkg.com/prettier/parser-babel.js");
+importScripts("https://unpkg.com/prettier@2.3.1/standalone.js");
+importScripts("https://unpkg.com/prettier@2.3.1/parser-babel.js");
 console.log(prettier, prettierPlugins);
 import prettierconfig from "./prettierconfig.json";
 self.onmessage = (e) => {
