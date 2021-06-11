@@ -40,11 +40,15 @@ export default {
 
                     this.$refs.输出框.innerText = errtxt;
                     alert(errtxt);
+                    throw e;
                 })
                 .finally(() => {
                     this.disablebutton = false;
                     this.$refs.detail1.open = false;
                     this.$refs.detail2.open = true;
+                    if (this.分屏状态 == "上下分屏") {
+                        this.切换左右分屏();
+                    }
                 });
         },
         拉伸文本框() {
