@@ -72,7 +72,9 @@ export default {
     mounted() {
         document.title = "美化JavaScript代码";
         window.addEventListener("resize", this.拉伸文本框);
-        $("#my主体").css("padding-top", $("#my导航栏").height());
+        requestAnimationFrame(() => {
+            $("#my主体").css("padding-top", $("#my导航栏").height());
+        });
     },
     beforeDestroy() {
         window.removeEventListener("resize", this.拉伸文本框);
