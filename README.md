@@ -12,7 +12,11 @@ https://github.com/masx200/vue-simple-global-state-store-manager
 
 添加了 javascript 代码美化功能,借用掘金网的代码的高亮样式
 
-https://github.com/masx200/acorn-parse-escodegen-generate-esm-broweser
+https://prettier.io/docs/en/api.html
+
+https://babeljs.io/docs/en/babel-parser
+
+https://babeljs.io/docs/en/babel-generator
 
 # my-project
 
