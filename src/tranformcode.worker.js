@@ -1,6 +1,6 @@
 import generate from "@babel/generator";
 import { parse } from "@babel/parser";
-
+self.process = { env: {} };
 self.onmessage = (e) => {
     const source = e.data;
     const code = transform(source);
