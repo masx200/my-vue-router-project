@@ -4,7 +4,8 @@
         <h2>美化JavaScript代码</h2>
         <h3>
             使用acorn生成抽象语法树,
-            <br />使用escodegen生成代码
+            <br />使用escodegen生成代码<br />
+使用prettier进行代码格式化
         </h3>
         <h4>删除注释,并格式整理</h4>
         <button
