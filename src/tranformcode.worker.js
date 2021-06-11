@@ -1,6 +1,7 @@
-import generate from "@babel/generator";
-import { parse } from "@babel/parser";
-
+import {
+    generate,
+    parse,
+} from "@masx200/acorn-parse-escodegen-generate-esm-broweser";
 self.onmessage = (e) => {
     const source = e.data;
     const code = transform(source);
@@ -9,22 +10,13 @@ self.onmessage = (e) => {
 };
 function transform(sourcecode) {
     console.log(sourcecode);
-    var ast = parse(sourcecode, {
-        // parse in strict mode and allow module declarations
-        sourceType: "module",
-
-        plugins: [
-            // enable jsx and flow syntax
-            "jsx",
-            "typescript",
-        ],
-    });
-    var output = generate(
+    var ast = parse(sourcecode, { sourceType: "module" });
+    var code = generate(
         ast,
-        { comments: false }
+        { comment: false }
         // { parse: parse }
         // { parse: Parser.extend(dynamicImport) }
     );
-    console.log(output);
-    return output.code;
+    console.log(code);
+    return code;
 }
