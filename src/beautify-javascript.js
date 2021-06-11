@@ -3,6 +3,7 @@ import { 关闭所有worker2 } from "./async-highlight-js-text.js";
 import { 关闭所有worker1 } from "./code-parseandgenerate.js";
 import lashentextarea from "./function-lashentextarea.js";
 import { transformall } from "./transformallcode.js";
+import { 关闭所有worker3 } from "./work-code-prettier.js";
 export default {
     name: "beautifyjvascript",
     data() {
@@ -93,5 +94,6 @@ export default {
         window.removeEventListener("resize", this.拉伸文本框);
         关闭所有worker1();
         关闭所有worker2();
+        关闭所有worker3();
     },
 };

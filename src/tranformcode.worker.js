@@ -11,12 +11,12 @@ self.onmessage = (e) => {
 function transform(sourcecode) {
     console.log(sourcecode);
     var ast = parse(sourcecode, { sourceType: "module" });
-    var code = generate(
+    var output = generate(
         ast,
         { comment: false }
         // { parse: parse }
         // { parse: Parser.extend(dynamicImport) }
     );
-    console.log(code);
-    return code;
+    console.log(output);
+    return output;
 }
