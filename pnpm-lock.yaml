@@ -8,16 +8,12 @@ specifiers:
   '@babel/plugin-syntax-dynamic-import': ^7.8.3
   '@babel/preset-env': ^7.14.2
   '@babel/preset-react': ^7.13.13
-  '@masx200/acorn-parse-escodegen-generate-esm-broweser': ^1.1.1
   '@masx200/vue-simple-global-state-store-manager': https://github.com/masx200/vue-simple-global-state-store-manager
   '@masx200/webpack-react-vue-spa-awesome-config': 3.2.1
   '@types/jquery': 3.5.5
   '@types/node': 15.6.1
   '@types/react': 17.0.6
   '@types/webpack': ^5.28.0
-  acorn: ^8.2.4
-  acorn-dynamic-import: ^4.0.0
-  acorn-jsx: ^5.3.1
   autoprefixer: ^10.2.5
   babel-core: ^6.26.3
   babel-generator: ^6.26.1
@@ -37,7 +33,6 @@ specifiers:
   core-js: ^3.12.1
   css-loader: ^5.2.6
   error: ^10.4.0
-  escodegen: ^2.0.0
   file-loader: ^6.2.0
   highlight.js: ^10.7.2
   html-webpack-plugin: ^5.3.1
@@ -52,7 +47,6 @@ specifiers:
   node-sass: 6.0.0
   optimize-css-assets-webpack-plugin: ^6.0.0
   pnp-webpack-plugin: ^1.6.4
-  popper.js: ^1.16.1
   postcss: 8.3.0
   postcss-flexbugs-fixes: ^5.0.2
   postcss-loader: ^5.3.0
@@ -97,16 +91,12 @@ devDependencies:
   '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.14.5
   '@babel/preset-env': 7.14.5_@babel+core@7.14.5
   '@babel/preset-react': 7.14.5_@babel+core@7.14.5
-  '@masx200/acorn-parse-escodegen-generate-esm-broweser': 1.1.1
   '@masx200/vue-simple-global-state-store-manager': github.com/masx200/vue-simple-global-state-store-manager/70c7dd08f6bc2c56fd9db1f21b6a79ec4021607c_vue@2.6.14
   '@masx200/webpack-react-vue-spa-awesome-config': 3.2.1
   '@types/jquery': 3.5.5
   '@types/node': 15.6.1
   '@types/react': 17.0.6
   '@types/webpack': 5.28.0_webpack-cli@4.7.2
-  acorn: 8.3.0
-  acorn-dynamic-import: 4.0.0_acorn@8.3.0
-  acorn-jsx: 5.3.1_acorn@8.3.0
   autoprefixer: 10.2.6_postcss@8.3.0
   babel-core: 6.26.3
   babel-generator: 6.26.1
@@ -126,7 +116,6 @@ devDependencies:
   core-js: 3.14.0
   css-loader: 5.2.6_webpack@5.38.1
   error: 10.4.0
-  escodegen: 2.0.0
   file-loader: 6.2.0_webpack@5.38.1
   highlight.js: 10.7.3
   html-webpack-plugin: 5.3.1_webpack@5.38.1
@@ -141,7 +130,6 @@ devDependencies:
   node-sass: 6.0.0
   optimize-css-assets-webpack-plugin: 6.0.0_webpack@5.38.1
   pnp-webpack-plugin: 1.6.4_typescript@4.3.2
-  popper.js: 1.16.1
   postcss: 8.3.0
   postcss-flexbugs-fixes: 5.0.2_postcss@8.3.0
   postcss-loader: 5.3.0_postcss@8.3.0+webpack@5.38.1
@@ -2410,13 +2398,6 @@ packages:
       '@hapi/hoek': 8.5.1
     dev: true
 
-  /@masx200/acorn-parse-escodegen-generate-esm-broweser/1.1.1:
-    resolution: {integrity: sha512-pZh1/ZMKHHkUnJl+AA1xsfBMGhZPnAQC/n51y2eMKGHlvamULHF7UrMccAt7jWdx7w3ufL5BN9cYb0/JOhXKag==}
-    dependencies:
-      '@types/escodegen': 0.0.6
-      acorn: 7.4.1
-    dev: true
-
   /@masx200/webpack-react-vue-spa-awesome-config/3.2.1:
     resolution: {integrity: sha512-qUWbxj6btBfCvfFDTcueN4XiX4PZKTVBaNhPM5glt6kA1U7qdsijo8AhBKEynswrIXvKvs/2YkhUOkg/vjM3Qw==}
     hasBin: true
@@ -2600,10 +2581,6 @@ packages:
     dependencies:
       '@types/node': 15.12.2
       source-map: 0.6.1
-    dev: true
-
-  /@types/escodegen/0.0.6:
-    resolution: {integrity: sha1-UjCpznluBCzabwhtvxnyLqMwZZw=}
     dev: true
 
   /@types/eslint-scope/3.7.0:
@@ -2976,28 +2953,6 @@ packages:
     dependencies:
       mime-types: 2.1.31
       negotiator: 0.6.2
-    dev: true
-
-  /acorn-dynamic-import/4.0.0_acorn@8.3.0:
-    resolution: {integrity: sha512-d3OEjQV4ROpoflsnUA8HozoIR504TFxNivYEUi6uwz0IYhBkTDXGuWlNdMtybRt3nqVx/L6XqMt0FxkXuWKZhw==}
-    peerDependencies:
-      acorn: ^6.0.0
-    dependencies:
-      acorn: 8.3.0
-    dev: true
-
-  /acorn-jsx/5.3.1_acorn@8.3.0:
-    resolution: {integrity: sha512-K0Ptm/47OKfQRpNQ2J/oIN/3QYiK6FwW+eJbILhsdxh2WTLdl+30o8aGdTbm5JbffpFFAg/g+zi1E+jvJha5ng==}
-    peerDependencies:
-      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
-    dependencies:
-      acorn: 8.3.0
-    dev: true
-
-  /acorn/7.4.1:
-    resolution: {integrity: sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
     dev: true
 
   /acorn/8.3.0:
@@ -4960,10 +4915,6 @@ packages:
       regexp.prototype.flags: 1.3.1
     dev: true
 
-  /deep-is/0.1.3:
-    resolution: {integrity: sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ=}
-    dev: true
-
   /deep-scope-analyser/1.7.0:
     resolution: {integrity: sha512-rl5Dmt2IZkFpZo6XbEY1zG8st2Wpq8Pi/dV2gz8ZF6BDYt3fnor2JNxHwdO1WLo0k6JbmYp0x8MNy8kE4l1NtA==}
     dependencies:
@@ -5294,19 +5245,6 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: true
 
-  /escodegen/2.0.0:
-    resolution: {integrity: sha512-mmHKys/C8BFUGI+MAWNcSYoORYLMdPzjrknd2Vc+bUsjN5bXcr8EhrNB+UTqfL1y3I9c4fw2ihgtMPQLBRiQxw==}
-    engines: {node: '>=6.0'}
-    hasBin: true
-    dependencies:
-      esprima: 4.0.1
-      estraverse: 5.2.0
-      esutils: 2.0.3
-      optionator: 0.8.3
-    optionalDependencies:
-      source-map: 0.6.1
-    dev: true
-
   /eslint-scope/5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
     engines: {node: '>=8.0.0'}
@@ -5526,10 +5464,6 @@ packages:
 
   /fast-json-stable-stringify/2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
-    dev: true
-
-  /fast-levenshtein/2.0.6:
-    resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=}
     dev: true
 
   /fast-sass-loader/2.0.0_sass@1.32.12+webpack@5.38.1:
@@ -6943,14 +6877,6 @@ packages:
       source-map: 0.6.1
     dev: true
 
-  /levn/0.3.0:
-    resolution: {integrity: sha1-OwmSTt+fCDwEkP3UwLxEIeBHZO4=}
-    engines: {node: '>= 0.8.0'}
-    dependencies:
-      prelude-ls: 1.1.2
-      type-check: 0.3.2
-    dev: true
-
   /lines-and-columns/1.1.6:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
@@ -7703,18 +7629,6 @@ packages:
       webpack: 5.38.1_webpack-cli@4.7.2
     dev: true
 
-  /optionator/0.8.3:
-    resolution: {integrity: sha512-+IW9pACdk3XWmmTXG8m3upGUJst5XRGzxMRjXzAuJ1XnIFNvfhjjIuYkDvysnPQ7qzqVzLt78BCruntqRhWQbA==}
-    engines: {node: '>= 0.8.0'}
-    dependencies:
-      deep-is: 0.1.3
-      fast-levenshtein: 2.0.6
-      levn: 0.3.0
-      prelude-ls: 1.1.2
-      type-check: 0.3.2
-      word-wrap: 1.2.3
-    dev: true
-
   /original/1.0.2:
     resolution: {integrity: sha512-hyBVl6iqqUOJ8FqRe+l/gS8H+kKYjrEndd5Pm1MfBtsEKA038HkkdbAl/72EAXGyonD/PFsvmVG+EvcIpliMBg==}
     dependencies:
@@ -8003,11 +7917,6 @@ packages:
       ts-pnp: 1.2.0_typescript@4.3.2
     transitivePeerDependencies:
       - typescript
-    dev: true
-
-  /popper.js/1.16.1:
-    resolution: {integrity: sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==}
-    deprecated: You can find the new Popper v2 at @popperjs/core, this package is dedicated to the legacy v1
     dev: true
 
   /portfinder/1.0.28:
@@ -9040,11 +8949,6 @@ packages:
       colorette: 1.2.2
       nanoid: 3.1.23
       source-map-js: 0.6.2
-    dev: true
-
-  /prelude-ls/1.1.2:
-    resolution: {integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=}
-    engines: {node: '>= 0.8.0'}
     dev: true
 
   /prettier/1.19.1:
@@ -10535,13 +10439,6 @@ packages:
     resolution: {integrity: sha1-WuaBd/GS1EViadEIr6k/+HQ/T2Q=}
     dev: true
 
-  /type-check/0.3.2:
-    resolution: {integrity: sha1-WITKtRLPHTVeP7eE8wgEsrUg23I=}
-    engines: {node: '>= 0.8.0'}
-    dependencies:
-      prelude-ls: 1.1.2
-    dev: true
-
   /type-fest/0.16.0:
     resolution: {integrity: sha512-eaBzG6MxNzEn9kiwvtre90cXaNLkmadMWa1zQMs3XORCXNbsH/OewwbxC5ia9dCxIxnTAsSxXJaa/p5y8DlvJg==}
     engines: {node: '>=10'}
@@ -11118,11 +11015,6 @@ packages:
 
   /wildcard/2.0.0:
     resolution: {integrity: sha512-JcKqAHLPxcdb9KM49dufGXn2x3ssnfjbcaQdLlfZsL9rH9wgDQjUtDxbo8NE0F6SFvydeu1VhZe7hZuHsB2/pw==}
-    dev: true
-
-  /word-wrap/1.2.3:
-    resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
-    engines: {node: '>=0.10.0'}
     dev: true
 
   /workbox-background-sync/6.1.5:
