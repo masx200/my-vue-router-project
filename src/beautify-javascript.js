@@ -1,3 +1,4 @@
+import $ from "jquery";
 import asynchighlighttext, {
     关闭所有worker2,
 } from "./async-highlight-js-text.js";
@@ -79,4 +80,3 @@ export default {
         关闭所有worker2();
     },
 };
-import $ from 'jquery'
