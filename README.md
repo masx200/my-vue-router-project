@@ -1,10 +1,12 @@
 # my-vue-router-project-webpack
 
+https://github.com/masx200/my-vue-router-project
+
 使用 webpack-react-vue-spa-awesome-config 打包
 
 https://github.com/masx200/webpack-react-vue-spa-awesome-config
 
-https://github.com/masx200/my-vue-router-project
+
 
 添加了全局状态管理库,适用于 Vue.js 的极简全局状态管理库
 
