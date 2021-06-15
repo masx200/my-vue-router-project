@@ -1,4 +1,5 @@
-"use strict";
+import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
+("use strict");
 // @ts-ignore
 import AppHome from "./vue-app-home.vue";
 import $ from "jquery";
@@ -7,7 +8,8 @@ export const hashchangehandler = onhashchange;
 function onhashchange() {
     scrollTo(0, 0);
     $("#example-navbar-collapse").hide();
-    $("#my主体").css("padding-top", $("#my导航栏").height());
+    // $("#my主体").css("padding-top", $("#my导航栏").height());
+    调整导航栏和主体的距离();
 }
 $(window).on("hashchange", onhashchange);
 let haverun = 0;

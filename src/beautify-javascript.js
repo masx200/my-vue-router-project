@@ -1,9 +1,9 @@
-import $ from "jquery";
 import { 关闭所有worker2 } from "./async-highlight-js-text.js";
 import { 关闭所有worker1 } from "./code-parseandgenerate.js";
 import lashentextarea from "./function-lashentextarea.js";
 import { transformall } from "./transformallcode.js";
 import { 关闭所有worker3 } from "./work-code-prettier.js";
+import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
 export default {
     name: "beautifyjvascript",
     data() {
@@ -77,18 +77,7 @@ export default {
         document.title = "美化JavaScript代码";
         window.addEventListener("resize", this.拉伸文本框);
         //console.log($("#my导航栏").height());
-        requestAnimationFrame(() => {
-            $("#my主体").css("padding-top", $("#my导航栏").height());
-        });
-        let timer = setInterval(() => {
-            $("#my主体").css("padding-top", $("#my导航栏").height());
-            //console.log($("#my导航栏").height());
-        }, 0);
-        setTimeout(() => {
-            $("#my主体").css("padding-top", $("#my导航栏").height());
-            //console.log($("#my导航栏").height());
-            clearInterval(timer);
-        }, 1000);
+        调整导航栏和主体的距离();
     },
     beforeDestroy() {
         window.removeEventListener("resize", this.拉伸文本框);
