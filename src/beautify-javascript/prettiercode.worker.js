@@ -2,8 +2,8 @@
 // import parserbabel from "prettier/esm/parser-babel.mjs";
 // importScripts("https://unpkg.zhimg.com/prettier@2.3.1/standalone.js");
 // importScripts("https://unpkg.zhimg.com/prettier@2.3.1/parser-babel.js");
-import prettier from "./assetsutils/prettier/standalone.js";
-import parserbabel from "./assetsutils/prettier/parser-babel.js";
+import prettier from "@/assetsutils/prettier/standalone.js";
+import parserbabel from "@/assetsutils/prettier/parser-babel.js";
 const prettierPlugins = [parserbabel];
 console.log(prettier, prettierPlugins);
 import prettierconfig from "./prettierconfig.json";

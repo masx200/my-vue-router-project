@@ -3,7 +3,7 @@ import { 关闭所有worker1 } from "./code-parseandgenerate.js";
 import lashentextarea from "./function-lashentextarea.js";
 import { transformall } from "./transformallcode.js";
 import { 关闭所有worker3 } from "./work-code-prettier.js";
-import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
+import { 调整导航栏和主体的距离 } from "@/调整导航栏和主体的距离";
 export default {
     name: "beautifyjvascript",
     data() {

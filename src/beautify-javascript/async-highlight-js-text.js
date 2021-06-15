@@ -1,5 +1,5 @@
 // @ts-ignore
-import 弹出消息通用 from "./assetsutils/my弹出消息通用.js";
+import 弹出消息通用 from "@/assetsutils/my弹出消息通用.js";
 import Worker from "./markdown-highlight.worker.js";
 let worker;
 function launchworker() {

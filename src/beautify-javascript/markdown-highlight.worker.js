@@ -1,4 +1,4 @@
-import hljs from "./assetsutils/highlight.js";
+import hljs from "@/assetsutils/highlight.js";
 self.onmessage = (e) => {
     const source = e.data;
     const code = transform(source);

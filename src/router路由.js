@@ -22,7 +22,10 @@ var 我的路由列表 = [
         () => import("./vue-simple-global-state-store-manager.vue"),
     ],
     // @ts-ignore
-    ["/beautify-javascript", () => import("./beautify-javascript.vue")],
+    [
+        "/beautify-javascript",
+        () => import("./beautify-javascript/beautify-javascript.vue"),
+    ],
     ["*", home],
 ];
 const router = new VueRouter({
