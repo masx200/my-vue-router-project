@@ -1,7 +1,10 @@
 // import prettier from "prettier/esm/standalone.mjs";
 // import parserbabel from "prettier/esm/parser-babel.mjs";
-importScripts("https://unpkg.zhimg.com/prettier@2.3.1/standalone.js");
-importScripts("https://unpkg.zhimg.com/prettier@2.3.1/parser-babel.js");
+// importScripts("https://unpkg.zhimg.com/prettier@2.3.1/standalone.js");
+// importScripts("https://unpkg.zhimg.com/prettier@2.3.1/parser-babel.js");
+import prettier from "./assetsutils/prettier/standalone.mjs";
+import parserbabel from "./assetsutils/prettier/parser-babel.mjs";
+const prettierPlugins = [parserbabel];
 console.log(prettier, prettierPlugins);
 import prettierconfig from "./prettierconfig.json";
 self.onmessage = (e) => {
