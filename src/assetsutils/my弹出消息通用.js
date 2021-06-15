@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
+import { 调整导航栏和主体的距离 } from "../调整导航栏和主体的距离";
 function guid() {
     return "xxxxxxxx-xxxx-yxxx-yxxx-xxxxxxxxxxxx".replace(
         /[xy]/g,
