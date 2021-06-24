@@ -91,7 +91,7 @@
                                 v-html="output"
                                 class="form-control"
                                 id="clip50b92c49b148d93bba82d6b41a4651fce37"
-                                style="height: fit-content"
+                                style="height: max-content"
                             ></div>
                         </div>
                     </div>
