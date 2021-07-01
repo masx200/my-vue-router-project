@@ -78,7 +78,7 @@
                                     >关于VUE</router-link
                                 >
                             </li>
-                            <li>
+                            <!-- <li>
                                 <router-link
                                     to="/vue-simple-global-state-store-manager"
                                     class="
@@ -87,7 +87,7 @@
                                     "
                                     >适用于Vue的极简全局状态管理库</router-link
                                 >
-                            </li>
+                            </li> -->
                             <li>
                                 <router-link
                                     to="/beautify-javascript"

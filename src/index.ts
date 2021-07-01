@@ -3,7 +3,7 @@ import { initloadingid } from "./initloadingid.ts";
 import "./error-alert.js";
 import VueRouter from "vue-router";
 //@ts-ignore
-import SimpleStoreManager from "@masx200/vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
+// import SimpleStoreManager from "@masx200/vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
 import Vue from "vue";
 import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 import "./index.css";
@@ -41,7 +41,7 @@ Vue.config.silent = true;
 Vue.config.devtools = true;
 Vue.use(VueRouter);
 // console.log(SimpleStore);
-Vue.use(SimpleStoreManager);
+// Vue.use(SimpleStoreManager);
 Vue.config.errorHandler = function (err, vm, info) {
     throw err;
 };
