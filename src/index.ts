@@ -12,14 +12,18 @@ import "./mystyle.css";
 import "./pre-wrap.css";
 // import "webpack-react-vue-spa-awesome-config/ie11babelpolyfill";
 ("use strict");
-const rootele = document.getElementById("root");
-rootele &&
-    (rootele.innerHTML = `<div id=${initloadingid}>
+const rootele =
+    document.getElementById("root") ||
+    document.body.appendChild(document.createElement("div"));
+Object.assign(rootele, { id: "root" });
+if (!document.getElementById("app")) {
+    rootele &&
+        (rootele.innerHTML = `<div id=${initloadingid}>
 <h1>loading</h1>
 <span class="mui-spinner mui-spinner-custom">
 
 </span></div>`);
-
+}
 // eslint-disable-next-line no-undef
 
 window.addEventListener(
@@ -46,22 +50,20 @@ Vue.config.errorHandler = function (err, vm, info) {
     throw err;
 };
 import("./vue-index-render.js").then(({ router, default: AppHome }) => {
+    const container =
+        document.getElementById("app") ||
+        rootele.appendChild(document.createElement("div"));
+    Object.assign(container, { id: "app" });
     // var AppHome=default
     const vm = new Vue({
-        // el: document
-        //     .querySelector("#root")
-        //     .appendChild(document.createElement("div")),
         router,
-        //   components: {
-        //     //   App
-        //   },
-        // template: "<App/>"
+
         render(h) {
             return h(AppHome);
         },
-        // data() {
-        //   return {};
-        // }
     });
-    rootele && vm.$mount(rootele.appendChild(document.createElement("div")));
+    rootele && vm.$mount(container);
+    Object.assign(vm.$el, {
+        id: "app",
+    });
 });

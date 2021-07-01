@@ -1,1 +1,3 @@
 /dist/
+src/assetsutils/prettier/parser-babel.js
+src/assetsutils/prettier/standalone.js
