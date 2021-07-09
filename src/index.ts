@@ -7,7 +7,7 @@ import VueRouter from "vue-router";
 import Vue from "vue";
 import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 import "./index.css";
-import "./juejin-highlight-markdown-0.c4305b077afc652cb76a.css";
+// import "./juejin-highlight-markdown-0.c4305b077afc652cb76a.css";
 import "./mystyle.css";
 import "./pre-wrap.css";
 // import "webpack-react-vue-spa-awesome-config/ie11babelpolyfill";
