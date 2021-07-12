@@ -15,3 +15,9 @@ div,
 input {
     text-align: center;
 }
+* {
+    transition-property: all;
+    transition-duration: 0s !important;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
