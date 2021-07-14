@@ -2,11 +2,11 @@
 // import parserbabel from "prettier/esm/parser-babel.mjs";
 // importScripts("https://unpkg.zhimg.com/prettier@2.3.1/standalone.js");
 // importScripts("https://unpkg.zhimg.com/prettier@2.3.1/parser-babel.js");
-import prettier from "@/assetsutils/prettier/standalone.js";
 import parserbabel from "@/assetsutils/prettier/parser-babel.js";
+import prettier from "@/assetsutils/prettier/standalone.js";
+import prettierconfig from "./prettierconfig.json";
 const prettierPlugins = [parserbabel];
 console.log(prettier, prettierPlugins);
-import prettierconfig from "./prettierconfig.json";
 self.onmessage = (e) => {
     const source = e.data;
     const code = transform(source);
