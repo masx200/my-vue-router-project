@@ -114,6 +114,6 @@
     "homepage": "https://github.com/masx200/my-vue-router-project#readme",
     "keywords": [],
     "dependencies": {
-        "@masx200/ie11-usual-ployfills": "^1.0.2"
+        "@masx200/ie11-usual-polyfills": "^1.0.2"
     }
 }
