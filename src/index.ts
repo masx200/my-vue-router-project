@@ -1,12 +1,10 @@
-import "./styles.ts";
+import "./polyfill";
+import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
+import * as Vue from "vue";
+import "./error-alert.js";
 //@ts-ignore
 import { initloadingid } from "./initloadingid.ts";
-import "./error-alert.js";
-import VueRouter from "vue-router";
-//@ts-ignore
-// import SimpleStoreManager from "@masx200/vue-simple-global-state-store-manager"; // bindGlobalStore // initGlobalState,
-import Vue from "vue";
-import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
+import "./styles.ts";
 
 // import "webpack-react-vue-spa-awesome-config/ie11babelpolyfill";
 ("use strict");
@@ -38,30 +36,34 @@ window.addEventListener(
     { once: true }
 );
 
-Vue.config.productionTip = false;
-Vue.config.silent = true;
-Vue.config.devtools = true;
-Vue.use(VueRouter);
-// console.log(SimpleStore);
-// Vue.use(SimpleStoreManager);
-Vue.config.errorHandler = function (err, vm, info) {
-    throw err;
-};
 import("./vue-index-render.js").then(({ router, default: AppHome }) => {
     const container =
         document.getElementById("app") ||
         rootele.appendChild(document.createElement("div"));
     Object.assign(container, { id: "app" });
     // var AppHome=default
-    const vm = new Vue({
-        router,
+    const vm = Vue.createApp({
+        mounted() {
+            var initloadele = document.getElementById(initloadingid);
 
-        render(h) {
-            return h(AppHome);
+            initloadele?.remove();
+        },
+        render() {
+            return Vue.h(AppHome);
         },
     });
-    rootele && vm.$mount(container);
-    Object.assign(vm.$el, {
-        id: "app",
-    });
+    vm.use(router);
+    // vm.config.silent = true;
+    // vm.config.devtools = true;
+    // console.log(SimpleStore);
+    // Vue.use(SimpleStoreManager);
+    vm.config.errorHandler = function (err, vm, info) {
+        throw err;
+    };
+    if (rootele) {
+        const instance = vm.mount(container);
+        Object.assign(instance.$el, {
+            id: "app",
+        });
+    }
 });

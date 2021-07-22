@@ -1,4 +1,3 @@
-<script src="./vue-app-home.js"></script>
 <template>
     <div>
         <div id="my导航栏" class="fixed-top container-fluid">
@@ -17,7 +16,7 @@
                                 navbar-brand
                                 mui-btn mui-btn-primary mui-btn-outlined
                             "
-                            href="./index.html"
+                            href="./"
                             >masx200的github主页</a
                         >
                         <button
@@ -40,8 +39,8 @@
                             @click="myfreshdata"
                         >
                             <li
-                                id="mynav1"
                                 v-bind:class="{ active: isActive1 }"
+                                id="mynav1"
                             >
                                 <router-link
                                     to="/"
@@ -53,8 +52,8 @@
                                 >
                             </li>
                             <li
-                                id="mynav2"
                                 v-bind:class="{ active: isActive2 }"
+                                id="mynav2"
                             >
                                 <router-link
                                     to="/huami"
@@ -66,8 +65,8 @@
                                 >
                             </li>
                             <li
-                                id="mynav3"
                                 v-bind:class="{ active: isActive3 }"
+                                id="mynav3"
                             >
                                 <router-link
                                     to="/about"
@@ -78,16 +77,7 @@
                                     >关于VUE</router-link
                                 >
                             </li>
-                            <!-- <li>
-                                <router-link
-                                    to="/vue-simple-global-state-store-manager"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
-                                    >适用于Vue的极简全局状态管理库</router-link
-                                >
-                            </li> -->
+
                             <li>
                                 <router-link
                                     to="/beautify-javascript"
@@ -98,26 +88,6 @@
                                     >美化javascript代码</router-link
                                 >
                             </li>
-                            <!-- <li>
-                                <a
-                                    href="https://masx200-github-io-masx200.vercel.app/#/react-home"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
-                                    >基于react的首页</a
-                                >
-                            </li>
-                            <li class>
-                                <a
-                                    href="https://masx200-github-io-masx200.vercel.app/#/picalc"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
-                                    >圆周率计算多线程</a
-                                >
-                            </li>-->
                         </ul>
                     </div>
                 </div>
@@ -129,7 +99,14 @@
             id="my主体"
             style="min-width: 100%; padding-top: 53px"
         >
-            <router-view />
+            <suspense :timeout="0">
+                <template #fallback>
+                    <loading></loading>
+                </template>
+                <router-view />
+            </suspense>
         </div>
     </div>
 </template>
+
+<script src="./vue-app-home.js"></script>

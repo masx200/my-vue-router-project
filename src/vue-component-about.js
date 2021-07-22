@@ -2,9 +2,9 @@
 function 获取当前时间() {
     return new Date().toString().slice(0, new Date().toString().indexOf("GMT"));
 }
-import Vue from "vue";
+import * as Vue from "vue";
 var timer;
-var about = Vue.extend({
+var about = Vue.defineComponent({
     name: "about",
     data() {
         return {

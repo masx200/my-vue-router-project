@@ -1,4 +1,3 @@
-<script src="./vue-component-about.js"></script>
 <template>
     <div class="hello">
         <img
@@ -78,3 +77,5 @@
         </ul>
     </div>
 </template>
+
+<script src="./vue-component-about.js"></script>

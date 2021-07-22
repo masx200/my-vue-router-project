@@ -3,6 +3,9 @@ window.addEventListener("unhandledrejection", fn2);
 
 function fn1(e) {
     const { error } = e;
+    if (!error) {
+        return;
+    }
     alert(
         [String(e), String(error), e.message, e.filename, error?.stack].join(
             "\n"

@@ -1,5 +1,5 @@
-import "./index.css";
-alert("hello world");
+// import './index.css'
+// alert('hello world')
 /*import "../registerserviceworker.js";
 
  import React from "react";
@@ -13,7 +13,7 @@ render(<App />, document.getElementById("root"));
  
 
 import Vue from "vue/dist/vue.esm.browser";
-const App = Vue.extend({
+const App = Vue.defineComponent({
   template: `
     <div>
     {{msg}}

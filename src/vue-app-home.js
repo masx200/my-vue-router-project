@@ -1,8 +1,11 @@
+import $ from "jquery";
+import * as Vue from "vue";
+import { initloadingid } from "./initloadingid.ts";
 import { hashchangehandler } from "./vue-index-render";
 import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
-import $ from "jquery";
-import Vue from "vue";
-let App = Vue.extend({
+import loading from "./loading.vue";
+let App = Vue.defineComponent({
+    components: { loading },
     name: "App",
     data() {
         return {
@@ -44,4 +47,3 @@ let App = Vue.extend({
     },
 });
 export default App;
-import { initloadingid } from "./initloadingid.ts";

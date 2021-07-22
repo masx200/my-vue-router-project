@@ -1,7 +1,7 @@
-import Vue from "vue";
+import * as Vue from "vue";
 import $ from "jquery";
 import { md5 } from "./assetsutils/md5";
-let huami = Vue.extend({
+let huami = Vue.defineComponent({
     mounted() {
         document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
     },

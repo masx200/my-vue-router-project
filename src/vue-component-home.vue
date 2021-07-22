@@ -1,4 +1,3 @@
-<script src="./vue-component-home.js"></script>
 <template>
     <div>
         <div class="hello">
@@ -56,3 +55,5 @@
 
     <!-- </div> -->
 </template>
+
+<script src="./vue-component-home.js"></script>

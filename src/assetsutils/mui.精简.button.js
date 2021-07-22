@@ -26,7 +26,6 @@ const selectclass = class extends Array {
         Object.defineProperty(this, Symbol.toStringTag, {
             value: "ArrayLikeSelect",
         });
-
         ((ele) => {
             this.length = 0;
             if (

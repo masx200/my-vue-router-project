@@ -1,17 +1,16 @@
-import VueRouter from "vue-router";
+import * as VueRouter from "vue-router";
+import * as Vue from "vue";
 // @ts-ignore
-import loading from "./loading.vue";
-function 处理加载状态loading组件(component) {
-    return () => ({
-        component: component(),
-        loading,
-    });
-}
+
 // @ts-ignore
-const about = () => import("./vue-component-about.vue");
-const home = () => import("./vue-component-home.vue");
+const about = Vue.defineAsyncComponent(() =>
+    import("./vue-component-about.vue")
+);
+const home = Vue.defineAsyncComponent(() => import("./vue-component-home.vue"));
 // @ts-ignore
-const huami = () => import("./vue-component-huami.vue");
+const huami = Vue.defineAsyncComponent(() =>
+    import("./vue-component-huami.vue")
+);
 var 我的路由列表 = [
     ["/about", about],
     ["/", home],
@@ -24,14 +23,17 @@ var 我的路由列表 = [
     // @ts-ignore
     [
         "/beautify-javascript",
-        () => import("./beautify-javascript/beautify-javascript.vue"),
+        Vue.defineAsyncComponent(() =>
+            import("./beautify-javascript/beautify-javascript.vue")
+        ),
     ],
-    ["*", home],
+    ["/:pathMatch(.*)*", home],
 ];
-const router = new VueRouter({
+const router = VueRouter.createRouter({
+    history: VueRouter.createWebHashHistory(),
     routes: [
         ...我的路由列表.map((e) => {
-            return { path: e[0], component: 处理加载状态loading组件(e[1]) };
+            return { path: e[0], component: e[1] };
         }),
     ],
 });

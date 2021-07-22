@@ -1,4 +1,3 @@
-<script src="./vue-component-huami.js"></script>
 <template>
     <div class="hello flowerpassword">
         <h1>花密 不一样的密码管理工具</h1>
@@ -99,3 +98,5 @@
         </div>
     </div>
 </template>
+
+<script src="./vue-component-huami.js"></script>
