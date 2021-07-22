@@ -3,7 +3,7 @@
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start --port=11111 --config=./webpack.config.js",
         "build": "webpack-react-vue-spa-awesome-config build --config=./webpack.config.js",
-        "format": "prettier **/*.js --write **/*.ts *.json *.md **/*.jsx **/*.tsx **/*.vue **/*.css **/*.html */*/*.js "
+        "format": "prettier **/*.js --write **/*.ts *.json *.md **/*.jsx **/*.tsx **/*.vue **/*.css **/*.html */*/*.js *.js */*/*/*.js */*/*.vue"
     },
     "name": "@masx200/my-vue-router-project",
     "description": "A Vue.js router project",
@@ -25,9 +25,7 @@
         "url": "git+https://github.com/masx200/my-vue-router-project.git"
     },
     "license": "MIT",
-    "devDependencies": {
-        "@vue/compiler-sfc": "^3.0.0"
-    },
+    "devDependencies": {},
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/masx200/my-vue-router-project/issues"
@@ -35,6 +33,7 @@
     "homepage": "https://github.com/masx200/my-vue-router-project#readme",
     "keywords": [],
     "dependencies": {
+        "@vue/compiler-sfc": "^3.0.0",
         "@babel/core": "^7.14.3",
         "@babel/generator": "^7.14.5",
         "@babel/parser": "^7.14.5",

@@ -82,7 +82,7 @@ export default defineComponent({
         //console.log($("#my导航栏").height());
         调整导航栏和主体的距离();
     },
-    beforeDestroy() {
+    beforeUnmount() {
         window.removeEventListener("resize", this.拉伸文本框);
         关闭所有worker1();
         关闭所有worker2();
