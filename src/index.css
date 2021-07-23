@@ -3,12 +3,7 @@
 @import url(https://cdn.staticfile.org/mui/3.7.1/css/mui.min.css);
 @import url(https://cdn.jsdelivr.net/gh/masx200/masx200.github.io@4.2.2/src/assetscss/github-6556dfa9be535e551ffffaadfecdad99.min.css);
 @import url(https://cdn.jsdelivr.net/gh/masx200/masx200.github.io@4.2.2/src/assetscss/github-frameworks-a2fba223d5af91496cac70d4ec3624df.min.css);
-/* @import url(https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css);p { */
 
-/* @import url(https://cdn.staticfile.org/mui/3.7.1/css/mui.min.css);
-@import url(https://github.githubassets.com/assets/frameworks-a2fba223d5af91496cac70d4ec3624df.css);
-@import url(https://github.githubassets.com/assets/github-6556dfa9be535e551ffffaadfecdad99.css);
-@import url(https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css); */
 @import url(https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css);
 .flowerpassword a,
 .flowerpassword a:hover {
@@ -20,7 +15,7 @@
     color: #09c;
     margin: 30px 0 12px;
 }
-.flowerpassword #input p,
+.flowerpassword .input p,
 .flowerpassword .other {
     font-size: 12px;
     color: #999;
@@ -38,7 +33,7 @@ html {
 nav {
     width: 100%;
 }
-#图片列表200 img {
+.图片列表200 img {
     min-height: 150px;
     min-width: 150px;
     height: auto;
@@ -46,7 +41,7 @@ nav {
     max-width: 100%;
     max-height: 200px;
 }
-#my导航栏 .navbar-nav li a {
+.my导航栏 .navbar-nav li a {
     margin-left: 2px;
     margin-right: 2px;
 }
@@ -75,7 +70,7 @@ body {
 * {
     font-family: "Microsoft Yahei,PingFangSC-Regular,arial, verdana, sans-serif";
 }
-#my导航栏 {
+.my导航栏 {
     overflow: auto;
     max-height: 100%;
     padding-right: 0;
@@ -205,7 +200,7 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New,
         monospace;
 }
-.jdahd #my导航栏 {
+.jdahd .my导航栏 {
     overflow: auto;
     max-height: 100%;
     padding-right: 0;
@@ -259,7 +254,7 @@ code {
     text-align: center;
     margin-top: 0;
 }
-#App-logo {
+.App-logo {
     animation: App-logo-spin 20s linear infinite;
     height: 40vmin;
     pointer-events: none;
@@ -511,31 +506,31 @@ html {
     display: inline-block;
     text-align: center;
 }
-.flowerpassword #input span {
+.flowerpassword .input span {
     color: #09c;
     font-weight: 700;
     font-size: 22px;
     margin: 0 20px;
 }
-.flowerpassword #input input {
+.flowerpassword .input input {
     font-size: 14px;
     padding: 5px;
     margin-left: 5px;
 }
-.flowerpassword #input label {
+.flowerpassword .input label {
     float: none;
     display: inline;
     padding-right: 5px;
 }
-.flowerpassword #input p {
+.flowerpassword .input p {
     margin-top: 16px;
 }
-.flowerpassword #input p,
+.flowerpassword .input p,
 .flowerpassword .other {
     font-size: 12px;
     color: #999;
 }
-.flowerpassword #code16 {
+.flowerpassword .code16 {
     display: inline-block;
     text-align: center;
 }
@@ -545,7 +540,7 @@ html {
 .flowerpassword .code16h {
     border: 2px solid #ff881c;
 }
-.flowerpassword #copycode16 {
+.flowerpassword .copycode16 {
     color: #000;
     display: inline-block;
     padding: 0 3px;
@@ -564,7 +559,7 @@ html {
     color: #666;
     margin: 20px 0;
 }
-.flowerpassword #copyOK {
+.flowerpassword .copyOK {
     color: #f2f2f2;
     border: 2px solid #f2f2f2;
     display: inline-block;
@@ -574,7 +569,7 @@ html {
 .flowerpassword .down-button {
     margin: 10px 20px 10px 0;
 }
-.flowerpassword #get {
+.flowerpassword .get {
     margin-bottom: 100px;
 }
 .flowerpassword footer {

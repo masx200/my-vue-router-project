@@ -35,7 +35,7 @@
             <h1>{{ msg }}</h1>
         </div>
 
-        <div id="图片列表200">
+        <div class="图片列表200">
             <hr />
             <img loading="lazy" :src="picture1" />
             <hr />
@@ -52,8 +52,6 @@
             <img loading="lazy" :src="picture7" />
         </div>
     </div>
-
-    <!-- </div> -->
 </template>
 
 <script src="./vue-component-home.js"></script>

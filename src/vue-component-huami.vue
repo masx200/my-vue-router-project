@@ -1,13 +1,13 @@
 <template>
     <div class="hello flowerpassword">
         <h1>花密 不一样的密码管理工具</h1>
-        <div class="container" id="rong1" style="text-align: center">
-            <div class id="rong2">
+        <div class="container rong1" style="text-align: center">
+            <div class="rong2">
                 <h2>
                     <span>1</span>
                     输入
                 </h2>
-                <div id="input">
+                <div class="input">
                     <p></p>
                     <h3>记忆密码</h3>
                     <p></p>
@@ -19,8 +19,8 @@
                             class="
                                 col-lg-12 col-md-12 col-sm-12 col-xs-12
                                 form-control
+                                password
                             "
-                            id="password"
                             placeholder="输入密码"
                             name="password"
                             type="password"
@@ -40,8 +40,8 @@
                             class="
                                 col-lg-12 col-md-12 col-sm-12 col-xs-12
                                 form-control
+                                key
                             "
-                            id="key"
                             placeholder="输入代号"
                             name="key"
                             type="text"
@@ -57,17 +57,18 @@
                     获取
                 </h2>
                 <p></p>
-                <div id="get">
-                    <p id="tuijian"></p>
+                <div class="get">
+                    <p class="tuijian"></p>
                     <p></p>
                     <h3>最终密码</h3>
                     <p></p>
-                    <span id="myhezi">
+                    <span class="myhezi">
                         <p>
                             <input
                                 v-model="message3"
-                                id="code16"
+                                id="clip-code16"
                                 class="
+                                    code16
                                     col-lg-12 col-md-12 col-sm-12 col-xs-12
                                     snippet
                                     code16d
@@ -79,9 +80,13 @@
                         <br />
                         <p>
                             <button
-                                id="copycode16"
-                                class="btn-lg btn copycode16d btn-info"
-                                data-clipboard-target="#code16"
+                                class="
+                                    btn-lg btn
+                                    copycode16d
+                                    btn-info
+                                    copycode16
+                                "
+                                data-clipboard-target="#clip-code16"
                                 style="width: 100%"
                                 v-on:click="functioncopy"
                             >
@@ -90,7 +95,9 @@
                         </p>
                     </span>
                     <p>
-                        <span id="copyOK" style="display: none">√复制成功</span>
+                        <span class="copyOK" style="display: none"
+                            >√复制成功</span
+                        >
                     </p>
                     <p></p>
                 </div>

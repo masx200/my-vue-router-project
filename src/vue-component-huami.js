@@ -16,15 +16,15 @@ let huami = Vue.defineComponent({
     methods: {
         functioncopy() {
             if (this.message3) {
-                $("#copyOK").show();
-                $("#copyOK")
+                $(".copyOK").show();
+                $(".copyOK")
                     .fadeTo(0, 0)
                     .css("border-color", "#22B614")
                     .css("background-color", "#22B614")
                     .fadeTo("fast", 1)
                     .fadeTo(2000, 1)
                     .fadeTo(3000, 0, function () {
-                        $("#copyOK").hide();
+                        $(".copyOK").hide();
                     });
             }
         },

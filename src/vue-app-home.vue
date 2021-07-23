@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div id="my导航栏" class="fixed-top container-fluid">
+        <div class="fixed-top container-fluid my导航栏">
             <nav
                 class="
                     navbar navbar-default navbar navbar-expand-sm
@@ -23,25 +23,16 @@
                             class="navbar-toggler"
                             type="button"
                             data-toggle="collapse"
-                            data-target="#example-navbar-collapse"
                             v-on:click="togglecollapsenavbar"
                         >
                             <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
                     <div
-                        class="collapse navbar-collapse"
-                        id="example-navbar-collapse"
+                        class="collapse navbar-collapse example-navbar-collapse"
                     >
-                        <ul
-                            class="nav navbar-nav"
-                            id="mynavul"
-                            @click="myfreshdata"
-                        >
-                            <li
-                                v-bind:class="{ active: isActive1 }"
-                                id="mynav1"
-                            >
+                        <ul class="nav navbar-nav" @click="myfreshdata">
+                            <li v-bind:class="{ active: isActive1 }">
                                 <router-link
                                     to="/"
                                     class="
@@ -51,10 +42,7 @@
                                     >基于VUE的首页</router-link
                                 >
                             </li>
-                            <li
-                                v-bind:class="{ active: isActive2 }"
-                                id="mynav2"
-                            >
+                            <li v-bind:class="{ active: isActive2 }">
                                 <router-link
                                     to="/huami"
                                     class="
@@ -64,10 +52,7 @@
                                     >花密网页版</router-link
                                 >
                             </li>
-                            <li
-                                v-bind:class="{ active: isActive3 }"
-                                id="mynav3"
-                            >
+                            <li v-bind:class="{ active: isActive3 }">
                                 <router-link
                                     to="/about"
                                     class="
@@ -95,8 +80,7 @@
         </div>
 
         <div
-            class="container"
-            id="my主体"
+            class="container my主体"
             style="min-width: 100%; padding-top: 53px"
         >
             <suspense :timeout="0">

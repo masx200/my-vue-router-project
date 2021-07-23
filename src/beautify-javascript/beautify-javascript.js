@@ -79,7 +79,7 @@ export default defineComponent({
     mounted() {
         document.title = "美化JavaScript代码";
         window.addEventListener("resize", this.拉伸文本框);
-        //console.log($("#my导航栏").height());
+        //console.log($(".my导航栏").height());
         调整导航栏和主体的距离();
     },
     beforeUnmount() {

@@ -32,14 +32,14 @@ function tanchu弹出消息通用(infotype) {
     var id = guid();
     // console.log($("[data-tanchuxiaoxi]"));
     $("[data-tanchuxiaoxi]").remove();
-    jQuery("#my导航栏").append(
+    jQuery(".my导航栏").append(
         jQuery(`<div id="${id}" class="alert alert-${infotype} alert-dismissible fade show" data-tanchuxiaoxi>
     <button type="button" class="close" data-dismiss="alert">&times;</button>
     <strong>${textinfo}!</strong> 操作${textinfo}提示信息。
     </div>`).fadeTo(5000, 0.5, () => {
             // console.log(jQuery("#" + id));
             jQuery("#" + id).remove();
-            // $("#my主体").css("padding-top", $("#my导航栏").height());
+            // $(".my主体").css("padding-top", $(".my导航栏").height());
             调整导航栏和主体的距离();
             //   refreshall();
         })
