@@ -1,4 +1,3 @@
-import "./polyfill";
 import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 import * as Vue from "vue";
 import "./error-alert.js";

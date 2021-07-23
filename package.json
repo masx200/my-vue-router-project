@@ -25,7 +25,6 @@
         "url": "git+https://github.com/masx200/my-vue-router-project.git"
     },
     "license": "MIT",
-    "devDependencies": {},
     "main": "index.js",
     "bugs": {
         "url": "https://github.com/masx200/my-vue-router-project/issues"
@@ -33,7 +32,6 @@
     "homepage": "https://github.com/masx200/my-vue-router-project#readme",
     "keywords": [],
     "dependencies": {
-        "@vue/compiler-sfc": "^3.0.0",
         "@babel/core": "^7.14.3",
         "@babel/generator": "^7.14.5",
         "@babel/parser": "^7.14.5",
@@ -43,11 +41,12 @@
         "@babel/preset-react": "^7.13.13",
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "1.1.1",
         "@masx200/ie11-usual-polyfills": "^1.0.4",
-        "@masx200/webpack-react-vue-spa-awesome-config": "3.5.1",
+        "@masx200/webpack-react-vue-spa-awesome-config": "3.5.2",
         "@types/jquery": "3.5.5",
         "@types/node": "15.6.1",
         "@types/react": "17.0.6",
         "@types/webpack": "^5.28.0",
+        "@vue/compiler-sfc": "^3.0.0",
         "autoprefixer": "^10.2.5",
         "babel-core": "^6.26.3",
         "babel-generator": "^6.26.1",
@@ -77,7 +76,6 @@
         "lodash": "^4.17.21",
         "mini-css-extract-plugin": "^1.6.0",
         "minimist": "^1.2.5",
-        "node-sass": "6.0.0",
         "optimize-css-assets-webpack-plugin": "^6.0.0",
         "pnp-webpack-plugin": "^1.6.4",
         "postcss": "8.3.0",
