@@ -11,13 +11,13 @@
             >
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a
+                        <router-link
                             class="
                                 navbar-brand
                                 mui-btn mui-btn-primary mui-btn-outlined
                             "
-                            href="./"
-                            >masx200的github主页</a
+                            to="/"
+                            >基于VUE的首页</router-link
                         >
                         <button
                             class="navbar-toggler"
@@ -32,16 +32,6 @@
                         class="collapse navbar-collapse example-navbar-collapse"
                     >
                         <ul class="nav navbar-nav" @click="myfreshdata">
-                            <li v-bind:class="{ active: isActive1 }">
-                                <router-link
-                                    to="/"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
-                                    >基于VUE的首页</router-link
-                                >
-                            </li>
                             <li v-bind:class="{ active: isActive2 }">
                                 <router-link
                                     to="/huami"

@@ -15,12 +15,7 @@ var 我的路由列表 = [
     ["/about", about],
     ["/", home],
     ["/huami", huami],
-    // [
-    //     "/vue-simple-global-state-store-manager",
-    //     // @ts-ignore
-    //     () => import("./vue-simple-global-state-store-manager.vue"),
-    // ],
-    // @ts-ignore
+
     [
         "/beautify-javascript",
         Vue.defineAsyncComponent(() =>
