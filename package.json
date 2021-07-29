@@ -111,5 +111,8 @@
         "workbox-webpack-plugin": "^6.1.5",
         "worker-loader": "^3.0.8",
         "yargs-parser": "20.2.7"
+    },
+    "resolutions": {
+        "glob-parent": "5.1.2"
     }
 }
