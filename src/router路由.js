@@ -9,7 +9,7 @@ const about = Vue.defineAsyncComponent(() =>
 const home = Vue.defineAsyncComponent(() => import("./vue-component-home.vue"));
 // @ts-ignore
 const huami = Vue.defineAsyncComponent(() =>
-    import("./vue-component-huami.vue")
+    import("./huami/vue-component-huami.vue")
 );
 var 我的路由列表 = [
     ["/about", about],
