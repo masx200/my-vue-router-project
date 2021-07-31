@@ -1,5 +1,5 @@
 {
-    "version": "4.0.0",
+    "version": "4.0.1",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start --port=11111 --config=./webpack.config.js",
         "build": "webpack-react-vue-spa-awesome-config build --config=./webpack.config.js",
@@ -41,7 +41,7 @@
         "@babel/preset-react": "^7.13.13",
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "1.1.1",
         "@masx200/ie11-usual-polyfills": "^1.0.4",
-        "@masx200/webpack-react-vue-spa-awesome-config": "3.5.2",
+        "@masx200/webpack-react-vue-spa-awesome-config": "3.5.3",
         "@types/jquery": "3.5.5",
         "@types/node": "15.6.1",
         "@types/react": "17.0.6",

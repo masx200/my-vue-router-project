@@ -1245,10 +1245,10 @@
   resolved "https://registry.nlark.com/@masx200/ie11-usual-polyfills/download/@masx200/ie11-usual-polyfills-1.0.4.tgz#dcce72ac84388ed7dcba52efa81a8405e97d3cd2"
   integrity sha1-3M5yrIQ4jtfculLvqBqEBel9PNI=
 
-"@masx200/webpack-react-vue-spa-awesome-config@3.5.2":
-  version "3.5.2"
-  resolved "https://registry.nlark.com/@masx200/webpack-react-vue-spa-awesome-config/download/@masx200/webpack-react-vue-spa-awesome-config-3.5.2.tgz#97d9fa3b627dfb6a0d1d0b9589a1f3829dad1a99"
-  integrity sha1-l9n6O2J9+2oNHQuViaHzgp2tGpk=
+"@masx200/webpack-react-vue-spa-awesome-config@3.5.3":
+  version "3.5.3"
+  resolved "https://registry.nlark.com/@masx200/webpack-react-vue-spa-awesome-config/download/@masx200/webpack-react-vue-spa-awesome-config-3.5.3.tgz?cache=0&sync_timestamp=1627717781799&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40masx200%2Fwebpack-react-vue-spa-awesome-config%2Fdownload%2F%40masx200%2Fwebpack-react-vue-spa-awesome-config-3.5.3.tgz#a16150d0664148335649e07adc395eff09969af5"
+  integrity sha1-oWFQ0GZBSDNWSeB63Dle/wmWmvU=
   dependencies:
     "@babel/core" "^7.14.6"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
