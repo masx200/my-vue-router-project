@@ -5,4 +5,4 @@ function importScripts(url) {
     var data = xhr.responseText;
     new Function(data)();
 }
-module.exports = importScripts;
+export default importScripts;

@@ -1,19 +1,22 @@
 const path = require("path");
-const webpackconfig = Object.assign(
-    {},
-    require("@masx200/webpack-react-vue-spa-awesome-config")
-);
+const {
+    createconfig,
+} = require("@masx200/webpack-react-vue-spa-awesome-config");
 
-if ("production" === process.env.NODE_ENV) {
-    webpackconfig.entry = [
-        require.resolve("@masx200/ie11-usual-polyfills"),
+module.exports = (env, argv) => {
+    const config = createconfig(env, argv);
+    const webpackconfig = config;
+    if ("production" === process.env.NODE_ENV) {
+        webpackconfig.entry = [
+            require.resolve("@masx200/ie11-usual-polyfills"),
 
-        path.join(__dirname, "./src", "polyfill.js"),
+            path.join(__dirname, "./src", "polyfill.js"),
 
-        ...webpackconfig.entry,
-    ];
-    // webpackconfig.devtool = "source-map";
-}
+            ...webpackconfig.entry,
+        ];
+        // webpackconfig.devtool = "source-map";
+    }
 
-console.log(webpackconfig);
-module.exports = webpackconfig;
+    console.log(webpackconfig);
+    return webpackconfig;
+};

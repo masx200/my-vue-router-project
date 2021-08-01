@@ -35,7 +35,7 @@ window.addEventListener(
     { once: true }
 );
 
-import("./vue-index-render.js").then(({ router, default: AppHome }) => {
+import("./vue-index-render").then(({ router, default: AppHome }) => {
     const container =
         document.getElementById("app") ||
         rootele.appendChild(document.createElement("div"));

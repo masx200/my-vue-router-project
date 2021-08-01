@@ -2,7 +2,7 @@
     "version": "4.0.2",
     "scripts": {
         "start": "webpack-react-vue-spa-awesome-config start --port=11111 --config=./webpack.config.js",
-        "build": "webpack-react-vue-spa-awesome-config build --config=./webpack.config.js",
+        "build": "npx webpack-react-vue-spa-awesome-config build --config=./webpack.config.js",
         "format": "prettier **/*.js --write **/*.ts *.json *.md **/*.jsx **/*.tsx **/*.vue **/*.css **/*.html */*/*.js *.js */*/*/*.js */*/*.vue"
     },
     "name": "@masx200/my-vue-router-project",
@@ -32,7 +32,7 @@
     "homepage": "https://github.com/masx200/my-vue-router-project#readme",
     "keywords": [],
     "dependencies": {
-        "@babel/core": "^7.14.3",
+        "@babel/core": "^7.14.8",
         "@babel/generator": "^7.14.5",
         "@babel/parser": "^7.14.5",
         "@babel/plugin-proposal-class-properties": "7.13.0",
@@ -40,8 +40,8 @@
         "@babel/preset-env": "^7.14.2",
         "@babel/preset-react": "^7.13.13",
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "1.1.1",
-        "@masx200/ie11-usual-polyfills": "^1.0.4",
-        "@masx200/webpack-react-vue-spa-awesome-config": "3.5.4",
+        "@masx200/ie11-usual-polyfills": "^1.0.5",
+        "@masx200/webpack-react-vue-spa-awesome-config": "4.0.2",
         "@types/jquery": "3.5.5",
         "@types/node": "15.6.1",
         "@types/react": "17.0.6",
@@ -93,7 +93,7 @@
         "terser": "^5.7.0",
         "terser-webpack-plugin": "^5.1.2",
         "tslib": "^2.2.0",
-        "typescript": "^4.3.2",
+        "typescript": "^4.3.5",
         "unicode-loader": "^1.0.7",
         "url-loader": "^4.1.1",
         "vue": "3.1.5",

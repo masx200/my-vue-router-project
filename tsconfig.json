@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
-        "allowJs": true,
+        "skipLibCheck": true,
+        "checkJs": false,
+        "allowJs": false,
         "paths": {},
         "declarationDir": "./dist",
         "resolveJsonModule": true,
@@ -29,6 +31,6 @@
         "allowSyntheticDefaultImports": true,
         "alwaysStrict": true
     },
-    "include": ["./src/*/*.ts", "./src/*.ts", "./src/**/*.ts", "*.js"],
+    "include": ["src"],
     "exclude": []
 }

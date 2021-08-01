@@ -15,7 +15,7 @@ $(window).on("hashchange", onhashchange);
 
 window.addEventListener("resize", () => {
     requestAnimationFrame(() => {
-        $(".my主体").css("padding-top", $(".my导航栏").height());
+        $(".my主体").css("padding-top", $(".my导航栏").height() || 0);
     });
 });
 export default AppHome;

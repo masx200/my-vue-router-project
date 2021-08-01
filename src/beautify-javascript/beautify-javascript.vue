@@ -30,7 +30,7 @@
                 v-bind:class="模式左右 ? 绑定宽样式 : 绑定窄样式"
                 class="col-sm-12 col-12"
             >
-                <details open ref="detail1">
+                <details :open="detailopen1" ref="detail1" @toggle="toggle1">
                     <summary
                         class="
                             btn btn-outline-primary
@@ -65,7 +65,7 @@
                 v-bind:class="模式左右 ? 绑定宽样式 : 绑定窄样式"
                 class="col-sm-12 col-12"
             >
-                <details open ref="detail2">
+                <details :open="detailopen2" ref="detail2" @toggle="toggle2">
                     <summary
                         class="
                             btn btn-outline-primary
@@ -100,4 +100,4 @@
     </div>
 </template>
 
-<script src="./beautify-javascript.js"></script>
+<script src="./beautify-javascript.ts"></script>

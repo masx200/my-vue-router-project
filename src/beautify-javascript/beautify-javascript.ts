@@ -1,14 +1,21 @@
-import { 调整导航栏和主体的距离 } from "@/调整导航栏和主体的距离";
+import { 调整导航栏和主体的距离 } from "../调整导航栏和主体的距离";
 import { defineComponent } from "vue";
+//@ts-ignore
 import { 关闭所有worker2 } from "./async-highlight-js-text.js";
+//@ts-ignore
 import { 关闭所有worker1 } from "./code-parseandgenerate.js";
+//@ts-ignore
 import lashentextarea from "./function-lashentextarea.js";
+//@ts-ignore
 import { transformall } from "./transformallcode.js";
+//@ts-ignore
 import { 关闭所有worker3 } from "./work-code-prettier.js";
 export default defineComponent({
     name: "beautifyjvascript",
     data() {
         return {
+            detailopen1: true,
+            detailopen2: true,
             output: "",
             disablebutton: false,
             分屏状态: "上下分屏",
@@ -19,10 +26,22 @@ export default defineComponent({
         };
     },
     methods: {
+        toggle1(e: Event) {
+            console.log(e);
+            //@ts-ignore
+            this.detailopen1 = e.target.open;
+        },
+        toggle2(e: Event) {
+            console.log(e);
+            //@ts-ignore
+            this.detailopen2 = e.target.open;
+        },
         clearcode() {
+            //@ts-ignore
             this.$refs.输入框.style.height = "50px";
             this.input = "";
-            this.$refs.输出框.innerHTML = "";
+            this.output = "";
+            // this.$refs.输出框.innerHTML = "";
         },
         切换左右分屏() {
             this.模式左右 = !this.模式左右;
@@ -34,22 +53,22 @@ export default defineComponent({
             //alert("transformcode")
             this.disablebutton = true;
             transformall(this.input)
-                .then((output) => {
-                    this.$refs.输出框.innerHTML = output;
+                .then((output: string) => {
+                    // this.$refs.输出框.innerHTML = output;
                     this.output = output;
                     //    alert(output);
                 })
-                .catch((e) => {
+                .catch((e: { stack: string }) => {
                     var errtxt = String(e) + "\n" + e.stack;
-
-                    this.$refs.输出框.innerText = errtxt;
+                    this.output = errtxt;
+                    // this.$refs.输出框.innerText = errtxt;
                     alert(errtxt);
                     throw e;
                 })
                 .finally(() => {
                     this.disablebutton = false;
-                    this.$refs.detail1.open = false;
-                    this.$refs.detail2.open = true;
+                    this.detailopen1 = false;
+                    this.detailopen2 = true;
                     if (this.分屏状态 == "上下分屏") {
                         this.切换左右分屏();
                     }
@@ -62,10 +81,10 @@ export default defineComponent({
             };
             lashentextarea(this.$refs.输入框);
             requestAnimationFrame(() => {
-                if (this.$refs.detail1.open && !this.$refs.detail2.open) {
+                if (this.detailopen1 && !this.detailopen2) {
                     上下分屏();
                 }
-                if (!this.$refs.detail1.open && this.$refs.detail2.open) {
+                if (!this.detailopen1 && this.detailopen2) {
                     上下分屏();
                 }
             });
