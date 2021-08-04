@@ -1,5 +1,5 @@
 // @ts-ignore
-import hljs from "highlight.js/lib/core.js";
+import hljs from "highlight.js/lib/core";
 //升级了highlight
 export default hljs;
 import javascript from "highlight.js/lib/languages/javascript";

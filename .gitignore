@@ -20,3 +20,4 @@ yarn.lock
 *.bak
 .now
 package-lock.json
+src/assetsutils/highlight/dist/
