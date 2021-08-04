@@ -9,5 +9,6 @@ const prefix = `<pre><code class="language-javascript"> `;
 const postfix = `</code></pre>`;
 function transform(sourcecode) {
     console.log(sourcecode);
+    const code = sourcecode;
     return prefix + hljs.highlight(code, { language: "js" }).value + postfix;
 }
