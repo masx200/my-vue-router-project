@@ -1,5 +1,5 @@
 {
-    "version": "4.0.3",
+    "version": "4.0.4",
     "scripts": {
         "precommit": "npm run format ||node -v",
         "start": "webpack-react-vue-spa-awesome-config start --port=11111 --config=./webpack.config.js",

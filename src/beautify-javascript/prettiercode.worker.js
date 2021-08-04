@@ -6,7 +6,7 @@ import parserbabel from "@/assetsutils/prettier/parser-babel.js";
 import prettier from "@/assetsutils/prettier/standalone.js";
 import prettierconfig from "./prettierconfig.json";
 const prettierPlugins = [parserbabel];
-console.log(prettier, prettierPlugins);
+//console.log(prettier, prettierPlugins);
 self.onmessage = (e) => {
     const source = e.data;
     const code = transform(source);
