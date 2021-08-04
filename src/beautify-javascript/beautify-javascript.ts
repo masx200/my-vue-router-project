@@ -1,5 +1,6 @@
-import { 调整导航栏和主体的距离 } from "../调整导航栏和主体的距离";
+import "highlight.js/styles/github.css";
 import { defineComponent } from "vue";
+import { 调整导航栏和主体的距离 } from "../调整导航栏和主体的距离";
 //@ts-ignore
 import { 关闭所有worker2 } from "./async-highlight-js-text.js";
 //@ts-ignore
