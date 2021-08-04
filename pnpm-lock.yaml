@@ -38,7 +38,7 @@ specifiers:
   css-loader: ^5.2.6
   error: ^10.4.0
   file-loader: ^6.2.0
-  highlight.js: ^10.7.2
+  highlight.js: ^11.2.0
   html-webpack-plugin: ^5.3.1
   http-proxy: 1.18.1
   jquery: ^3.6.0
@@ -119,7 +119,7 @@ dependencies:
   css-loader: 5.2.6_webpack@5.38.1
   error: 10.4.0
   file-loader: 6.2.0_webpack@5.38.1
-  highlight.js: 10.7.3
+  highlight.js: 11.2.0
   html-webpack-plugin: 5.3.1_webpack@5.38.1
   http-proxy: 1.18.1
   jquery: 3.6.0
@@ -7585,8 +7585,9 @@ packages:
     resolution: {integrity: sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==}
     dev: false
 
-  /highlight.js/10.7.3:
-    resolution: {integrity: sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==}
+  /highlight.js/11.2.0:
+    resolution: {integrity: sha512-JOySjtOEcyG8s4MLR2MNbLUyaXqUunmSnL2kdV/KuGJOmHZuAR5xC54Ko7goAXBWNhf09Vy3B+U7vR62UZ/0iw==}
+    engines: {node: '>=12.0.0'}
     dev: false
 
   /home-or-tmp/2.0.0:
