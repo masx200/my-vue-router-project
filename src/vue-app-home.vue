@@ -11,7 +11,8 @@
             >
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <router-link active-class="active"
+                        <router-link
+                            active-class="active"
                             class="
                                 navbar-brand
                                 mui-btn mui-btn-primary mui-btn-outlined
