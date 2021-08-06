@@ -11,7 +11,7 @@
             >
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <router-link
+                        <router-link active-class="active"
                             class="
                                 navbar-brand
                                 mui-btn mui-btn-primary mui-btn-outlined
@@ -34,6 +34,7 @@
                         <ul class="nav navbar-nav" @click="myfreshdata">
                             <li v-bind:class="{ active: isActive2 }">
                                 <router-link
+                                    active-class="active"
                                     to="/huami"
                                     class="
                                         nav-link
@@ -44,6 +45,7 @@
                             </li>
                             <li v-bind:class="{ active: isActive3 }">
                                 <router-link
+                                    active-class="active"
                                     to="/about"
                                     class="
                                         nav-link
@@ -55,6 +57,7 @@
 
                             <li>
                                 <router-link
+                                    active-class="active"
                                     to="/beautify-javascript"
                                     class="
                                         nav-link
