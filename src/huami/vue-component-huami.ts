@@ -1,16 +1,13 @@
 import * as Vue from "vue";
-import {ref}from "vue"
+import { ref } from "vue";
 import $ from "jquery";
 //@ts-ignore
 import { generatehuami } from "./generatehuami";
 let huami = Vue.defineComponent({
-setup(){
-
-const copyokref=ref()
-return {copyokref}
-
-
-},
+    setup() {
+        const copyokref = ref();
+        return { copyokref };
+    },
     mounted() {
         document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
     },
@@ -24,8 +21,10 @@ return {copyokref}
     },
     methods: {
         functioncopy() {
-const okele=this.copyokref
-if(!okele){return}
+            const okele = this.copyokref;
+            if (!okele) {
+                return;
+            }
             if (this.message3) {
                 $(okele).show();
                 $(okele)
