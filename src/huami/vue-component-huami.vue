@@ -95,7 +95,10 @@
                         </p>
                     </span>
                     <p>
-                        <span class="copyOK" style="display: none"
+                        <span
+                            class="copyOK"
+                            style="display: none"
+                            ref="copyokref"
                             >√复制成功</span
                         >
                     </p>
