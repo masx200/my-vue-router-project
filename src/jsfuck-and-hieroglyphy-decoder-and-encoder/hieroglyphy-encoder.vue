@@ -44,7 +44,7 @@
         >
         </textarea>
         <div class="actions">
-            <span id="stats" v-text="stats">0 chars</span>
+            <span id="stats" v-text="stats"></span>
             <button
                 @click="runhandler"
                 class="btn btn-outline-primary"

@@ -37,7 +37,7 @@
 
         <textarea id="clip9F02A223-F000-D1D5-5679-79F6719E9658"> </textarea>
         <div class="actions">
-            <span id="stats" v-text="stats">0 chars</span>
+            <span id="stats" v-text="stats"></span>
             <button
                 class="btn btn-outline-success"
                 id="run"
