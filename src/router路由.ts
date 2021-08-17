@@ -1,8 +1,7 @@
 import * as VueRouter from "vue-router";
 import * as Vue from "vue";
-// @ts-ignore
+import { defineAsyncComponent } from "vue";
 
-// @ts-ignore
 const about = Vue.defineAsyncComponent(
     () => import("./vue-component-about.vue")
 );
@@ -11,17 +10,44 @@ const home = Vue.defineAsyncComponent(() => import("./vue-component-home.vue"));
 const huami = Vue.defineAsyncComponent(
     () => import("./huami/vue-component-huami.vue")
 );
-var 我的路由列表: [string, Vue.Component][] = [
+const beautifyjavascript = Vue.defineAsyncComponent(
+    () => import("./beautify-javascript/beautify-javascript.vue")
+);
+const 我的路由列表: [string, Vue.Component][] = [
     ["/about", about],
-    ["/", home],
+
     ["/huami", huami],
 
+    ["/beautify-javascript", beautifyjavascript],
+
     [
-        "/beautify-javascript",
-        Vue.defineAsyncComponent(
-            () => import("./beautify-javascript/beautify-javascript.vue")
+        "/jsfuck-encoder",
+        defineAsyncComponent(
+            () =>
+                import(
+                    "./jsfuck-and-hieroglyphy-decoder-and-encoder/jsfuck-encoder.vue"
+                )
         ),
     ],
+    [
+        "/JSfuck-and-hieroglyphy-decoder",
+        defineAsyncComponent(
+            () =>
+                import(
+                    "./jsfuck-and-hieroglyphy-decoder-and-encoder/JSfuck-and-hieroglyphy-decoder.vue"
+                )
+        ),
+    ],
+    [
+        "/hieroglyphy-encoder",
+        defineAsyncComponent(
+            () =>
+                import(
+                    "./jsfuck-and-hieroglyphy-decoder-and-encoder/hieroglyphy-encoder.vue"
+                )
+        ),
+    ],
+    ["", home],
     ["/:pathMatch(.*)*", home],
 ];
 const routes = [

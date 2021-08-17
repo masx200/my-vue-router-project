@@ -18,7 +18,7 @@
                                 mui-btn mui-btn-primary mui-btn-outlined
                             "
                             to="/"
-                            >基于VUE的首页</router-link
+                            >首页</router-link
                         >
                         <button
                             class="navbar-toggler"
@@ -30,41 +30,22 @@
                         </button>
                     </div>
                     <div
-                        class="collapse navbar-collapse example-navbar-collapse"
+                        v-show="shownavbar"
+                        class="navbar-collapse example-navbar-collapse"
                     >
                         <ul class="nav navbar-nav" @click="myfreshdata">
-                            <li v-bind:class="{ active: isActive2 }">
+                            <li
+                                v-for="(navlink, index) of navlinks"
+                                :key="index"
+                            >
                                 <router-link
                                     active-class="active"
-                                    to="/huami"
+                                    :to="navlink.to"
                                     class="
                                         nav-link
                                         mui-btn mui-btn-primary mui-btn-outlined
                                     "
-                                    >花密网页版</router-link
-                                >
-                            </li>
-                            <li v-bind:class="{ active: isActive3 }">
-                                <router-link
-                                    active-class="active"
-                                    to="/about"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
-                                    >关于VUE</router-link
-                                >
-                            </li>
-
-                            <li>
-                                <router-link
-                                    active-class="active"
-                                    to="/beautify-javascript"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
-                                    >美化javascript代码</router-link
+                                    >{{ navlink.text }}</router-link
                                 >
                             </li>
                         </ul>
@@ -79,7 +60,7 @@
         >
             <suspense :timeout="0">
                 <template #fallback>
-                    <loading></loading>
+                    <Loading></Loading>
                 </template>
                 <router-view />
             </suspense>
@@ -87,4 +68,4 @@
     </div>
 </template>
 
-<script src="./vue-app-home.js"></script>
+<script src="./vue-app-home.ts"></script>

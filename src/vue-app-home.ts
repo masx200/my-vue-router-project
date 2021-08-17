@@ -1,27 +1,23 @@
-import $ from "jquery";
 import * as Vue from "vue";
-import { initloadingid } from "./initloadingid.ts";
+import { initloadingid } from "./initloadingid";
+import Loading from "./loading.vue";
+import { navlinks } from "./navlinks";
 import { hashchangehandler } from "./vue-index-render";
 import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
-import loading from "./loading.vue";
-let App = Vue.defineComponent({
-    components: { loading },
+const App = Vue.defineComponent({
+    components: { Loading },
     name: "App",
     data() {
         return {
-            isActive1: window.location.hash == "#/" ? true : false,
-            isActive2: window.location.hash == "#/huami" ? true : false,
-            isActive3: window.location.hash == "#/about" ? true : false,
+            shownavbar: window.innerWidth > 500,
+            navlinks,
         };
     },
     methods: {
         togglecollapsenavbar() {
-            $(".example-navbar-collapse").toggle();
+            this.shownavbar = !this.shownavbar;
         },
         myfreshdata() {
-            (this.isActive1 = window.location.hash === "#/"),
-                (this.isActive2 = window.location.hash === "#/huami"),
-                (this.isActive3 = window.location.hash === "#/about");
             hashchangehandler();
         },
     },

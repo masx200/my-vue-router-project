@@ -54,4 +54,4 @@
     </div>
 </template>
 
-<script src="./vue-component-home.js"></script>
+<script src="./vue-component-home.ts"></script>

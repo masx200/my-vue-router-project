@@ -28,12 +28,12 @@ export default defineComponent({
     },
     methods: {
         toggle1(e: Event) {
-            console.log(e);
+            // console.log(e);
             //@ts-ignore
             this.detailopen1 = e.target.open;
         },
         toggle2(e: Event) {
-            console.log(e);
+            // console.log(e);
             //@ts-ignore
             this.detailopen2 = e.target.open;
         },

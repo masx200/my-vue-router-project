@@ -1,8 +1,10 @@
 import "@masx200/webpack-react-vue-spa-awesome-config/registerserviceworker.js";
 import * as Vue from "vue";
+import { defineAsyncComponent } from "vue";
 import "./error-alert.js";
 //@ts-ignore
 import { initloadingid } from "./initloadingid.ts";
+import router from "./router路由";
 import "./styles.ts";
 
 // import "webpack-react-vue-spa-awesome-config/ie11babelpolyfill";
@@ -34,35 +36,27 @@ window.addEventListener(
     },
     { once: true }
 );
+const container =
+    document.getElementById("app") ||
+    rootele.appendChild(document.createElement("div"));
+Object.assign(container, { id: "app" });
+const AppHome = defineAsyncComponent(() => import("./vue-index-render"));
+const vm = Vue.createApp({
+    mounted() {
+        var initloadele = document.getElementById(initloadingid);
 
-import("./vue-index-render").then(({ router, default: AppHome }) => {
-    const container =
-        document.getElementById("app") ||
-        rootele.appendChild(document.createElement("div"));
-    Object.assign(container, { id: "app" });
-    // var AppHome=default
-    const vm = Vue.createApp({
-        mounted() {
-            var initloadele = document.getElementById(initloadingid);
-
-            initloadele?.remove();
-        },
-        render() {
-            return Vue.h(AppHome);
-        },
-    });
-    vm.use(router);
-    // vm.config.silent = true;
-    // vm.config.devtools = true;
-    // console.log(SimpleStore);
-    // Vue.use(SimpleStoreManager);
-    vm.config.errorHandler = function (err, vm, info) {
-        throw err;
-    };
-    if (rootele) {
-        const instance = vm.mount(container);
-        Object.assign(instance.$el, {
-            id: "app",
-        });
-    }
+        initloadele?.remove();
+    },
+    render() {
+        return Vue.h(AppHome);
+    },
+});
+vm.use(router);
+vm.config.errorHandler = function (err, vm, info) {
+    throw err;
+};
+// if (rootele) {
+const instance = vm.mount(container);
+Object.assign(instance.$el, {
+    id: "app",
 });
