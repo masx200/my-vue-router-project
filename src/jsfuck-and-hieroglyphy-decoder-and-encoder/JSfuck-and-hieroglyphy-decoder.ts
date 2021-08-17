@@ -5,7 +5,6 @@ export default defineComponent({
     mounted() {
         document.title = "JSfuck Decoder and hieroglyphy decoder";
     },
-    setup() {},
 
     methods: {
         decodehandler() {

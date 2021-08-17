@@ -17,10 +17,16 @@
         <textarea id="input" type="text"> </textarea>
         <br />
         <p>
-            <button class="btn btn-outline-primary" id="encode" type="text">
+            <button
+                class="btn btn-outline-primary"
+                id="encode"
+                type="text"
+                @click="encodestring"
+            >
                 Encode string
             </button>
             <button
+                @click="encodescript"
                 class="btn btn-outline-primary"
                 id="encodescript"
                 type="text"
@@ -31,11 +37,12 @@
 
         <textarea id="clip9F02A223-F000-D1D5-5679-79F6719E9658"> </textarea>
         <div class="actions">
-            <span id="stats">0 chars</span>
+            <span id="stats" v-text="stats">0 chars</span>
             <button
                 class="btn btn-outline-success"
                 id="run"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
+                @click="runhandler"
             >
                 Run This
             </button>
@@ -65,14 +72,46 @@
     </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
-
+import { defineComponent, reactive } from "vue";
+//@ts-ignore
+import {
+    //@ts-ignore
+    jsfuckScript,
+    jsfuckString,
+    //@ts-ignore
+} from "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder";
 export default defineComponent({
     mounted() {
         document.title =
             " JSFuck encoder-Write any JavaScript with 6 Characters:[]()!+";
     },
-    setup() {},
+    setup() {
+        const data = reactive({
+            stats: "0 chars",
+            inputcode:
+                "console.log('{你好吗zxcvbnmasdfghjklqwertyuiopQWERTYUIOPASDFGHJKLZXCVBNM}')",
+            outputcode: "",
+        });
+
+        function encodescript() {
+            // lastclick = "encodescript";
+            var output = jsfuckScript(data.inputcode);
+            data.outputcode = output;
+            data.stats = output.length + " chars";
+        }
+        function encodestring() {
+            // lastclick = "encodestring";
+            var output = jsfuckString(data.inputcode);
+            data.outputcode = output;
+            data.stats = output.length + " chars";
+        }
+        return Object.assign({ encodescript, encodestring }, toRefs(data));
+    },
+    methods: {
+        runhandler() {
+            new Function(this.outputcode)();
+        },
+    },
 });
 </script>
 <style scoped src="./jsfuck.css"></style>

@@ -13,10 +13,11 @@
             建议在最新超高版本chrome或者Firefox或者safari浏览器中运行！
         </p>
         <br />
-        <textarea id="input" type="text"> </textarea>
+        <textarea id="input" type="text" v-model="inputcode"> </textarea>
         <br />
         <p>
             <button
+                @click="encodescript"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
                 class="btn btn-outline-success"
                 id="encodescript"
@@ -26,6 +27,7 @@
             </button>
 
             <button
+                @click="encodestring"
                 id="encodestring"
                 type="text"
                 class="btn btn-outline-info"
@@ -36,10 +38,15 @@
         </p>
         <br />
         <br />
-        <textarea id="clip5869EC85-6180-4E4B-E565-561BA1F25223"> </textarea>
+        <textarea
+            id="clip5869EC85-6180-4E4B-E565-561BA1F25223"
+            v-model="outputcode"
+        >
+        </textarea>
         <div class="actions">
-            <span id="stats">0 chars</span>
+            <span id="stats" v-text="stats">0 chars</span>
             <button
+                @click="runhandler"
                 class="btn btn-outline-primary"
                 id="run"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
@@ -73,13 +80,45 @@
     </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
-
+import { defineComponent, reactive, toRefs } from "vue";
+//@ts-ignore
+import {
+    //@ts-ignore
+    hieroglyphyScript,
+    hieroglyphyString,
+    //@ts-ignore
+} from "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder";
 export default defineComponent({
     mounted() {
         document.title = "hieroglyphy encoder";
     },
-    setup() {},
+    setup() {
+        const data = reactive({
+            stats: "0 chars",
+            inputcode:
+                "console.log('{你好吗zxcvbnmasdfghjklqwertyuiopQWERTYUIOPASDFGHJKLZXCVBNM}')",
+            outputcode: "",
+        });
+
+        function encodescript() {
+            // lastclick = "encodescript";
+            var output = hieroglyphyScript(data.inputcode);
+            data.outputcode = output;
+            data.stats = output.length + " chars";
+        }
+        function encodestring() {
+            // lastclick = "encodestring";
+            var output = hieroglyphyString(data.inputcode);
+            data.outputcode = output;
+            data.stats = output.length + " chars";
+        }
+        return Object.assign({ encodescript, encodestring }, toRefs(data));
+    },
+    methods: {
+        runhandler() {
+            new Function(this.outputcode)();
+        },
+    },
 });
 </script>
 <style scoped src="./hieroglyphy-encoder.css"></style>
