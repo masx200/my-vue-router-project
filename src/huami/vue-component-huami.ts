@@ -9,7 +9,7 @@ let huami = Vue.defineComponent({
         return { copyokref };
     },
     mounted() {
-        document.title = "masx200的github主页-" + "花密  不一样的密码管理工具";
+        document.title = "花密  不一样的密码管理工具";
     },
     name: "huami",
     data() {
