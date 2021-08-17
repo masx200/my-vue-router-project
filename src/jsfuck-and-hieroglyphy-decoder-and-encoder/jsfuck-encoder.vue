@@ -17,7 +17,8 @@
         <textarea id="input" type="text"> </textarea>
         <br />
         <p>
-            <button  style="font-size: 1.5em; padding: 0.5rem 1rem"
+            <button
+                style="font-size: 1.5em; padding: 0.5rem 1rem"
                 class="btn btn-outline-primary"
                 id="encode"
                 type="text"
@@ -25,7 +26,8 @@
             >
                 Encode string
             </button>
-            <button  style="font-size: 1.5em; padding: 0.5rem 1rem"
+            <button
+                style="font-size: 1.5em; padding: 0.5rem 1rem"
                 @click="encodescript"
                 class="btn btn-outline-primary"
                 id="encodescript"
