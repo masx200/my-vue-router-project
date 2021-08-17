@@ -16,7 +16,7 @@
                 浏览器兼容性:建议在最新超高版本chrome或者Firefox或者safari浏览器中运行！
             </p>
             <br />
-            <textarea
+            <textarea 
                 v-model="inputcode"
                 placeholder="Paste your code here!"
                 id="code"

@@ -14,7 +14,7 @@
             浏览器兼容性:建议在最新超高版本的chrome或者Firefox或者safari浏览器中运行！
         </p>
         <br />
-        <textarea id="input" type="text"> </textarea>
+        <textarea id="input" type="text" v-model="inputcode"> </textarea>
         <br />
         <p>
             <button
@@ -37,7 +37,7 @@
             </button>
         </p>
 
-        <textarea id="clip9F02A223-F000-D1D5-5679-79F6719E9658"> </textarea>
+        <textarea id="clip9F02A223-F000-D1D5-5679-79F6719E9658"  v-model="outputcode"> </textarea>
         <div class="actions">
             <span id="stats" v-text="stats"></span>
             <button
