@@ -6,4 +6,4 @@ export default defineComponent({
     setup() {},
 });
 </script>
-<style scoped src='./hieroglyphy-encoder.css'></style>
+<style scoped src="./hieroglyphy-encoder.css"></style>

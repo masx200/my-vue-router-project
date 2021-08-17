@@ -6,4 +6,4 @@ export default defineComponent({
     setup() {},
 });
 </script>
-<style scoped src='./jsfuck.css'></style>
+<style scoped src="./jsfuck.css"></style>
