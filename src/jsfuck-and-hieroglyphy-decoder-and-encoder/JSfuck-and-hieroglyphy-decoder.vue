@@ -23,7 +23,7 @@
                 style="width: 100%; min-height: 250px"
             >
             </textarea>
-            <input
+            <input  style="font-size: 1.5em; padding: 0.5rem 1rem"
                 @click="decodehandler"
                 type="button"
                 id="decode"

@@ -17,7 +17,7 @@
         <textarea id="input" type="text"> </textarea>
         <br />
         <p>
-            <button
+            <button  style="font-size: 1.5em; padding: 0.5rem 1rem"
                 class="btn btn-outline-primary"
                 id="encode"
                 type="text"
@@ -25,7 +25,7 @@
             >
                 Encode string
             </button>
-            <button
+            <button  style="font-size: 1.5em; padding: 0.5rem 1rem"
                 @click="encodescript"
                 class="btn btn-outline-primary"
                 id="encodescript"
@@ -72,7 +72,7 @@
     </div>
 </template>
 <script lang="ts">
-import { defineComponent, reactive } from "vue";
+import { defineComponent, reactive, toRefs } from "vue";
 //@ts-ignore
 import {
     //@ts-ignore
