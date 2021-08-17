@@ -2,9 +2,21 @@ import * as Vue from "vue";
 import { initloadingid } from "./initloadingid";
 import Loading from "./loading.vue";
 import { navlinks } from "./navlinks";
-import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
+import { useobservesize } from "./useobservesize";
+// import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
 
 const App = Vue.defineComponent({
+    setup() {
+        const [{ height: navbarheight }, navbarref] = useobservesize({
+            height: 60,
+        });
+        return { navbarheight, navbarref };
+    },
+    watch: {
+        navbarheight(v) {
+            console.log(v);
+        },
+    },
     components: { Loading },
     name: "App",
     data() {
@@ -27,14 +39,14 @@ const App = Vue.defineComponent({
             }
 
             // $(".my主体").css("padding-top", $(".my导航栏").height());
-            调整导航栏和主体的距离();
+            // 调整导航栏和主体的距离();
         }
 
         window.addEventListener("hashchange", onhashchange);
         var initloadele = document.getElementById(initloadingid);
         initloadele && (initloadele.style.display = "none");
 
-        调整导航栏和主体的距离();
+        // 调整导航栏和主体的距离();
     },
 });
 export default App;

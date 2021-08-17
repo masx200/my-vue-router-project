@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="fixed-top container-fluid my导航栏">
+        <div :ref="navbarref" class="fixed-top container-fluid my导航栏">
             <nav
                 class="
                     navbar navbar-default navbar navbar-expand-sm
@@ -56,7 +56,7 @@
 
         <div
             class="container my主体"
-            style="min-width: 100%; padding-top: 53px"
+            :style="`min-width: 100%; padding-top: ${navbarheight}px`"
         >
             <suspense :timeout="0">
                 <template #fallback>
