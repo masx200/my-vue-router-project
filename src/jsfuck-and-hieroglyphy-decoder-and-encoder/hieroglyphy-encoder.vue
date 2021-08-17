@@ -33,7 +33,7 @@
         <textarea id="clip5869EC85-6180-4E4B-E565-561BA1F25223"> </textarea>
         <div class="actions">
             <span id="stats">0 chars</span>
-            <button class="btn btn-outline-primary" id="run">Run This</button>
+            <button class="btn btn-outline-primary" id="run"       style="font-size: 1.5em; padding: 0.5rem 1rem">Run This</button>
             <button
                 class="
                     btn btn-outline-primary
