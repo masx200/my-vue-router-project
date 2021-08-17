@@ -4,6 +4,7 @@ import { defineAsyncComponent } from "vue";
 import "./error-alert.js";
 //@ts-ignore
 import { initloadingid } from "./initloadingid.ts";
+import Loading from "./loading.vue";
 import router from "./router路由";
 import "./styles.ts";
 
@@ -40,7 +41,11 @@ const container =
     document.getElementById("app") ||
     rootele.appendChild(document.createElement("div"));
 Object.assign(container, { id: "app" });
-const AppHome = defineAsyncComponent(() => import("./vue-index-render"));
+const AppHome = defineAsyncComponent({
+    timeout: 0,
+    loadingComponent: Loading,
+    loader: () => import("./vue-index-render"),
+});
 const vm = Vue.createApp({
     mounted() {
         var initloadele = document.getElementById(initloadingid);
