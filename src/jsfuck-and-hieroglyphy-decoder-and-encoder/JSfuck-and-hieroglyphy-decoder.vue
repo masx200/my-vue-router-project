@@ -31,7 +31,7 @@
                 class="btn btn-primary"
             />
             <textarea
-                id="code2"
+                id="clip9C4C7C63-E416-6DE0-AA6B-831D8F93393C"
                 style="width: 100%; min-height: 250px"
                 v-model="outputcode"
             >
@@ -46,6 +46,16 @@
                 style="font-size: 1.5em; padding: 10px"
             >
                 Run This
+            </button>
+            <button
+                class="
+                    btn btn-outline-primary
+                    mui-btn mui-btn-primary mui-btn-outlined
+                "
+                style="font-size: 1.5em; padding: 10px"
+                data-clipboard-target="#clip9C4C7C63-E416-6DE0-AA6B-831D8F93393C"
+            >
+                复制
             </button>
             <br />
             <br />
