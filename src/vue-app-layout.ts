@@ -2,8 +2,8 @@ import * as Vue from "vue";
 import { initloadingid } from "./initloadingid";
 import Loading from "./loading.vue";
 import { navlinks } from "./navlinks";
-import { hashchangehandler } from "./vue-index-render";
 import { 调整导航栏和主体的距离 } from "./调整导航栏和主体的距离";
+
 const App = Vue.defineComponent({
     components: { Loading },
     name: "App",
@@ -17,15 +17,22 @@ const App = Vue.defineComponent({
         togglecollapsenavbar() {
             this.shownavbar = !this.shownavbar;
         },
-        myfreshdata() {
-            hashchangehandler();
-        },
     },
     mounted() {
+        const selfo = this;
+        function onhashchange() {
+            scrollTo(0, 0);
+            if (window.innerWidth <= 500) {
+                selfo.shownavbar = false;
+            }
+
+            // $(".my主体").css("padding-top", $(".my导航栏").height());
+            调整导航栏和主体的距离();
+        }
+
+        window.addEventListener("hashchange", onhashchange);
         var initloadele = document.getElementById(initloadingid);
         initloadele && (initloadele.style.display = "none");
-        this.myfreshdata();
-        hashchangehandler();
 
         调整导航栏和主体的距离();
     },

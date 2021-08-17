@@ -33,7 +33,7 @@
                         v-show="shownavbar"
                         class="navbar-collapse example-navbar-collapse"
                     >
-                        <ul class="nav navbar-nav" @click="myfreshdata">
+                        <ul class="nav navbar-nav">
                             <li
                                 v-for="(navlink, index) of navlinks"
                                 :key="index"
@@ -68,4 +68,4 @@
     </div>
 </template>
 
-<script src="./vue-app-home.ts"></script>
+<script src="./vue-app-layout.ts"></script>
