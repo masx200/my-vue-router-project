@@ -16,7 +16,7 @@
         <textarea id="input" type="text"> </textarea>
         <br />
         <p>
-            <button
+            <button style="font-size:1.5em;padding:0.5rem 1rem;"
                 class="btn btn-outline-success"
                 id="encodescript"
                 type="text"
@@ -24,7 +24,7 @@
                 Encode script
             </button>
 
-            <button id="encodestring" type="text" class="btn btn-outline-info">
+            <button id="encodestring" type="text" class="btn btn-outline-info" style="font-size:1.5em;padding:0.5rem 1rem;">
                 Encode string
             </button>
         </p>
