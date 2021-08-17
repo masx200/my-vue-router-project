@@ -6,7 +6,7 @@ https://github.com/masx200/my-vue-router-project
 
 https://github.com/masx200/webpack-react-vue-spa-awesome-config
 
-添加了JSfuck-and-hieroglyphy-Decoder-and-ENCODER
+添加了 JSfuck-and-hieroglyphy-Decoder-and-ENCODER
 
 https://gitee.com/masx200/JSfuck-and-hieroglyphy-Decoder-and-ENCODER
 
