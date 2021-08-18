@@ -3121,6 +3121,11 @@ bluebird@^3.1.1, bluebird@^3.7.2:
   resolved "https://registry.npm.taobao.org/bluebird/download/bluebird-3.7.2.tgz#9f229c15be272454ffa973ace0dbee79a1b0c36f"
   integrity sha1-nyKcFb4nJFT/qXOs4NvueaGww28=
 
+blueimp-md5@^2.16.0:
+  version "2.18.0"
+  resolved "https://registry.npm.taobao.org/blueimp-md5/download/blueimp-md5-2.18.0.tgz#1152be1335f0c6b3911ed9e36db54f3e6ac52935"
+  integrity sha1-EVK+EzXwxrORHtnjbbVPPmrFKTU=
+
 body-parser@1.19.0:
   version "1.19.0"
   resolved "https://registry.nlark.com/body-parser/download/body-parser-1.19.0.tgz#96b2709e57c9c4e09a6fd66a8fd979844f69f08a"
@@ -4727,6 +4732,13 @@ flatten@^1.0.2:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/flatten/download/flatten-1.0.3.tgz#c1283ac9f27b368abc1e36d1ff7b04501a30356b"
   integrity sha1-wSg6yfJ7Noq8HjbR/3sEUBowNWs=
+
+flowerpassword.js@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.nlark.com/flowerpassword.js/download/flowerpassword.js-3.0.2.tgz#efe1fd74eca6eb4faa9d93f3c962500ce5ed4b52"
+  integrity sha1-7+H9dOym60+qnZPzyWJQDOXtS1I=
+  dependencies:
+    blueimp-md5 "^2.16.0"
 
 follow-redirects@^1.0.0:
   version "1.14.1"

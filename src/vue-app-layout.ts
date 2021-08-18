@@ -7,7 +7,7 @@ import { useobservesize } from "./useobservesize";
 
 const App = Vue.defineComponent({
     setup() {
-        const [{ height: navbarheight }, navbarref] = useobservesize({
+        const { height: navbarheight, ref: navbarref } = useobservesize({
             height: 60,
         });
         return { navbarheight, navbarref };

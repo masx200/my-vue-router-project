@@ -1,4 +1,4 @@
-import { reactive, onMounted, onUnmounted, toRefs, ToRefs } from "vue";
+import { reactive, onMounted, onUnmounted, computed } from "vue";
 /**
  * 使用ResizeObserver观察一个元素的大小变化
  * 传入大小初始值
@@ -10,13 +10,7 @@ export function useobservesize({
 }: {
     width?: number;
     height?: number;
-} = {}): [
-    ToRefs<{
-        width: number;
-        height: number;
-    }>,
-    (e: HTMLElement | undefined) => void
-] {
+} = {}) {
     onUnmounted(() => {
         observer?.disconnect();
     });
@@ -41,5 +35,9 @@ export function useobservesize({
         width,
         height,
     });
-    return [toRefs(size), eleref];
+    return {
+        ref: eleref,
+        width: computed(() => size.width),
+        height: computed(() => size.height),
+    };
 }
