@@ -60,7 +60,7 @@ export default defineComponent({
                     //    alert(output);
                 })
                 .catch((e: { stack: string }) => {
-                  console.error(e)
+                    console.error(e);
                     var errtxt = String(e) + "\n" + e.stack;
                     this.output = errtxt;
                     // this.$refs.输出框.innerText = errtxt;
