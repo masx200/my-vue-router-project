@@ -1228,10 +1228,10 @@
   resolved "https://registry.yarnpkg.com/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder/-/jsfuck-and-hieroglyphy-decoder-and-encoder-2.0.2.tgz#cbf5ff5ba384bd4e51d0f4ced49522d4cbd667cb"
   integrity sha512-zu9O1EMnA+LusDMIls3+m+l/JH0s+pyzIxvNAII19l3jRw6fR/tPZnWnvq6F6jOI4EFmJQL+/446YJ/JeDvozg==
 
-"@masx200/webpack-react-vue-spa-awesome-config@^4.2.1":
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/@masx200/webpack-react-vue-spa-awesome-config/-/webpack-react-vue-spa-awesome-config-4.2.1.tgz#60ea9c8b27f8ffe77cae44293bb86903ea7ee520"
-  integrity sha512-qHpddXWSQicCOi6PqApCzUCZd/s6jOOzGGBPWitKUIVtYYG+2hFTNweRhvbuGThVYE9TXZekfMbSJ2/ML0fjDA==
+"@masx200/webpack-react-vue-spa-awesome-config@^4.2.5":
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/@masx200/webpack-react-vue-spa-awesome-config/-/webpack-react-vue-spa-awesome-config-4.2.5.tgz#6b8d9ffe91520fff2066299951468ded60cab9da"
+  integrity sha512-+UuGfZecqUpSQeREwO1fs0vAZatPVr6mVS+K9RxqP0tcAK2lrYQ5XUguuz04hm6laKvtOaWe8AI7O+nupXgbkQ==
   dependencies:
     "@babel/core" "^7.14.6"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
@@ -1272,7 +1272,7 @@
     json-loader "^0.5.7"
     less "^4.1.1"
     less-loader "^10.0.1"
-    mini-css-extract-plugin "^1.6.0"
+    mini-css-extract-plugin "^2.2.2"
     optimize-css-assets-webpack-plugin "^5.0.4"
     postcss "8.3.6"
     postcss-flexbugs-fixes "^5.0.2"
@@ -1300,7 +1300,7 @@
     webpack-cli "^4.7.2"
     webpack-dev-server "^3.11.2"
     workbox-webpack-plugin "^6.1.5"
-    worker-loader "3.0.8"
+    worker-loader "^3.0.8"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -6002,14 +6002,12 @@ mimic-fn@^2.1.0:
   resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha512-OqbOk5oEQeAZ8WXWydlu9HJjz9WVdEIvamMCcXmuqUYjTknH/sqsWvhQ3vgwKFRR1HpjvNBKQ37nbJgYzGqGcg==
 
-mini-css-extract-plugin@^1.6.0:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-1.6.2.tgz#83172b4fd812f8fc4a09d6f6d16f924f53990ca8"
-  integrity sha512-WhDvO3SjGm40oV5y26GjMJYjd2UMqrLAGKy5YS2/3QKJy2F7jgynuHTir/tgUUOiNQu5saXHdc8reo7YuhhT4Q==
+mini-css-extract-plugin@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/mini-css-extract-plugin/-/mini-css-extract-plugin-2.2.2.tgz#df22f16bf43173050c6d652fa7d035318c310e04"
+  integrity sha512-eUjQ/q1rQIeHWgIx7ny/DNgXHcMXHdBwgrZQK7Ev8dbR+HxhroFM2Cb6kMiswOYaq05IRJhPuQqXWUABIjjA3g==
   dependencies:
-    loader-utils "^2.0.0"
-    schema-utils "^3.0.0"
-    webpack-sources "^1.1.0"
+    schema-utils "^3.1.0"
 
 minimalistic-assert@^1.0.0:
   version "1.0.1"
@@ -6237,10 +6235,10 @@ object-keys@^1.0.12, object-keys@^1.1.1:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
 
-object-path@0.x.x:
-  version "0.11.5"
-  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.5.tgz#d4e3cf19601a5140a55a16ad712019a9c50b577a"
-  integrity sha512-jgSbThcoR/s+XumvGMTMf81QVBmah+/Q7K7YduKeKVWL7N111unR2d6pZZarSk6kY/caeNxUDyxOvMWyzoU2eg==
+object-path@0.11.7, object-path@0.x.x:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.7.tgz#5f211161f34bb395e4b13a5f565b79d933b6f65d"
+  integrity sha512-T4evaK9VfGGQskXBDILcn6F90ZD+WO3OwRFFQ2rmZdUH4vQeDBpiolTpVlPY2yj5xSepyILTjDyM6UvbbdHMZw==
 
 object-visit@^1.0.0:
   version "1.0.1"
@@ -9449,7 +9447,7 @@ workbox-window@6.2.4:
     "@types/trusted-types" "^2.0.2"
     workbox-core "6.2.4"
 
-worker-loader@3.0.8, worker-loader@^3.0.8:
+worker-loader@^3.0.8:
   version "3.0.8"
   resolved "https://registry.yarnpkg.com/worker-loader/-/worker-loader-3.0.8.tgz#5fc5cda4a3d3163d9c274a4e3a811ce8b60dbb37"
   integrity sha512-XQyQkIFeRVC7f7uRhFdNMe/iJOdO6zxAaR3EWbDp45v3mDhrTi+++oswKNxShUNjPC/1xUp5DB29YKLhFo129g==
