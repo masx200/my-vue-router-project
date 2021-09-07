@@ -16,7 +16,9 @@ module.exports = (env, argv) => {
         ];
         // webpackconfig.devtool = "source-map";
     }
-
-    console.log(webpackconfig);
+    if (process.env.NODE_ENV == "development") {
+        config.experiments = { ...config.experiments, lazyCompilation: true };
+    }
+    // console.log(webpackconfig);
     return webpackconfig;
 };

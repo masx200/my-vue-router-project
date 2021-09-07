@@ -42,7 +42,7 @@ const container =
     rootele.appendChild(document.createElement("div"));
 Object.assign(container, { id: "app" });
 const AppHome = defineAsyncComponent({
-    timeout: 0,
+    timeout: 500,
     loadingComponent: Loading,
     loader: () => import("./vue-index-render"),
 });

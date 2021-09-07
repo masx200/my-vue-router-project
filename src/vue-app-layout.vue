@@ -58,7 +58,7 @@
             class="container my主体"
             :style="`min-width: 100%; padding-top: ${navbarheight}px`"
         >
-            <suspense :timeout="0">
+            <suspense :timeout="500">
                 <template #fallback>
                     <Loading></Loading>
                 </template>
