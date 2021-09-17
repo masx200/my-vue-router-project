@@ -1,5 +1,5 @@
 {
-    "version": "4.0.9",
+    "version": "4.1.0",
     "scripts": {
         "precommit": "npm run format ||node -v",
         "start": "webpack-react-vue-spa-awesome-config start --port=11111 --config=./webpack.config.js",
@@ -107,7 +107,6 @@
         "vue-template-compiler": "^2.6.14",
         "webpack": "5.47.0",
         "webpack-cli": "^4.8.0",
-        "webpack-copyfiles-plugin": "^1.0.9",
         "webpack-deep-scope-plugin": "^1.6.2",
         "webpack-dev-server": "^4.1.0",
         "webpack-manifest-plugin": "^3.1.1",
