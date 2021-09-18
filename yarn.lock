@@ -1223,10 +1223,10 @@
   resolved "https://registry.nlark.com/@masx200/ie11-usual-polyfills/download/@masx200/ie11-usual-polyfills-1.0.5.tgz#fafa4ed3d422fc273234bd15d3d3249ed6761621"
   integrity sha1-+vpO09Qi/CcyNL0V09MkntZ2FiE=
 
-"@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.nlark.com/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder/download/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder-2.0.2.tgz#cbf5ff5ba384bd4e51d0f4ced49522d4cbd667cb"
-  integrity sha1-y/X/W6OEvU5R0PTO1JUi1MvWZ8s=
+"@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.nlark.com/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder/download/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder-2.0.5.tgz#99ddb8c5e90cdcdd446f3673ea96d51c87f9660f"
+  integrity sha1-md24xekM3N1EbzZz6pbVHIf5Zg8=
 
 "@masx200/webpack-react-vue-spa-awesome-config@^4.3.3":
   version "4.3.3"
