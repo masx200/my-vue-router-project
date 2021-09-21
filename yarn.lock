@@ -1228,10 +1228,10 @@
   resolved "https://registry.nlark.com/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder/download/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder-2.0.8.tgz#852796ee6c3800624db54972e9e4a4615e2d35c2"
   integrity sha1-hSeW7mw4AGJNtUly6eSkYV4tNcI=
 
-"@masx200/webpack-react-vue-spa-awesome-config@^4.3.3":
-  version "4.3.3"
-  resolved "https://registry.nlark.com/@masx200/webpack-react-vue-spa-awesome-config/download/@masx200/webpack-react-vue-spa-awesome-config-4.3.3.tgz#901ba0a0a7827e97443496012fdd0d99d52015b9"
-  integrity sha1-kBugoKeCfpdENJYBL90NmdUgFbk=
+"@masx200/webpack-react-vue-spa-awesome-config@^4.3.6":
+  version "4.3.6"
+  resolved "https://registry.nlark.com/@masx200/webpack-react-vue-spa-awesome-config/download/@masx200/webpack-react-vue-spa-awesome-config-4.3.6.tgz#ee18dafc05621b0f25ba0da7ce35fe6c194e0095"
+  integrity sha1-7hja/AViGw8lug2nzjX+bBlOAJU=
   dependencies:
     "@babel/core" "^7.14.6"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
@@ -1268,7 +1268,7 @@
     file-loader "^6.2.0"
     fork-ts-checker-webpack-plugin "^6.2.10"
     htm "^3.0.4"
-    html-webpack-plugin "^5.3.1"
+    html-webpack-plugin "^5.3.2"
     json-loader "^0.5.7"
     less "^4.1.1"
     less-loader "^10.0.1"
@@ -1296,7 +1296,7 @@
     vue-loader-16 "npm:vue-loader@16.5.0"
     vue-style-loader "^4.1.3"
     vue-template-compiler "^2.6.14"
-    webpack "5.47"
+    webpack "5.47.0"
     webpack-cli "^4.8.0"
     webpack-dev-server "^4.1.0"
     workbox-webpack-plugin "^6.1.5"
@@ -4308,10 +4308,10 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
-html-webpack-plugin@^5.3.1:
+html-webpack-plugin@^5.3.2:
   version "5.3.2"
-  resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-5.3.2.tgz#7b04bf80b1f6fe84a6d3f66c8b79d64739321b08"
-  integrity sha512-HvB33boVNCz2lTyBsSiMffsJ+m0YLIQ+pskblXgN9fnjS1BgEcuAfdInfXfGrkdXV406k9FiDi86eVCDBgJOyQ==
+  resolved "https://registry.nlark.com/html-webpack-plugin/download/html-webpack-plugin-5.3.2.tgz#7b04bf80b1f6fe84a6d3f66c8b79d64739321b08"
+  integrity sha1-ewS/gLH2/oSm0/Zsi3nWRzkyGwg=
   dependencies:
     "@types/html-minifier-terser" "^5.0.0"
     html-minifier-terser "^5.0.1"
@@ -5269,10 +5269,10 @@ object-keys@^1.0.12, object-keys@^1.1.1:
   resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.1.1.tgz#1c47f272df277f3b1daf061677d9c82e2322c60e"
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
 
-object-path@0.11.7:
-  version "0.11.7"
-  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.7.tgz#5f211161f34bb395e4b13a5f565b79d933b6f65d"
-  integrity sha512-T4evaK9VfGGQskXBDILcn6F90ZD+WO3OwRFFQ2rmZdUH4vQeDBpiolTpVlPY2yj5xSepyILTjDyM6UvbbdHMZw==
+object-path@0.11.8:
+  version "0.11.8"
+  resolved "https://registry.nlark.com/object-path/download/object-path-0.11.8.tgz#ed002c02bbdd0070b78a27455e8ae01fc14d4742"
+  integrity sha1-7QAsArvdAHC3iidFXorgH8FNR0I=
 
 object.assign@^4.1.0:
   version "4.1.2"
@@ -7476,7 +7476,7 @@ webpack-sources@^3.0.1:
   resolved "https://registry.nlark.com/webpack-sources/download/webpack-sources-3.2.0.tgz#b16973bcf844ebcdb3afde32eda1c04d0b90f89d"
   integrity sha1-sWlzvPhE682zr94y7aHATQuQ+J0=
 
-webpack@5.47, webpack@5.47.0, webpack@^5, webpack@^5.1.0, webpack@^5.38.1, webpack@^5.4.0:
+webpack@5.47.0, webpack@^5, webpack@^5.1.0, webpack@^5.38.1, webpack@^5.4.0:
   version "5.47.0"
   resolved "https://registry.nlark.com/webpack/download/webpack-5.47.0.tgz?cache=0&sync_timestamp=1630682901437&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwebpack%2Fdownload%2Fwebpack-5.47.0.tgz#3c13862b5d7b428792bfe76c5f67a0f43ba685f8"
   integrity sha1-PBOGK117QoeSv+dsX2eg9Dumhfg=

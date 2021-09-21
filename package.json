@@ -44,7 +44,7 @@
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "^1.1.1",
         "@masx200/ie11-usual-polyfills": "^1.0.5",
         "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder": "^2.0.8",
-        "@masx200/webpack-react-vue-spa-awesome-config": "^4.3.3",
+        "@masx200/webpack-react-vue-spa-awesome-config": "^4.3.6",
         "@types/jquery": "3.5.5",
         "@types/node": "15.6.1",
         "@types/react": "17.0.6",
@@ -71,7 +71,7 @@
         "file-loader": "^6.2.0",
         "flowerpassword.js": "^3.0.2",
         "highlight.js": "^11.2.0",
-        "html-webpack-plugin": "^5.3.1",
+        "html-webpack-plugin": "^5.3.2",
         "http-proxy": "1.18.1",
         "jquery": "^3.6.0",
         "json-loader": "^0.5.7",
@@ -117,7 +117,7 @@
     },
     "resolutions": {
         "glob-parent": "5.1.2",
-        "object-path": "0.11.7",
+        "object-path": "0.11.8",
         "webpack": "5.47.0",
         "ansi-html": "npm:ansi-html-community"
     },
