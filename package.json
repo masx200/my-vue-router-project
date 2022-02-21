@@ -116,7 +116,8 @@
         "yargs-parser": "20.2.7"
     },
     "resolutions": {
-        "json-pointer": "0.6.2",
+        "jsonpointer": "5.0.0",
+        "json-schema": "0.4.0",
         "nanoid": "3.3.1",
         "node-forge": "1.2.1",
         "follow-redirects": "1.14.9",
