@@ -1233,10 +1233,10 @@
   resolved "https://registry.nlark.com/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder/download/@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder-2.0.8.tgz#852796ee6c3800624db54972e9e4a4615e2d35c2"
   integrity sha1-hSeW7mw4AGJNtUly6eSkYV4tNcI=
 
-"@masx200/webpack-react-vue-spa-awesome-config@^4.3.8":
-  version "4.3.8"
-  resolved "https://registry.yarnpkg.com/@masx200/webpack-react-vue-spa-awesome-config/-/webpack-react-vue-spa-awesome-config-4.3.8.tgz#147f700b6a088f294b1d440c244aff7654f7fc91"
-  integrity sha512-zWuqhkjKExtHA9fdA//+Bvd2s5bt0VJ//be4snSKhqH2S2ndQDoSNpYDYZh4LewnJVYGDmHyRkiLXHU30Kg89Q==
+"@masx200/webpack-react-vue-spa-awesome-config@^4.3.9":
+  version "4.3.9"
+  resolved "https://registry.yarnpkg.com/@masx200/webpack-react-vue-spa-awesome-config/-/webpack-react-vue-spa-awesome-config-4.3.9.tgz#16f86aa307e0dc6f16c427490b703bb13cbc6446"
+  integrity sha512-+dmDhI3CUOjsLL2jc6H/4EHa+1Muge+hTHccR2iFDKUjUm0GmLej6ABuQ+gH2rk0nKTv0GS8p+zS58X33HV+xw==
   dependencies:
     "@babel/core" "^7.14.6"
     "@babel/plugin-proposal-class-properties" "^7.14.5"
