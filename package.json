@@ -71,7 +71,6 @@
         "file-loader": "^6.2.0",
         "flowerpassword.js": "^3.0.2",
         "highlight.js": "^11.2.0",
-      
         "http-proxy": "1.18.1",
         "jquery": "^3.6.0",
         "json-loader": "^0.5.7",
@@ -126,9 +125,11 @@
         "glob-parent": "5.1.2",
         "object-path": "0.11.8",
         "webpack": "5.47.0",
+        "html-webpack-plugin": "^5.5.0",
         "ansi-html": "npm:ansi-html-community"
     },
-    "devDependencies": { "html-webpack-plugin": "^5.5.0",
+    "devDependencies": {
+        "html-webpack-plugin": "^5.5.0",
         "husky": "^7.0.1"
     },
     "packageManager": "yarn@3.2.0"
