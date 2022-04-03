@@ -1932,7 +1932,7 @@ __metadata:
     "@masx200/acorn-parse-escodegen-generate-esm-broweser": ^1.1.1
     "@masx200/ie11-usual-polyfills": ^1.0.5
     "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder": ^2.0.9
-    "@masx200/webpack-react-vue-spa-awesome-config": ^4.3.9
+    "@masx200/webpack-react-vue-spa-awesome-config": ^4.4.1
     "@types/jquery": 3.5.5
     "@types/node": 15.6.1
     "@types/react": 17.0.6
@@ -2006,9 +2006,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@masx200/webpack-react-vue-spa-awesome-config@npm:^4.3.9":
-  version: 4.3.9
-  resolution: "@masx200/webpack-react-vue-spa-awesome-config@npm:4.3.9"
+"@masx200/webpack-react-vue-spa-awesome-config@npm:^4.4.1":
+  version: 4.4.1
+  resolution: "@masx200/webpack-react-vue-spa-awesome-config@npm:4.4.1"
   dependencies:
     "@babel/core": ^7.14.6
     "@babel/plugin-proposal-class-properties": ^7.14.5
@@ -2046,7 +2046,7 @@ __metadata:
     file-loader: ^6.2.0
     fork-ts-checker-webpack-plugin: ^6.2.10
     htm: ^3.0.4
-    html-webpack-plugin: ^5.3.2
+    html-webpack-plugin: ^5.5.0
     json-loader: ^0.5.7
     less: ^4.1.1
     less-loader: ^10.0.1
@@ -2085,7 +2085,7 @@ __metadata:
     vue: 2.6.14
   bin:
     webpack-react-vue-spa-awesome-config: bin/cli.js
-  checksum: cf5415231d77d83d6f6e13c21742a0f5a29bd014d084b761f0d9d4515a61b9f2e233372e1ea809c8d8a596ab4c764223e2d18ba43a5ef91fe662062149ba4006
+  checksum: f4a1fe0f6bbedb8a07db1e9789b2c5178c6b756ae2812bd043532d78cd37677e97903f9a0b4b00d772d91a4e876acea34ca6dc8e472517d51be08d39bda84a88
   languageName: node
   linkType: hard
 
