@@ -1,3 +1,10 @@
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
 .DS_Store
 node_modules/
 /dist/
@@ -21,3 +28,4 @@ selenium-debug.log
 .now
 package-lock.json
 src/assetsutils/highlight/dist/
+*.zip
