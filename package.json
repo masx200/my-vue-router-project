@@ -127,7 +127,8 @@
         "webpack": "5.47.0",
         "ansi-html": "npm:ansi-html-community",
         "ansi-regex": "6.0.1",
-        "strip-ansi": "7.0.1"
+        "strip-ansi": "7.0.1",
+        "renderkid": "3.0.0"
     },
     "devDependencies": {
         "html-webpack-plugin": "^5.5.0",
