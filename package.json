@@ -115,6 +115,8 @@
         "yargs-parser": "20.2.7"
     },
     "resolutions": {
+        "async": "3.2.3",
+        "ejs": "3.1.7",
         "minimist": "^1.2.6",
         "jsonpointer": "5.0.0",
         "json-schema": "0.4.0",
