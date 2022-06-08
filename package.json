@@ -53,7 +53,7 @@
         "autoprefixer": "^10.2.5",
         "babel-core": "^6.26.3",
         "babel-generator": "^6.26.1",
-        "babel-loader": "^8.2.2",
+        "babel-loader": "^8.2.5",
         "babel-plugin-named-asset-import": "^0.3.7",
         "babel-plugin-transform-runtime": "^6.23.0",
         "babel-polyfill": "^6.26.0",
