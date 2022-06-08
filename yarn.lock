@@ -1968,7 +1968,6 @@ __metadata:
     highlight.js: ^11.2.0
     html-webpack-plugin: ^5.5.0
     http-proxy: 1.18.1
-    husky: ^7.0.1
     jquery: ^3.6.0
     json-loader: ^0.5.7
     less: ^4.1.1
@@ -6663,15 +6662,6 @@ __metadata:
   dependencies:
     ms: ^2.0.0
   checksum: 9c7a74a2827f9294c009266c82031030eae811ca87b0da3dceb8d6071b9bde22c9f3daef0469c3c533cc67a97d8a167cd9fc0389350e5f415f61a79b171ded16
-  languageName: node
-  linkType: hard
-
-"husky@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "husky@npm:7.0.1"
-  bin:
-    husky: lib/bin.js
-  checksum: b2ea1460f1126ed7161779b1b89f7ec8ae66fb6723e0e9fd47c522f454f4a2ea7e31a21d6ce2eb5d32e9837d232fb0245783425c109df0adab53668f8c8d8fc8
   languageName: node
   linkType: hard
 
