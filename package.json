@@ -110,7 +110,7 @@
         "webpack-dev-server": "^4.7.4",
         "webpack-manifest-plugin": "^3.1.1",
         "webpack-merge": "^5.7.3",
-        "workbox-webpack-plugin": "^6.1.5",
+        "workbox-webpack-plugin": "^6.5.3",
         "worker-loader": "^3.0.8",
         "yargs-parser": "20.2.7"
     },
