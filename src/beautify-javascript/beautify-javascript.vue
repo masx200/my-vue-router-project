@@ -32,10 +32,7 @@
             >
                 <details :open="detailopen1" ref="detail1" @toggle="toggle1">
                     <summary
-                        class="
-                            btn btn-outline-primary
-                            mui-btn mui-btn-outline-primary
-                        "
+                        class="btn btn-outline-primary mui-btn mui-btn-outline-primary"
                         v-on:click="拉伸文本框()"
                     >
                         展开收起
@@ -67,10 +64,7 @@
             >
                 <details :open="detailopen2" ref="detail2" @toggle="toggle2">
                     <summary
-                        class="
-                            btn btn-outline-primary
-                            mui-btn mui-btn-outline-primary
-                        "
+                        class="btn btn-outline-primary mui-btn mui-btn-outline-primary"
                         v-on:click="拉伸文本框()"
                     >
                         展开收起

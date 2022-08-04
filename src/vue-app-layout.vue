@@ -2,21 +2,14 @@
     <div>
         <div :ref="navbarref" class="fixed-top container-fluid my导航栏">
             <nav
-                class="
-                    navbar navbar-default navbar navbar-expand-sm
-                    bg-light
-                    navbar-light
-                "
+                class="navbar navbar-default navbar navbar-expand-sm bg-light navbar-light"
                 role="navigation"
             >
                 <div class="container-fluid">
                     <div class="navbar-header">
                         <router-link
                             active-class="active"
-                            class="
-                                navbar-brand
-                                mui-btn mui-btn-primary mui-btn-outlined
-                            "
+                            class="navbar-brand mui-btn mui-btn-primary mui-btn-outlined"
                             to="/"
                             >首页</router-link
                         >
@@ -41,10 +34,7 @@
                                 <router-link
                                     active-class="active"
                                     :to="navlink.to"
-                                    class="
-                                        nav-link
-                                        mui-btn mui-btn-primary mui-btn-outlined
-                                    "
+                                    class="nav-link mui-btn mui-btn-primary mui-btn-outlined"
                                     >{{ navlink.text }}</router-link
                                 >
                             </li>

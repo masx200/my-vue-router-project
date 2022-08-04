@@ -39,20 +39,14 @@
             </textarea>
             <button
                 @click="runhandler"
-                class="
-                    btn btn-outline-primary
-                    mui-btn mui-btn-primary mui-btn-outlined
-                "
+                class="btn btn-outline-primary mui-btn mui-btn-primary mui-btn-outlined"
                 id="run"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
             >
                 Run This
             </button>
             <button
-                class="
-                    btn btn-outline-primary
-                    mui-btn mui-btn-primary mui-btn-outlined
-                "
+                class="btn btn-outline-primary mui-btn mui-btn-primary mui-btn-outlined"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
                 data-clipboard-target="#clip9C4C7C63-E416-6DE0-AA6B-831D8F93393C"
             >

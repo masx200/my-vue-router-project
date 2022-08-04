@@ -16,11 +16,7 @@
                             v-on:change="handlechange()"
                             v-on:input="handlechange()"
                             v-model="message1"
-                            class="
-                                col-lg-12 col-md-12 col-sm-12 col-xs-12
-                                form-control
-                                password
-                            "
+                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control password"
                             placeholder="输入密码"
                             name="password"
                             type="password"
@@ -37,11 +33,7 @@
                             v-on:change="handlechange()"
                             v-on:input="handlechange()"
                             v-model="message2"
-                            class="
-                                col-lg-12 col-md-12 col-sm-12 col-xs-12
-                                form-control
-                                key
-                            "
+                            class="col-lg-12 col-md-12 col-sm-12 col-xs-12 form-control key"
                             placeholder="输入代号"
                             name="key"
                             type="text"
@@ -67,25 +59,14 @@
                             <input
                                 v-model="message3"
                                 id="clip-code168D9E36AE-A757-A2BD-F9D8-4A4DCFA02C61"
-                                class="
-                                    code16
-                                    col-lg-12 col-md-12 col-sm-12 col-xs-12
-                                    snippet
-                                    code16d
-                                    form-control
-                                "
+                                class="code16 col-lg-12 col-md-12 col-sm-12 col-xs-12 snippet code16d form-control"
                                 readonly
                             />
                         </p>
                         <br />
                         <p>
                             <button
-                                class="
-                                    btn-lg btn
-                                    copycode16d
-                                    btn-info
-                                    copycode16
-                                "
+                                class="btn-lg btn copycode16d btn-info copycode16"
                                 data-clipboard-target="#clip-code168D9E36AE-A757-A2BD-F9D8-4A4DCFA02C61"
                                 style="width: 100%"
                                 v-on:click="functioncopy"

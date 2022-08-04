@@ -53,10 +53,7 @@
                 Run This
             </button>
             <button
-                class="
-                    btn btn-outline-primary
-                    mui-btn mui-btn-primary mui-btn-outlined
-                "
+                class="btn btn-outline-primary mui-btn mui-btn-primary mui-btn-outlined"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
                 data-clipboard-target="#clip9F02A223-F000-D1D5-5679-79F6719E9658"
             >
