@@ -1,5 +1,5 @@
 {
-    "version": "4.3.0",
+    "version": "5.0.0",
     "scripts": {
         "precommit": "npm run format ||node -v",
         "start": "webpack-react-vue-spa-awesome-config start --port=11111 --config=./webpack.config.js",
@@ -45,7 +45,7 @@
         "@masx200/ie11-usual-polyfills": "^1.0.5",
         "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder": "^2.1.2",
         "@masx200/webpack-react-vue-spa-awesome-config": "^5.0.1",
-        "@types/jquery": "3.5.5",
+        "@types/jquery": "3.5.14",
         "@types/node": "18.7.1",
         "@types/react": "17.0.6",
         "@types/webpack": "^5.28.0",
