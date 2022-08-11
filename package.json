@@ -91,7 +91,7 @@
         "rollup": "^2.49.0",
         "sass": "1.54.4",
         "sass-loader": "^11.1.1",
-        "serialize-javascript": "^5.0.1",
+        "serialize-javascript": "^6.0.0",
         "style-loader": "^2.0.0",
         "terser": "^5.14.2",
         "terser-webpack-plugin": "^5.3.3",
