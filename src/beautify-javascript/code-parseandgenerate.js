@@ -1,9 +1,11 @@
 // @ts-ignore
-import Worker from "./tranformcode.worker.js";
+function createWorker() {
+    return new Worker(new URL("./tranformcode-worker.js", import.meta.url));
+}
 let worker;
 function launchworker() {
     if (!worker) {
-        worker = new Worker();
+        worker = new createWorker();
     }
 }
 export function 关闭所有worker1() {

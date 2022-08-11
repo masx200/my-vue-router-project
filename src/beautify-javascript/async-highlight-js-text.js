@@ -1,11 +1,15 @@
 // @ts-ignore
 import 弹出消息通用 from "@/assetsutils/my弹出消息通用.js";
 // @ts-ignore
-import Worker from "./markdown-highlight.worker.ts";
+function createWorker() {
+    return new Worker(
+        new URL("./markdown-highlight-worker.ts", import.meta.url)
+    );
+}
 let worker;
 function launchworker() {
     if (!worker) {
-        worker = new Worker();
+        worker = new createWorker();
     }
 }
 export function 关闭所有worker2() {
