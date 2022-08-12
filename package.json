@@ -112,7 +112,7 @@
         "webpack-merge": "^5.7.3",
         "workbox-webpack-plugin": "^6.1.5",
         "worker-loader": "^3.0.8",
-        "yargs-parser": "20.2.7"
+        "yargs-parser": "21.1.1"
     },
     "resolutions": {
         "@babel/preset-env": "^7.18.10",
