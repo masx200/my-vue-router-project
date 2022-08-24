@@ -44,7 +44,7 @@
         "@masx200/acorn-parse-escodegen-generate-esm-broweser": "^1.1.1",
         "@masx200/ie11-usual-polyfills": "^1.0.5",
         "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder": "^2.1.2",
-        "@masx200/webpack-react-vue-spa-awesome-config": "^5.0.1",
+        "@masx200/webpack-react-vue-spa-awesome-config": "^5.1.0",
         "@types/jquery": "3.5.14",
         "@types/node": "18.7.1",
         "@types/react": "18.0.17",
