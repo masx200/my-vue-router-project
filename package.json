@@ -89,7 +89,7 @@
         "postcss-safe-parser": "^6.0.0",
         "prettier": "^2.7.1",
         "rollup": "^2.49.0",
-        "sass": "1.54.4",
+        "sass": "1.54.5",
         "sass-loader": "^13.0.2",
         "serialize-javascript": "^6.0.0",
         "style-loader": "^3.3.1",
