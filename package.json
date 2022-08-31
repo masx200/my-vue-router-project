@@ -79,7 +79,7 @@
         "lodash": "^4.17.21",
         "mini-css-extract-plugin": "^2.2.2",
         "minimist": "^1.2.6",
-        "optimize-css-assets-webpack-plugin": "^6.0.0",
+        "optimize-css-assets-webpack-plugin": "^6.0.1",
         "pnp-webpack-plugin": "^1.6.4",
         "postcss": "8.4.16",
         "postcss-flexbugs-fixes": "^5.0.2",
@@ -135,6 +135,9 @@
         "babel-loader": "^8.2.5",
         "html-webpack-plugin": "^5.5.0",
         "ansi-html": "npm:ansi-html-community"
+    },
+    "overrides": {
+        "webpack": "^5.74.0"
     },
     "devDependencies": {
         "html-webpack-plugin": "^5.5.0"
