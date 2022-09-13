@@ -46,7 +46,7 @@
         "@masx200/jsfuck-and-hieroglyphy-decoder-and-encoder": "^2.1.2",
         "@masx200/webpack-react-vue-spa-awesome-config": "^5.1.0",
         "@types/jquery": "3.5.14",
-        "@types/node": "18.7.14",
+        "@types/node": "18.7.17",
         "@types/react": "18.0.18",
         "@types/webpack": "^5.28.0",
         "@vue/compiler-sfc": "^3.2.37",
