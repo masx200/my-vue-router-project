@@ -19,6 +19,9 @@ module.exports = (env, argv) => {
     if (process.env.NODE_ENV == "development") {
         config.experiments = { ...config.experiments, lazyCompilation: true };
     }
-    // console.log(webpackconfig);
+    //console.log(webpackconfig.resolve);
+    webpackconfig.resolve = Object.assign(webpackconfig.resolve, {
+        fallback: { os: require.resolve("os-browserify/browser") },
+    });
     return webpackconfig;
 };
