@@ -47,7 +47,6 @@
         "@types/decomment": "^0.9.2",
         "@types/jquery": "3.5.14",
         "@types/node": "18.11.18",
-        "@types/react": "18.0.21",
         "@types/webpack": "^5.28.0",
         "@vue/compiler-sfc": "^3.2.37",
         "autoprefixer": "^10.2.5",
