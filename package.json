@@ -145,6 +145,7 @@
         "webpack": "^5.74.0"
     },
     "devDependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "html-webpack-plugin": "^5.5.0"
     }
 }
