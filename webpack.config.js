@@ -4,8 +4,8 @@ const {
 } = require("@masx200/webpack-react-vue-spa-awesome-config");
 
 module.exports = (env, argv) => {
-    const config = createconfig(env, argv);
-    const webpackconfig = config;
+    const webpackconfig = createconfig(env, argv);
+
     if ("production" === process.env.NODE_ENV) {
         webpackconfig.entry = [
             require.resolve("@masx200/ie11-usual-polyfills"),
@@ -17,7 +17,10 @@ module.exports = (env, argv) => {
         // webpackconfig.devtool = "source-map";
     }
     if (process.env.NODE_ENV == "development") {
-        config.experiments = { ...config.experiments, lazyCompilation: true };
+        webpackconfig.experiments = {
+            ...webpackconfig.experiments,
+            lazyCompilation: true,
+        };
     }
     //console.log(webpackconfig.resolve);
     webpackconfig.resolve = Object.assign(webpackconfig.resolve, {
