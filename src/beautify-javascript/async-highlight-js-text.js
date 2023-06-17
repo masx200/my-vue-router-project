@@ -3,7 +3,8 @@ import 弹出消息通用 from "@/assetsutils/my弹出消息通用.js";
 // @ts-ignore
 function createWorker() {
     return new Worker(
-        new URL("./markdown-highlight-worker.ts", import.meta.url)
+        new URL("./markdown-highlight-worker.ts", import.meta.url),
+        { type: "module" }
     );
 }
 let worker;

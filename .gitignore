@@ -31,3 +31,4 @@ src/assetsutils/highlight/dist/
 *.zip
 pnpm-lock.yaml
 .pnpm-debug.log
+checks.json

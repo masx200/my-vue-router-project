@@ -1,6 +1,8 @@
 // @ts-ignore
 function createWorker() {
-    return new Worker(new URL("./tranformcode-worker.js", import.meta.url));
+    return new Worker(new URL("./tranformcode-worker.js", import.meta.url), {
+        type: "module",
+    });
 }
 let worker;
 function launchworker() {
