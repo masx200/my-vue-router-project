@@ -118,20 +118,6 @@ function slct(selector) {
 }
 function setstate(state, element, options) {
     if (element instanceof HTMLElement) {
-        //debugger;
-        //   console.log(
-        //     element,
-        //     "\n",
-        //     element.outerHTML,
-        //     "\n",
-        //     element.innerHTML,
-        //     "\n",
-        //     element.value,
-        //     "\n",
-        //     element[loadingState],
-        //     "\n",
-        //     element[ResetHTML]
-        //   );
         if (!element[loadingState]) {
             element[ResetHTML] =
                 element.tagName === "INPUT" ? element.value : element.innerHTML;

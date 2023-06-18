@@ -21,7 +21,7 @@
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
                 class="btn btn-outline-success"
                 id="encodescript"
-                type="text"
+                type="button"
             >
                 Encode script
             </button>
@@ -29,7 +29,7 @@
             <button
                 @click="encodestring"
                 id="encodestring"
-                type="text"
+                type="button"
                 class="btn btn-outline-info"
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
             >

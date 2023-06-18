@@ -1,9 +1,10 @@
 import * as Vue from "vue";
-import { ref } from "vue";
+
 import $ from "jquery";
 //@ts-ignore
 import { generatehuami } from "./generatehuami";
-let huami = Vue.defineComponent({
+import { ref } from "vue";
+const huami = Vue.defineComponent({
     setup() {
         const copyokref = ref();
         return { copyokref };

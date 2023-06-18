@@ -21,7 +21,7 @@
                 style="font-size: 1.5em; padding: 0.5rem 1rem"
                 class="btn btn-outline-primary"
                 id="encode"
-                type="text"
+                type="button"
                 @click="encodestring"
             >
                 Encode string
@@ -31,7 +31,7 @@
                 @click="encodescript"
                 class="btn btn-outline-primary"
                 id="encodescript"
-                type="text"
+                type="button"
             >
                 Encode script
             </button>
