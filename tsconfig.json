@@ -2,7 +2,7 @@
     "compilerOptions": {
         "skipLibCheck": true,
         "checkJs": false,
-        "allowJs": false,
+        "allowJs": true,
         "paths": {},
         "declarationDir": "./dist",
         "resolveJsonModule": true,
