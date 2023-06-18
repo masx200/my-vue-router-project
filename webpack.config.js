@@ -8,7 +8,7 @@ module.exports = (env, argv) => {
 
     if ("production" === process.env.NODE_ENV) {
         webpackconfig.entry = [
-            path.join(__dirname, "./src", "polyfill.js"),
+            //path.join(__dirname, "./src", "polyfill.js"),
 
             ...webpackconfig.entry,
         ];
