@@ -8,8 +8,6 @@ module.exports = (env, argv) => {
 
     if ("production" === process.env.NODE_ENV) {
         webpackconfig.entry = [
-            require.resolve("@masx200/ie11-usual-polyfills"),
-
             path.join(__dirname, "./src", "polyfill.js"),
 
             ...webpackconfig.entry,

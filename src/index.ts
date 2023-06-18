@@ -8,7 +8,6 @@ import Loading from "./loading.vue";
 import router from "./router路由";
 import "./styles.ts";
 
-// import "webpack-react-vue-spa-awesome-config/ie11babelpolyfill";
 ("use strict");
 const rootele =
     document.getElementById("root") ||
