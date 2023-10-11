@@ -89,7 +89,7 @@
         "postcss-normalize": "^10.0.0",
         "postcss-preset-env": "^9.2.0",
         "postcss-safe-parser": "^6.0.0",
-        "prettier": "^2.7.1",
+        "prettier": "^3.0.3",
         "rollup": "^4.0.2",
         "sass": "1.67.0",
         "sass-loader": "^13.0.2",
