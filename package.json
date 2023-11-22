@@ -46,7 +46,7 @@
         "@masx200/webpack-react-vue-spa-awesome-config": "^5.1.0",
         "@types/decomment": "^0.9.2",
         "@types/jquery": "3.5.16",
-        "@types/node": "20.6.0",
+        "@types/node": "20.9.4",
         "@types/webpack": "^5.28.0",
         "@vitejs/plugin-vue": "^4.2.3",
         "@vue/compiler-sfc": "^3.2.37",
