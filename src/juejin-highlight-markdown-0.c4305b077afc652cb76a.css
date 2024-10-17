@@ -79,7 +79,12 @@
 
 .article-content code,
 .article-content pre {
-    font-family: Menlo, Monaco, Consolas, Courier New, monospace;
+    font-family:
+        Menlo,
+        Monaco,
+        Consolas,
+        Courier New,
+        monospace;
 }
 
 .article-content code {

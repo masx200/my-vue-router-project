@@ -92,7 +92,7 @@ const selectclass = class extends Array {
                     var loadingText = e.getAttribute("data-loading-text");
                     var loadingIcon = e.getAttribute("data-loading-icon");
                     var loadingIconPosition = e.getAttribute(
-                        "data-loading-icon-position"
+                        "data-loading-icon-position",
                     );
 
                     setstate(state, e, {

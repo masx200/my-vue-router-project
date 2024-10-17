@@ -1,8 +1,16 @@
 /* @import 'https://fonts.googleapis.com/css?family=Open+Sans:300'; */
 * {
     text-align: center !important;
-    font-family: Microsoft Yahei, Helvetica, Tahoma, Arial, PingFang SC,
-        Hiragino Sans GB, Heiti SC, MicrosoftYaHei, WenQuanYi Micro Hei,
+    font-family:
+        Microsoft Yahei,
+        Helvetica,
+        Tahoma,
+        Arial,
+        PingFang SC,
+        Hiragino Sans GB,
+        Heiti SC,
+        MicrosoftYaHei,
+        WenQuanYi Micro Hei,
         sans-serif !important;
 }
 

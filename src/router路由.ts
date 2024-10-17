@@ -3,15 +3,15 @@ import * as Vue from "vue";
 import { defineAsyncComponent } from "vue";
 
 const about = Vue.defineAsyncComponent(
-    () => import("./vue-component-about.vue")
+    () => import("./vue-component-about.vue"),
 );
 const home = Vue.defineAsyncComponent(() => import("./vue-component-home.vue"));
 // @ts-ignore
 const huami = Vue.defineAsyncComponent(
-    () => import("./huami/vue-component-huami.vue")
+    () => import("./huami/vue-component-huami.vue"),
 );
 const beautifyjavascript = Vue.defineAsyncComponent(
-    () => import("./beautify-javascript/beautify-javascript.vue")
+    () => import("./beautify-javascript/beautify-javascript.vue"),
 );
 const 我的路由列表: [string, Vue.Component][] = [
     ["/about", about],
@@ -26,7 +26,7 @@ const 我的路由列表: [string, Vue.Component][] = [
             () =>
                 import(
                     "./jsfuck-and-hieroglyphy-decoder-and-encoder/jsfuck-encoder.vue"
-                )
+                ),
         ),
     ],
     [
@@ -35,7 +35,7 @@ const 我的路由列表: [string, Vue.Component][] = [
             () =>
                 import(
                     "./jsfuck-and-hieroglyphy-decoder-and-encoder/JSfuck-and-hieroglyphy-decoder.vue"
-                )
+                ),
         ),
     ],
     [
@@ -44,7 +44,7 @@ const 我的路由列表: [string, Vue.Component][] = [
             () =>
                 import(
                     "./jsfuck-and-hieroglyphy-decoder-and-encoder/hieroglyphy-encoder.vue"
-                )
+                ),
         ),
     ],
     ["", home],

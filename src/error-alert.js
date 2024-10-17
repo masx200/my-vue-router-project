@@ -8,8 +8,8 @@ function fn1(e) {
     }
     alert(
         [String(e), String(error), e.message, e.filename, error?.stack].join(
-            "\n"
-        )
+            "\n",
+        ),
     );
 }
 

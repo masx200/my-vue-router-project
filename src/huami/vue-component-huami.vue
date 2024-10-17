@@ -101,7 +101,11 @@
     background-color: #fff;
 }
 .flowerpassword body {
-    font: 14px/1.5 Tahoma, Helvetica, Arial, \5b8b\4f53;
+    font:
+        14px/1.5 Tahoma,
+        Helvetica,
+        Arial,
+        \5b8b\4f53;
     color: #000;
 }
 .flowerpassword a,

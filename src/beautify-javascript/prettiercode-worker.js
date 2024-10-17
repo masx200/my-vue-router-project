@@ -23,8 +23,8 @@ function transform(code) {
                 // plugins: [parserbabel],
                 plugins: prettierPlugins,
             },
-            prettierconfig
-        )
+            prettierconfig,
+        ),
     );
     return output;
 }

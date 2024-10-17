@@ -7,7 +7,7 @@ function guid() {
             var r = (Math.random() * 16) | 0,
                 v = c == "x" ? r : (r & 0x3) | 0x8;
             return v.toString(16);
-        }
+        },
     );
 }
 function tanchu弹出消息通用(infotype) {
@@ -42,7 +42,7 @@ function tanchu弹出消息通用(infotype) {
             // $(".my主体").css("padding-top", $(".my导航栏").height());
             // 调整导航栏和主体的距离();
             //   refreshall();
-        })
+        }),
     );
 }
 const jQuery = $;

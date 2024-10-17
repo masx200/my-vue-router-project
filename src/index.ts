@@ -34,7 +34,7 @@ window.addEventListener(
             });
         });
     },
-    { once: true }
+    { once: true },
 );
 const container =
     document.getElementById("app") ||
