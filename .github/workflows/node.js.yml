@@ -26,6 +26,6 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - run: npx -y pnpm i
+    - run: npm --global add cnpm && cnpm install --force
     - run: npm run build 
 
