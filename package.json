@@ -122,7 +122,7 @@
         "sass": "1.69.7",
         "sass-loader": "^13.0.2",
         "serialize-javascript": "^6.0.0",
-        "style-loader": "^3.3.1",
+        "style-loader": "^4.0.0",
         "terser": "^5.14.2",
         "terser-webpack-plugin": "^5.3.3",
         "tslib": "^2.2.0",
